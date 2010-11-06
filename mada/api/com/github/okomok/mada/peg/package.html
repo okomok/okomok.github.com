@@ -1,0 +1,989 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for com.github.okomok.mada.peg</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+          
+      <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a></p>
+
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <h1>peg</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">peg</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.peg.ASTreeBuilder">
+      <h4 class="signature"><a href="ASTreeBuilder.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ASTreeBuilder</span><span class="tparams">[<span name="T">T &lt;: MutableTreeNode</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Builds <code>MutableTreeNode</code> while parsing.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#Action">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Action</span><span class="result"> = (<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#Action3">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Action3</span><span class="result"> = (<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.ByNeedActions">
+      <h4 class="signature"><a href="ByNeedActions.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ByNeedActions</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Suppresses actions until outer <code>Peg</code> is matched.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.CapturingGroups">
+      <h4 class="signature"><a href="CapturingGroups.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">CapturingGroups</span><span class="tparams">[<span name="K">K</span>, <span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides capturing groups functionality.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Compatibles">
+      <h4 class="signature"><a href="Compatibles.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Compatibles</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Forwarder">
+      <h4 class="signature"><a href="Forwarder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Forwarder</span><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends Peg[A] with Forwarder</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Memoizer">
+      <h4 class="signature"><a href="Memoizer.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Memoizer</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Provides memoization functionality.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.NotConstantWidth">
+      <h4 class="signature"><a href="NotConstantWidth.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NotConstantWidth</span><span class="result"> extends UnsupportedOperationException</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Thrown if <code>width</code> is required but not constant.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg">
+      <h4 class="signature"><a href="Peg.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Peg</span><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The PEG parser combinator:</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.PrettyPrinter">
+      <h4 class="signature"><a href="PrettyPrinter.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">PrettyPrinter</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Prints matched input information.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Quantified">
+      <h4 class="signature"><a href="Quantified.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Quantified</span><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends Peg[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Adds reluctant methods for quantified peg.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.QuantifiedForwarder">
+      <h4 class="signature"><a href="QuantifiedForwarder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">QuantifiedForwarder</span><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends Forwarder[A] with Quantified[A]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.RegionActions">
+      <h4 class="signature"><a href="RegionActions.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">RegionActions</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Associates actions where Peg can't be placed.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Rule">
+      <h4 class="signature"><a href="Rule.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Rule</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Peg[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Helps to define recursive grammars.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.StackActions">
+      <h4 class="signature"><a href="StackActions.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">StackActions</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends Forwarder[B]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Helper for stack evaluations.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#SymbolMap">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">SymbolMap</span><span class="result"> = <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A] with <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#SymbolSet">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">SymbolSet</span><span class="result"> = <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A] with <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.TSTree">
+      <h4 class="signature"><a href="TSTree.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">TSTree</span><span class="tparams">[<span name="A">A</span>, <span name="V">V</span>]</span><span class="result"> extends Cloneable</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.VerificationException">
+      <h4 class="signature"><a href="VerificationException.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">VerificationException</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="peg">peg: Peg[A]</span>, <span name="vector">vector: Vector[A]</span>)</span><span class="result"> extends RuntimeException with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Thrown in case <code>verify</code> doesn't match.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.ZeroWidth">
+      <h4 class="signature"><a href="ZeroWidth.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">ZeroWidth</span><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends Peg[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Trivial mixin for zero-width peg.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.peg.ASTreeBuilder">
+      <h4 class="signature"><a href="ASTreeBuilder$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ASTreeBuilder</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Contains utility methods operating on type <code>ASTreeBuilder</code>.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#Compatibles">
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">Compatibles</span><span class="result">: <a href="Compatibles.html" class="extype" name="com.github.okomok.mada.peg.Compatibles">Compatibles</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#FAILURE">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">FAILURE</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Alias of <code>sequence.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Alias of <code>sequence.vector.SINGULAR</code> specifying the parsing failure.
+</p></div><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg">
+      <h4 class="signature"><a href="Peg$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Peg</span><span class="result"> extends Common with Compatibles</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#advance">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">advance</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Matches if it succeeds to advance.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Matches if it succeeds to advance.
+</p></div><dl class="paramcmts block"><dt class="param">n</dt><dd class="cmt"><p>the increment count
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#begin">
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">begin</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#byLazy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">byLazy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Constructs a Peg by-lazy.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Constructs a Peg by-lazy.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#byName">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">byName</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p">p: ⇒ <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Constructs a Peg by-name.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Constructs a Peg by-name.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#call">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">call</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#dot">
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">dot</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#end">
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">end</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#entry">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">entry</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="k">k: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="v">v: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>)</span><span class="result">: (<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A])</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">A short-cut to create a symbol entry.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>A short-cut to create a symbol entry.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#eps">
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">eps</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fail">
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">fail</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#from">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">from</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="to">to: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Triggers implicit conversions explicitly.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Triggers implicit conversions explicitly.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>to</code>.
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fromChar">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromChar</span><span class="params">(<span name="from">from: <span class="extype" name="scala.Char">Char</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fromRegexPattern">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromRegexPattern</span><span class="params">(<span name="from">from: <span class="extype" name="java.util.regex.Pattern">Pattern</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fromSIterable">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSIterable</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: <span class="extype" name="scala.collection.Iterable">Iterable</span>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fromSIterableBy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSIterableBy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: <span class="extype" name="scala.collection.Iterable">Iterable</span>[A]</span>)</span><span class="params">(<span name="pred">pred: (A, A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tries to match <code>from</code> using the predicate.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tries to match <code>from</code> using the predicate.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fromSRegex">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSRegex</span><span class="params">(<span name="from">from: <span class="extype" name="scala.util.matching.Regex">Regex</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fromSequence">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSequence</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#fromSequenceBy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSequenceBy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span><span class="params">(<span name="pred">pred: (A, A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tries to match <code>from</code> using the predicate.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tries to match <code>from</code> using the predicate.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#icase">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">icase</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">java.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>java.lang.Mathches case-insensitively.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#longest">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">longest</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="ps">ps: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Chooses the longest match.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Chooses the longest match.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#longest">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">longest</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="ps">ps: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]*</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Chooses the longest match.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Chooses the longest match.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#lookaround">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lookaround</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="pred">pred: (<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Zero-width assertion if region meets condition <code>pred</code></p>
+            <div class="fullcomment"><div class="comment cmt"><p>Zero-width assertion if region meets condition <code>pred</code></p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#lookaround3">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lookaround3</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="pred">pred: (<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Zero-width assertion if region meets condition <code>pred</code> (no heap allocations)
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Zero-width assertion if region meets condition <code>pred</code> (no heap allocations)
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#multiple">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">multiple</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="es">es: <span class="extype" name="scala.collection.Set">Set</span>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Matches any element of set.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Matches any element of set.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#multiple">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">multiple</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="es">es: A*</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Matches any element of set.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Matches any element of set.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#range">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">range</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="i">i: A</span>, <span name="j">j: A</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Matches range values.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Matches range values.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#regex">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">regex</span><span class="params">(<span name="str">str: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">no summary matey</p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>fromRegexPattern(java.util.regex.Pattern.compile(str))</code>.</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            <div class="block"><ol>see also:
+                  <li><p>java.util.regex
+</p></li>
+                </ol></div>
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#shortest">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shortest</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="ps">ps: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Chooses the shortest match.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Chooses the shortest match.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#shortest">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shortest</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="ps">ps: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]*</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Chooses the shortest match.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Chooses the shortest match.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#single">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">single</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="e">e: A</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Matches specified one element.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Matches specified one element.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#switch">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">switch</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="es">es: <span class="extype" name="scala.collection.Map">Map</span>[A, <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Matches a key, then tries to match its value.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Matches a key, then tries to match its value.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#switch">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">switch</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="es">es: (A, <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A])*</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Matches a key, then tries to match its value.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Matches a key, then tries to match its value.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#symbolMap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">symbolMap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="es">es: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[(<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A])]</span>)</span><span class="params">(<span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A] with <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a peg to optimize the form <code>(k1 &gt;&gt; p1)|(k2 &gt;&gt; p2)|(k3 &gt;&gt; p3)|.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a peg to optimize the form <code>(k1 &gt;&gt; p1)|(k2 &gt;&gt; p2)|(k3 &gt;&gt; p3)|...</code>.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#symbolMap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">symbolMap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="es">es: (<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A])*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A] with <span class="extype" name="scala.collection.mutable.Map">Map</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#symbolSet">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">symbolSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="vs">vs: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>)</span><span class="params">(<span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A] with <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns a peg to optimize the form <code>k1|k2|k3|.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns a peg to optimize the form <code>k1|k2|k3|...</code>.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#symbolSet">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">symbolSet</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="vs">vs: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]*</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A] with <span class="extype" name="scala.collection.mutable.Set">Set</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#try">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">try</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p">p: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.peg.Try">Try</span>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Constructs a pseudo try-catch expression.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Constructs a pseudo try-catch expression.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#undefined">
+      <h4 class="signature">
+      <span class="kind">lazy val</span>
+      <span class="symbol">
+        <span class="name">undefined</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#unstringize">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unstringize</span><span class="params">(<span name="from">from: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#unstringizeBy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unstringizeBy</span><span class="params">(<span name="from">from: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="params">(<span name="pred">pred: (<span class="extype" name="scala.Char">Char</span>, <span class="extype" name="scala.Char">Char</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Tries to match <code>from</code> using the predicate.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Tries to match <code>from</code> using the predicate.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.peg.Common#verify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">verify</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="p">p: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Throws VerificationException if p doesn't match.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Throws VerificationException if p doesn't match.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

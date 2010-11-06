@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for com.github.okomok.mada.dual.list</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+          
+      <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.dual">dual</a></p>
+
+      <div id="definition">
+        <img src="../../../../../../lib/package_big.png" />
+        <h1>list</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">list</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#::">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">::</span><span class="result"> = $colon$colon[x]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.AbstractList">
+      <h4 class="signature"><a href="AbstractList.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">AbstractList</span><span class="result"> extends List</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Cons">
+      <h4 class="signature"><a href="Cons.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Cons</span><span class="tparams">[<span name="x">x &lt;: Any</span>, <span name="xs">xs &lt;: List</span>]</span><span class="params">(<span name="head">head: x</span>, <span name="tail">tail: xs</span>)</span><span class="result"> extends AbstractList with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Forwarder">
+      <h4 class="signature"><a href="Forwarder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Forwarder</span><span class="result"> extends List with Forwarder</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.List">
+      <h4 class="signature"><a href="List.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">List</span><span class="result"> extends Any</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The dual List</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Nil">
+      <h4 class="signature"><a href="Nil.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Nil</span><span class="result"> extends AbstractList</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.RandomAccess">
+      <h4 class="signature"><a href="RandomAccess.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">RandomAccess</span><span class="result"> extends List</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Marker trait for random-access list
+</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Strong">
+      <h4 class="signature"><a href="Strong.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Strong</span><span class="tparams">[<span name="xs">xs &lt;: List</span>]</span><span class="result"> extends AbstractList</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Sequence-derivation helper to work around suboptimal <code>nsc.symtab.Types.Type.isGround</code>.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.TrivialForwarder">
+      <h4 class="signature"><a href="TrivialForwarder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TrivialForwarder</span><span class="result"> extends Forwarder</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Unzip1">
+      <h4 class="signature"><a href="Unzip1.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Unzip1</span><span class="tparams">[<span name="xs">xs &lt;: List</span>]</span><span class="params">(<span name="xs">xs: xs</span>)</span><span class="result"> extends AbstractList with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Unzip2">
+      <h4 class="signature"><a href="Unzip2.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Unzip2</span><span class="tparams">[<span name="xs">xs &lt;: List</span>]</span><span class="params">(<span name="xs">xs: xs</span>)</span><span class="result"> extends AbstractList with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#empty">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">empty</span><span class="result"> = <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#force2">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">force2</span><span class="result"> = <a href="../Tuple2.html" class="extype" name="com.github.okomok.mada.dual.Tuple2">Tuple2</a>[force, force]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#iterate">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">iterate</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.list.UnfoldRight.Impl">Impl</span>[z, <span class="extype" name="com.github.okomok.mada.dual.list.Iterate.Iter">Iter</span>[f]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#lexicographicalOrdering">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">lexicographicalOrdering</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.list.LexicographicalOrdering.Impl">Impl</span>[<a href="../Some.html" class="extype" name="com.github.okomok.mada.dual.Some">Some</a>[eo]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#naturalOrdering">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">naturalOrdering</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.list.LexicographicalOrdering.Impl">Impl</span>[<a href="../None.html" class="extype" name="com.github.okomok.mada.dual.None">None</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#range">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">range</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.list.Range.Impl">Impl</span>[n, m]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#repeat">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">repeat</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.list.UnfoldRight.Impl">Impl</span>[z, <span class="extype" name="com.github.okomok.mada.dual.list.Iterate.Iter">Iter</span>[<span class="extype" name="com.github.okomok.mada.dual.function.Identity">Identity</span>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#single">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">single</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[x, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#unfoldRight">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">unfoldRight</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.list.UnfoldRight.Impl">Impl</span>[z, f]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#::">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">::</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.List">
+      <h4 class="signature"><a href="List$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">List</span><span class="result"> extends Common with ToSTuple</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#Nil">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">Nil</span><span class="result">: <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#empty">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">empty</span><span class="result">: <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#force2">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">force2</span><span class="tparams">[<span name="t">t &lt;: <a href="../Product2.html" class="extype" name="com.github.okomok.mada.dual.Product2">Product2</a></span>]</span><span class="params">(<span name="t">t: t</span>)</span><span class="result">: <a href="../Tuple2.html" class="extype" name="com.github.okomok.mada.dual.Tuple2">Tuple2</a>[force, force]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Forces tuple elements.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Forces tuple elements.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>]</span><span class="params">(<span name="from">from: (T1, T2, T3, T4, T5)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T3], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T4], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T5], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span><span class="params">(<span name="from">from: (T1, T2, T3, T4)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T3], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T4], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span><span class="params">(<span name="from">from: (T1, T2, T3)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T3], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="params">(<span name="from">from: (T1, T2)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="from">from: (T1)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Lifts <code>scala.TupleN</code> to dual one.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Lifts <code>scala.TupleN</code> to dual one.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple1">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple1</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="from">from: (T1)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple2">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="params">(<span name="from">from: (T1, T2)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple3">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span><span class="params">(<span name="from">from: (T1, T2, T3)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T3], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple4">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple4</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span><span class="params">(<span name="from">from: (T1, T2, T3, T4)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T3], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T4], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#fromSTuple5">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple5</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>]</span><span class="params">(<span name="from">from: (T1, T2, T3, T4, T5)</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T1], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T2], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T3], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T4], <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[<a href="../Box.html" class="extype" name="com.github.okomok.mada.dual.Box">Box</a>[T5], <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#iterate">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">iterate</span><span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>, <span name="f">f &lt;: <a href="../Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span><span class="params">(<span name="z">z: z</span>, <span name="f">f: f</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.list.UnfoldRight.Impl">Impl</span>[z, <span class="extype" name="com.github.okomok.mada.dual.list.Iterate.Iter">Iter</span>[f]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#lexicographicalOrdering">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lexicographicalOrdering</span><span class="tparams">[<span name="eo">eo &lt;: <a href="../ordering/Ordering.html" class="extype" name="com.github.okomok.mada.dual.ordering.Ordering">Ordering</a></span>]</span><span class="params">(<span name="eo">eo: eo</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.list.LexicographicalOrdering.Impl">Impl</span>[<a href="../Some.html" class="extype" name="com.github.okomok.mada.dual.Some">Some</a>[eo]]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Makes a lexicographical Ordering from element Ordering.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Makes a lexicographical Ordering from element Ordering.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#naturalOrdering">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">naturalOrdering</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.list.LexicographicalOrdering.Impl">Impl</span>[<a href="../None.html" class="extype" name="com.github.okomok.mada.dual.None">None</a>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Makes a lexicographical Ordering from element natural ordering.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Makes a lexicographical Ordering from element natural ordering.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#range">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">range</span><span class="tparams">[<span name="n">n &lt;: <a href="../nat/Nat.html" class="extype" name="com.github.okomok.mada.dual.nat.Nat">Nat</a></span>, <span name="m">m &lt;: <a href="../nat/Nat.html" class="extype" name="com.github.okomok.mada.dual.nat.Nat">Nat</a></span>]</span><span class="params">(<span name="n">n: n</span>, <span name="m">m: m</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.list.Range.Impl">Impl</span>[n, m]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#repeat">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">repeat</span><span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span><span class="params">(<span name="z">z: z</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.list.UnfoldRight.Impl">Impl</span>[z, <span class="extype" name="com.github.okomok.mada.dual.list.Iterate.Iter">Iter</span>[<span class="extype" name="com.github.okomok.mada.dual.function.Identity">Identity</span>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#single">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">single</span><span class="tparams">[<span name="x">x &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span><span class="params">(<span name="x">x: x</span>)</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.list.Cons">Cons</a>[x, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.list.Nil">Nil</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.list.Common#unfoldRight">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unfoldRight</span><span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>, <span name="f">f &lt;: <a href="../Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span><span class="params">(<span name="z">z: z</span>, <span name="f">f: f</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.list.UnfoldRight.Impl">Impl</span>[z, f]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

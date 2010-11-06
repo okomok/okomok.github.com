@@ -1,0 +1,945 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for com.github.okomok.mada.dual.nat.peano</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../../../../../lib/jquery.js"></script>
+          
+      <link href="../../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada.dual">dual</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.dual.nat">nat</a></p>
+
+      <div id="definition">
+        <img src="../../../../../../../lib/package_big.png" />
+        <h1>peano</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">peano</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.Peano">
+      <h4 class="signature"><a href="Peano.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Peano</span><span class="result"> extends AbstractNat</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed 
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.Succ">
+      <h4 class="signature"><a href="Succ.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Succ</span><span class="tparams">[<span name="n">n &lt;: Peano</span>]</span><span class="params">(<span name="decrement">decrement: n</span>)</span><span class="result"> extends AbstractPeano with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.Zero">
+      <h4 class="signature"><a href="Zero.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Zero</span><span class="result"> extends AbstractPeano</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed 
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_0">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_0</span><span class="result"> = <a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_1">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_1</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_10">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_10</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_11">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_11</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_12">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_12</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_13">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_13</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_14">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_14</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_15">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_15</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_16">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_16</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_17">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_17</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_18">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_18</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_19">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_19</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_2">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_2</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_20">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_20</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_21">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_21</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_22">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_22</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_23">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_23</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_24">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_24</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_25">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_25</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_26">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_26</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_27">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_27</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_28">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_28</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_29">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_29</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_3">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_3</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_30">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_30</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_4">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_4</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_5">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_5</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_6">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_6</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_7">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_7</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_8">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_8</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_9">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">_9</span><span class="result"> = <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.Common#Literal">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">Literal</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral">CommonLiteral</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.Peano">
+      <h4 class="signature"><a href="Peano$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Peano</span><span class="result"> extends Common</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.StrongLiteral">
+      <h4 class="signature"><a href="StrongLiteral$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">StrongLiteral</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.Common#Zero">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">Zero</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.nat.peano.AbstractPeano">AbstractPeano</span> with <a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_0">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_0</span><span class="result">: <a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_1">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_1</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_10">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_10</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_11">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_11</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_12">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_12</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_13">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_13</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_14">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_14</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_15">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_15</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_16">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_16</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_17">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_17</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_18">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_18</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_19">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_19</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_2">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_2</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_20">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_20</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_21">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_21</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_22">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_22</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_23">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_23</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_24">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_24</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_25">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_25</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_26">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_26</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_27">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_27</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_28">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_28</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_29">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_29</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_3">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_3</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_30">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_30</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_4">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_4</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_5">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_5</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_6">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_6</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_7">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_7</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_8">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_8</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.peano.CommonLiteral#_9">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">_9</span><span class="result">: <a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Succ.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Succ">Succ</a>[<a href="Zero.html" class="extype" name="com.github.okomok.mada.dual.nat.peano.Zero">Zero</a>]]]]]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: CommonLiteral
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for com.github.okomok.mada.sequence.vector</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+          
+      <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a></p>
+
+      <div id="definition">
+        <img src="../../../../../../lib/package_big.png" />
+        <h1>vector</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">vector</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Adapter">
+      <h4 class="signature"><a href="Adapter.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Adapter</span><span class="tparams">[<span name="From">+From</span>, <span name="To">+To</span>]</span><span class="result"> extends Vector[To]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Adapts underlying vector.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Compatibles">
+      <h4 class="signature"><a href="Compatibles.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Compatibles</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Forwarder">
+      <h4 class="signature"><a href="Forwarder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Forwarder</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Adapter[A, A] with Forwarder[A]</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.FromJCharBuffer">
+      <h4 class="signature"><a href="FromJCharBuffer.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">FromJCharBuffer</span><span class="params">(<span name="_1">_1: CharBuffer</span>)</span><span class="result"> extends Vector[Char] with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#Func">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Func</span><span class="result"> = (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#Func3">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Func3</span><span class="result"> = (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Mixin">
+      <h4 class="signature"><a href="Mixin.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Mixin</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Mixin
+</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.NotReadableException">
+      <h4 class="signature"><a href="NotReadableException.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NotReadableException</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="_1">_1: Vector[A]</span>)</span><span class="result"> extends UnsupportedOperationException with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Thrown if vector is not readable.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.NotWritable">
+      <h4 class="signature"><a href="NotWritable.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">NotWritable</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Vector[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Trivial mixin to define a non-writable vector type.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.NotWritableException">
+      <h4 class="signature"><a href="NotWritableException.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">NotWritableException</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="_1">_1: Vector[A]</span>)</span><span class="result"> extends UnsupportedOperationException with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Thrown if vector is not writable.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#Pred">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Pred</span><span class="result"> = (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#Pred3">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Pred3</span><span class="result"> = (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Region">
+      <h4 class="signature"><a href="Region.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Region</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="_1">_1: Vector[A]</span>, <span name="_2">_2: Int</span>, <span name="_3">_3: Int</span>)</span><span class="result"> extends Adapter[A, A] with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Sequence">
+      <h4 class="signature"><a href="Sequence.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Sequence</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Sequence[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The bridge between phisical and logical hierarchy
+</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.ToProduct">
+      <h4 class="signature"><a href="ToProduct.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ToProduct</span><span class="result"> extends Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#TransformAdapter">
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">TransformAdapter</span><span class="result"> = <a href="Adapter.html" class="extype" name="com.github.okomok.mada.sequence.vector.Adapter">Adapter</a>[A, A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector">
+      <h4 class="signature"><a href="Vector.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Vector</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends PartialFunction[Int, A] with Sequence[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Sequences that guarantees O(1) element access and O(1) length computation.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Mixin">
+      <h4 class="signature"><a href="Mixin$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Mixin</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Contains concrete mixins.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#SINGULAR">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">SINGULAR</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">no summary matey</p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>java.lang.Math.MIN_INT</code>, which is the reserved index by <code>mada.Vector</code>.
+</p></dd></dl><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Sequence">
+      <h4 class="signature"><a href="Sequence$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Sequence</span><span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector">
+      <h4 class="signature"><a href="Vector$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Vector</span><span class="result"> extends Common with Compatibles with LowPriorityOrderingImplicits</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#allocate">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">allocate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="c">c: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">no summary matey</p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an uninitialized vector with the specified size.
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#apply">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: A*</span>)</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#byLazy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">byLazy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: ⇒ <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.sequence.vector.ByLazy">ByLazy</span>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns by-lazy vector.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns by-lazy vector.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#byName">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">byName</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: ⇒ <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.sequence.vector.ByName">ByName</span>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns by-name vector.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns by-name vector.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#concat">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">concat</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="vs">vs: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]*</span>)</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Concatenate all argument sequences into a single vector.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Concatenate all argument sequences into a single vector.
+</p></div><dl class="paramcmts block"><dt class="param">vs</dt><dd class="cmt"><p>the given argument sequences</p></dd><dt>returns</dt><dd class="cmt"><p>the projection vector created from the concatenated arguments
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#empty">
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">empty</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">no summary matey</p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>an empty vector.
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#file">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">file</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="java.lang.String">String</span></span>, <span name="m">m: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rm">rm: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[A]</span>)</span><span class="result">: <a href="../../arm/Arm.html" class="extype" name="com.github.okomok.mada.arm.Arm">Arm</a>[<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#file">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">file</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: <span class="extype" name="java.io.File">File</span></span>, <span name="m">m: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rm">rm: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[A]</span>)</span><span class="result">: <a href="../../arm/Arm.html" class="extype" name="com.github.okomok.mada.arm.Arm">Arm</a>[<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#file">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">file</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: <span class="extype" name="java.io.RandomAccessFile">RandomAccessFile</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="rm">rm: <span class="extype" name="scala.reflect.Manifest">Manifest</span>[A]</span>)</span><span class="result">: <a href="../../arm/Arm.html" class="extype" name="com.github.okomok.mada.arm.Arm">Arm</a>[<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates a file vector with the specified primitive type.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates a file vector with the specified primitive type.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#from">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">from</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="to">to: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>)</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#lexicographicalOrdering">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lexicographicalOrdering</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.math.Ordering">Ordering</span>[<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#range">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">range</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="u">u: <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">no summary matey</p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>range(i, java.lang.Integer.MAX_VALUE)</code>.
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#range">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">range</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="j">j: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates a vector containing of successive integers.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates a vector containing of successive integers.
+</p></div><dl class="paramcmts block"><dt class="param">i</dt><dd class="cmt"><p>the value of the first element of the vector</p></dd><dt class="param">j</dt><dd class="cmt"><p>the value of the last element of the vector plus 1</p></dd><dt>returns</dt><dd class="cmt"><p>the sorted vector of all integers in range [i, j).
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#single">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">single</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="e">e: A</span>)</span><span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">no summary matey</p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">e</dt><dd class="cmt"><p>the element</p></dd><dt>returns</dt><dd class="cmt"><p>the writable vector with one single element.
+</p></dd></dl><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.stl">
+      <h4 class="signature"><a href="stl/package.html">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">stl</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Port of <a href="http://www.sgi.com/tech/stl/">STL</a> algorithms.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#triplify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">triplify</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="f">f: (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ B</span>)</span><span class="result">: (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts a <code>Func</code> to <code>Func3</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts a <code>Func</code> to <code>Func3</code>.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#unapplySeq">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unapplySeq</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.collection.Seq">Seq</span>[A]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Common#untriplify">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">untriplify</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="f">f: (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>) ⇒ B</span>)</span><span class="result">: (<a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ B</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Converts a <code>Func3</code> to <code>Func</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Converts a <code>Func3</code> to <code>Func</code>.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

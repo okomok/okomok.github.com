@@ -1,0 +1,831 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Scaladoc for com.github.okomok.mada.sequence.vector.stl</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		      <script type="text/javascript" src="../../../../../../../lib/jquery.js"></script>
+          
+      <link href="../../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value">
+
+      <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence.vector">vector</a></p>
+
+      <div id="definition">
+        <img src="../../../../../../../lib/package_big.png" />
+        <h1>stl</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">stl</span>
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"><div class="comment cmt"><p>Port of <a href="http://www.sgi.com/tech/stl/">STL</a> algorithms.
+Mainly used to implement <code>mada.Vector</code>.</p><p><code>mada.stl</code> works only on <code>Vector</code> as RandomAccessIterator.
+(Java is heap-friendly, so ForwardIterator algorithms would be too slow.)
+These algorithms (ironically) take region arguments as STL does to eliminate intermediate vector objects.</p><p>Scala vs STL:</p><ul><li><code>Iterable</code>: SinglePassRange+Forward&quot;Begin&quot;Iterator</li><li><code>Collection</code>: ...maybe unneeded.</li><li><code>Seq</code>: ...maybe unneeded.</li><li><code>List</code>: ForwardRange</li><li><code>Stream</code>: ForwardRange</li><li><code>RandomAccessSeq</code>: RandomAccessRange</li></ul></div>
+            
+            
+            <div class="block"><ol>see also:
+                  <li><p><a href="http://www.stanford.edu/group/coursework/docsTech/jgl/">JGL</a></p></li>, <li><p><a href="http://www.sgi.com/tech/stl/">STL</a></p></li>
+                </ol></div>
+            
+          </div>
+      
+      <div id="template">
+
+        <div id="mbrsel">
+          
+          <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+          </div>
+        </div>
+        
+                
+        
+        <div class="members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.vector.stl.OutputCounter">
+      <h4 class="signature"><a href="OutputCounter.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">OutputCounter</span><span class="result"> extends OutputVector[Any]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Counts calls of <code>vector.</p>
+    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.stl.OutputVector">
+      <h4 class="signature"><a href="OutputVector.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">OutputVector</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Vector[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Mixin which supports only the <code>update</code> method, whose index argument is ignored.</p>
+    </li></ol>
+            </div>
+        
+        <div class="members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" name="_root_#accumulate">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">accumulate</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="init">init: B</span>)</span><span class="params">(<span name="binary_op">binary_op: (B, A) ⇒ B</span>)</span><span class="result">: B</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#adjacentFind">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">adjacentFind</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#adjacentFindIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">adjacentFindIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="binary_pred">binary_pred: (A, A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#copy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#copyBackward">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyBackward</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#copyIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">copyIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="pred">pred: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#count">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">count</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="e">e: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#countIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">countIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="pred">pred: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#equal">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equal</span><span class="tparams">[<span name="A1">A1</span>, <span name="A2">A2</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A1]</span>, <span name="first1">first1: <span class="extype" name="scala.Int">Int</span></span>, <span name="last1">last1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A2]</span>, <span name="first2">first2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#equalIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">equalIf</span><span class="tparams">[<span name="A1">A1</span>, <span name="A2">A2</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A1]</span>, <span name="first1">first1: <span class="extype" name="scala.Int">Int</span></span>, <span name="last1">last1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A2]</span>, <span name="first2">first2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="binary_pred">binary_pred: (A1, A2) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#fill">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fill</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="value">value: A</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#find">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">find</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>, <span name="value">value: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#findIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">findIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="pred">pred: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#forEach">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">forEach</span><span class="tparams">[<span name="A">A</span>, <span name="F">F &lt;: (A) ⇒ <span class="extype" name="scala.Any">Any</span></span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>, <span name="f">f: F</span>)</span><span class="result">: F</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#generate">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">generate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="gen">gen: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ A</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#generateN">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">generateN</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="^">^: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="gen">gen: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ A</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#isHeap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isHeap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#isSorted">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isSorted</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#iterSwap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">iterSwap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="i1">i1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="i2">i2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#lexicographicalCompare">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lexicographicalCompare</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first1">first1: <span class="extype" name="scala.Int">Int</span></span>, <span name="__last1">__last1: <span class="extype" name="scala.Int">Int</span></span>, <span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first2">first2: <span class="extype" name="scala.Int">Int</span></span>, <span name="__last2">__last2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#lexicographicalCompare3way">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lexicographicalCompare3way</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first1">first1: <span class="extype" name="scala.Int">Int</span></span>, <span name="__last1">__last1: <span class="extype" name="scala.Int">Int</span></span>, <span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first2">first2: <span class="extype" name="scala.Int">Int</span></span>, <span name="__last2">__last2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#lowerBound">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lowerBound</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>, <span name="value">value: A</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#makeHeap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">makeHeap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#maxElement">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">maxElement</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#median">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">median</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="x">x: A</span>, <span name="y">y: A</span>, <span name="z">z: A</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: A</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#merge">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">merge</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first1">first1: <span class="extype" name="scala.Int">Int</span></span>, <span name="last1">last1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first2">first2: <span class="extype" name="scala.Int">Int</span></span>, <span name="last2">last2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#minElement">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">minElement</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#outputBy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">outputBy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Creates <code>OutputVector</code> in which <code>output(e)</code> calls <code>f(e)</code>.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates <code>OutputVector</code> in which <code>output(e)</code> calls <code>f(e)</code>.
+</p></div><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div>
+            
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" name="_root_#partialSort">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">partialSort</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="middle">middle: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#popHeap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">popHeap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#pushHeap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">pushHeap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#randomSample">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">randomSample</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="out_first">out_first: <span class="extype" name="scala.Int">Int</span></span>, <span name="out_last">out_last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#randomSampleBy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">randomSampleBy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="out_first">out_first: <span class="extype" name="scala.Int">Int</span></span>, <span name="out_last">out_last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="rand">rand: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#randomSampleN">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">randomSampleN</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="out_ite">out_ite: <span class="extype" name="scala.Int">Int</span></span>, <span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#randomSampleNBy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">randomSampleNBy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="out_ite">out_ite: <span class="extype" name="scala.Int">Int</span></span>, <span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="rand">rand: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#randomShuffle">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">randomShuffle</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#randomShuffleBy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">randomShuffleBy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="rand">rand: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#remove">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">remove</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="e">e: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#removeCopy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">removeCopy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="e">e: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#removeCopyIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">removeCopyIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="pred">pred: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#removeIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">removeIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="pred">pred: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#replace">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">replace</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="old_value">old_value: <span class="extype" name="scala.Any">Any</span></span>, <span name="new_value">new_value: A</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#replaceCopy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">replaceCopy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>, <span name="old_value">old_value: <span class="extype" name="scala.Any">Any</span></span>, <span name="new_value">new_value: A</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#replaceCopyIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">replaceCopyIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="pred">pred: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="new_value">new_value: A</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#replaceIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">replaceIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="pred">pred: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="new_value">new_value: A</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#reverse">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">reverse</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#sort">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sort</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#sortHeap">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">sortHeap</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#stableSort">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">stableSort</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#swapRanges">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">swapRanges</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first1">first1: <span class="extype" name="scala.Int">Int</span></span>, <span name="last1">last1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first2">first2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#transform">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">transform</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="opr">opr: (A) ⇒ B</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#transformZip">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">transformZip</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span name="v1">v1: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first1">first1: <span class="extype" name="scala.Int">Int</span></span>, <span name="last1">last1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="v2">v2: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>, <span name="first2">first2: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[C]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="binary_op">binary_op: (A, B) ⇒ C</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#unique">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unique</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#uniqueCopy">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">uniqueCopy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: com.github.okomok.mada.sequence.vector.Vector[_ &gt;: A]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#uniqueCopyIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">uniqueCopyIf</span><span class="tparams">[<span name="A">A</span>, <span name="B">B &gt;: A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="^">^: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>, <span name="result">result: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="binary_pred">binary_pred: (A, B) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#uniqueIf">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">uniqueIf</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="binary_pred">binary_pred: (A, A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" name="_root_#upperBound">
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">upperBound</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="v">v: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>, <span name="value">value: A</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li></ol>
+            </div>
+                
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
