@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.sequence.vector.Vector</title>
+          <title>com.github.okomok.mada.sequence.vector.Vector</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type">
+        <body class="type" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.sequence.vector">vector</a></p>
 
@@ -23,7 +24,10 @@
       <h4 class="signature" id="signature">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Vector</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Int">Int</span>, A] with <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a>[A]</span>
+        <span class="name">Vector</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Int">Int</span>, A] with <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a>[A]</span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="comment cmt"><p>Sequences that guarantees O(1) element access and O(1) length computation.
@@ -33,39 +37,53 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
 </p></div><div class="block">
             go to: <a href="Vector$.html">companion</a>
           </div><div class="block">
-            known subclasses: <a href="stl/OutputVector.html" class="extype" name="com.github.okomok.mada.sequence.vector.stl.OutputVector">OutputVector</a>, <a href="Adapter.html" class="extype" name="com.github.okomok.mada.sequence.vector.Adapter">Adapter</a>, <a href="NotWritable.html" class="extype" name="com.github.okomok.mada.sequence.vector.NotWritable">NotWritable</a>, <a href="FromJCharBuffer.html" class="extype" name="com.github.okomok.mada.sequence.vector.FromJCharBuffer">FromJCharBuffer</a>
+            linear super types: <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a>[A], <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a>[A], <span class="extype" name="scala.Equals">Equals</span>, <a href="../reactive/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[A], <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Int">Int</span>, A], (<span class="extype" name="scala.Int">Int</span>) ⇒ A, AnyRef, <span class="extype" name="scala.Any">Any</span>
+          </div><div class="block">
+            known subclasses: <a href="stl/OutputVector.html" class="extype" name="com.github.okomok.mada.sequence.vector.stl.OutputVector">OutputVector</a>, <a href="stl/OutputCounter.html" class="extype" name="com.github.okomok.mada.sequence.vector.stl.OutputCounter">OutputCounter</a>, <a href="Adapter.html" class="extype" name="com.github.okomok.mada.sequence.vector.Adapter">Adapter</a>, <a href="Region.html" class="extype" name="com.github.okomok.mada.sequence.vector.Region">Region</a>, <a href="NotWritable.html" class="extype" name="com.github.okomok.mada.sequence.vector.NotWritable">NotWritable</a>, <a href="FromJCharBuffer.html" class="extype" name="com.github.okomok.mada.sequence.vector.FromJCharBuffer">FromJCharBuffer</a>, <a href="Forwarder.html" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a>
           </div>
             
             
             
-            
           </div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in">Alphabetic</li><li class="inherit out">By inheritance</li></ol>
+              </div>
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</li><li class="in" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</li><li class="in" name="scala.PartialFunction">PartialFunction</li><li class="in" name="scala.Function1">Function1</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.vector.Vector">Vector</li><li class="in" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</li><li class="in" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</li><li class="in" name="scala.PartialFunction">PartialFunction</li><li class="in" name="scala.Function1">Function1</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
+
         
-        
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=">
+              <ol><li visbl="pub" data-isabs="false" name="scala.AnyRef#!=">
+      <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -76,11 +94,15 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#!=">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#!=">
+      <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -94,14 +116,17 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef###">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef###">
+      <a id="##():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">##</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -112,11 +137,15 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           definition classes: AnyRef → Any
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$asInstanceOf">
+      <a id="$asInstanceOf[T0]():T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+        <span class="name">$asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -127,11 +156,15 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$isInstanceOf">
+      <a id="$isInstanceOf[T0]():Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">$isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -142,11 +175,15 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#++">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#++">
+      <a id="++[B&gt;:A](Vector[B]):Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">++</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">++</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
@@ -155,11 +192,15 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#/:">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#/:">
+      <a id="/:[B](B)((B, A) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">/:</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">/:</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span>
+        <span class="result">: B</span>
       </span>
       </h4>
       
@@ -168,11 +209,15 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#==">
+      <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -186,14 +231,17 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Any#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#==">
+      <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -207,14 +255,17 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#adjacent">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#adjacent">
+      <a id="adjacent(Int):Vector[Vector[A]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">adjacent</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+        <span class="name">adjacent</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
       </span>
       </h4>
       
@@ -224,14 +275,17 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.PartialFunction#andThen">
+    </li><li visbl="pub" data-isabs="false" name="scala.PartialFunction#andThen">
+      <a id="andThen[C]((A) ⇒ C):PartialFunction[Int, C]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">andThen</span><span class="tparams">[<span name="C">C</span>]</span><span class="params">(<span name="k">k: (A) ⇒ C</span>)</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Int">Int</span>, C]</span>
+        <span class="name">andThen</span>
+        <span class="tparams">[<span name="C">C</span>]</span>
+        <span class="params">(<span name="k">k: (A) ⇒ C</span>)</span>
+        <span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Int">Int</span>, C]</span>
       </span>
       </h4>
       
@@ -240,11 +294,15 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           definition classes: PartialFunction → Function1
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#append">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#append">
+      <a id="append[B&gt;:A](Vector[B]):Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">append</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">append</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
@@ -254,14 +312,17 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#apply">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#apply">
+      <a id="apply(Int,Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="_start">_start: <span class="extype" name="scala.Int">Int</span></span>, <span name="_end">_end: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="_start">_start: <span class="extype" name="scala.Int">Int</span></span>, <span name="_end">_end: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -270,29 +331,36 @@ the <code>start</code> method.</p><p>Unless otherwise specified, these methods r
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#apply">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#apply">
+      <a id="apply(Int):A"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: A</span>
+        <span class="name">apply</span>
+        
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: A</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">i</dt><dd class="cmt"><p>index of element to return.</p></dd><dt>returns</dt><dd class="cmt"><p>the element at the specified position in this vector.</p></dd></dl><div class="block">
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a> → Function1
         </div>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
+      <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -307,14 +375,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Sequence#asIterative">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Sequence#asIterative">
+      <a id="asIterative:Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asIterative</span><span class="result">: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">asIterative</span>
+        
+        
+        <span class="result">: Iterative[A]</span>
       </span>
       </h4>
       
@@ -323,11 +394,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a> → <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Sequence#asReactive">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Sequence#asReactive">
+      <a id="asReactive:Reactive[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asReactive</span><span class="result">: <a href="../reactive/Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
+        <span class="name">asReactive</span>
+        
+        
+        <span class="result">: Reactive[A]</span>
       </span>
       </h4>
       
@@ -336,11 +411,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a> → <a href="../reactive/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#asVector">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#asVector">
+      <a id="asVector:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asVector</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">asVector</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -349,11 +428,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a> → <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#asVectorOf">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#asVectorOf">
+      <a id="asVectorOf[B]:Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asVectorOf</span><span class="tparams">[<span name="B">B</span>]</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">asVectorOf</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
@@ -363,14 +446,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#bounds">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#bounds">
+      <a id="bounds:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">bounds</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">bounds</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -382,22 +468,29 @@ iif <code>i in [start, end)</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#break">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#break">
+      <a id="break((A) ⇒ Boolean):(Vector[A], Vector[A])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">break</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A])</span>
+        <span class="name">break</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A])</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Sequence#canEqual">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Sequence#canEqual">
+      <a id="canEqual(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">canEqual</span>
+        
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -406,19 +499,27 @@ iif <code>i in [start, end)</code>.
           definition classes: <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a> → Equals
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#clear">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#clear">
+      <a id="clear:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">clear</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">clear</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="prt" name="scala.AnyRef#clone">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
+      <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span>
+        
+        <span class="params">()</span>
+        <span class="result">: AnyRef</span>
       </span>
       </h4>
       
@@ -432,14 +533,17 @@ iif <code>i in [start, end)</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Function1#compose">
+    </li><li visbl="pub" data-isabs="false" name="scala.Function1#compose">
+      <a id="compose[A]((A) ⇒ Int):(A) ⇒ A"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">compose</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="g">g: (A) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: (A) ⇒ A</span>
+        <span class="name">compose</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="g">g: (A) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: (A) ⇒ A</span>
       </span>
       </h4>
       
@@ -448,11 +552,15 @@ iif <code>i in [start, end)</code>.
           definition classes: Function1
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#contains">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#contains">
+      <a id="contains(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">contains</span><span class="params">(<span name="e">e: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">contains</span>
+        
+        <span class="params">(<span name="e">e: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -463,14 +571,17 @@ iif <code>i in [start, end)</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#copy">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#copy">
+      <a id="copy:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">copy</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">copy</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -481,14 +592,17 @@ iif <code>i in [start, end)</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#copyTo">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#copyTo">
+      <a id="copyTo[B&gt;:A](Vector[B]):Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">copyTo</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">copyTo</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
@@ -498,14 +612,17 @@ iif <code>i in [start, end)</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#count">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#count">
+      <a id="count((A) ⇒ Boolean):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">count</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">count</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -515,14 +632,17 @@ iif <code>i in [start, end)</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#defaultGrainSize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#defaultGrainSize">
+      <a id="defaultGrainSize:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">defaultGrainSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">defaultGrainSize</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -532,14 +652,17 @@ iif <code>i in [start, end)</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#divide">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#divide">
+      <a id="divide(Int):Vector[Vector[A]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">divide</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+        <span class="name">divide</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
       </span>
       </h4>
       
@@ -553,14 +676,17 @@ Each vector size is <code>n</code> except for the last one.
                   <li><p>vector.undivide
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#drop">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#drop">
+      <a id="drop(Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">drop</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">drop</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -570,14 +696,17 @@ Each vector size is <code>n</code> except for the last one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#dropWhile">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#dropWhile">
+      <a id="dropWhile((A) ⇒ Boolean):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">dropWhile</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">dropWhile</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -587,18 +716,21 @@ Each vector size is <code>n</code> except for the last one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#end">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.vector.Vector#end">
+      <a id="end:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">end</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">end</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>end index of this vector, which is NOT guaranteed to be <code>size</code>.
 </p></dd></dl><div class="block">
           attributes: abstract 
@@ -606,14 +738,17 @@ Each vector size is <code>n</code> except for the last one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#eq">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#eq">
+      <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -640,14 +775,17 @@ should be equal to each other (<code>o1 == o2</code>) and they should hash to th
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Sequence#equals">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Sequence#equals">
+      <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -669,14 +807,17 @@ scala.Int
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#equalsIf">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#equalsIf">
+      <a id="equalsIf[B](Vector[B])((A, B) ⇒ Boolean):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">equalsIf</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="params">(<span name="p">p: (A, B) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equalsIf</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="params">(<span name="p">p: (A, B) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -690,14 +831,17 @@ satisfy the predicate <code>p</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#exists">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#exists">
+      <a id="exists((A) ⇒ Boolean):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">exists</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">exists</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -707,14 +851,17 @@ satisfy the predicate <code>p</code>.
             
             
             
-            
           </div>
           
-    </li><li visbl="prt" name="scala.AnyRef#finalize">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#finalize">
+      <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -729,14 +876,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#find">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#find">
+      <a id="find((A) ⇒ Boolean):Option[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">find</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
+        <span class="name">find</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
       </span>
       </h4>
       
@@ -746,31 +896,37 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#fold">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#fold">
+      <a id="fold[B&gt;:A](B)((B, B) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fold</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">fold</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
+        <span class="result">: B</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>foldLeft(z)(op)</code>.
 </p></dd></dl>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#foldLeft">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#foldLeft">
+      <a id="foldLeft[B](B)((B, A) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">foldLeft</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">foldLeft</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span>
+        <span class="result">: B</span>
       </span>
       </h4>
       
@@ -780,14 +936,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#foldRight">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#foldRight">
+      <a id="foldRight[B](B)((A, B) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">foldRight</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">foldRight</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span>
+        <span class="result">: B</span>
       </span>
       </h4>
       
@@ -797,31 +956,37 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#folder">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#folder">
+      <a id="folder[B&gt;:A](B)((B, B) ⇒ B):Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">folder</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">folder</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>asIterative.folderLeft(z)(op).toVector</code>.
 </p></dd></dl>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#forall">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#forall">
+      <a id="forall((A) ⇒ Boolean):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">forall</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">forall</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -831,14 +996,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#force">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#force">
+      <a id="force:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">force</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">force</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -848,14 +1016,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#foreach">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#foreach">
+      <a id="foreach((A) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">foreach</span><span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">foreach</span>
+        
+        <span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -865,14 +1036,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#getClass">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#getClass">
+      <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span>
+        <span class="result">: java.lang.Class[_]</span>
       </span>
       </h4>
       
@@ -886,14 +1060,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#grainSize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#grainSize">
+      <a id="grainSize:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">grainSize</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">grainSize</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -903,14 +1080,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Sequence#hashCode">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Sequence#hashCode">
+      <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -926,14 +1106,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#head">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#head">
+      <a id="head:A"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">head</span><span class="result">: A</span>
+        <span class="name">head</span>
+        
+        
+        <span class="result">: A</span>
       </span>
       </h4>
       
@@ -943,14 +1126,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#headOption">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#headOption">
+      <a id="headOption:Option[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">headOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
+        <span class="name">headOption</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
       </span>
       </h4>
       
@@ -960,14 +1146,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#indices">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#indices">
+      <a id="indices:Vector[Int]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">indices</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+        <span class="name">indices</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       
@@ -976,32 +1165,39 @@ to verify that the behavior is consistent with the <code>equals</code> method.
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#init">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#init">
+      <a id="init:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">init</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">init</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>this(start, end - 1)</code>.
 </p></dd></dl>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#isDefinedAt">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#isDefinedAt">
+      <a id="isDefinedAt(Int):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isDefinedAt</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isDefinedAt</span>
+        
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>i in [start, end)</code>, possibly overridden in subclasses.
 </p></dd></dl><div class="block">
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a> → PartialFunction
@@ -1009,22 +1205,29 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#isEmpty">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#isEmpty">
+      <a id="isEmpty:Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isEmpty</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isEmpty</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#isInstanceOf">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1040,14 +1243,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#join">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#join">
+      <a id="join:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">join</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">join</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1059,14 +1265,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#last">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#last">
+      <a id="last:A"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">last</span><span class="result">: A</span>
+        <span class="name">last</span>
+        
+        
+        <span class="result">: A</span>
       </span>
       </h4>
       
@@ -1076,14 +1285,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#lastOption">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#lastOption">
+      <a id="lastOption:Option[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lastOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
+        <span class="name">lastOption</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
       </span>
       </h4>
       
@@ -1093,14 +1305,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.PartialFunction#lift">
+    </li><li visbl="pub" data-isabs="false" name="scala.PartialFunction#lift">
+      <a id="lift:(Int) ⇒ Option[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lift</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Option">Option</span>[A]</span>
+        <span class="name">lift</span>
+        
+        
+        <span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Option">Option</span>[A]</span>
       </span>
       </h4>
       
@@ -1109,11 +1324,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: PartialFunction
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#loop">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#loop">
+      <a id="loop[F&lt;:(A) ⇒ Boolean](Int,Int,F):F"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">loop</span><span class="tparams">[<span name="F">F &lt;: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>]</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="j">j: <span class="extype" name="scala.Int">Int</span></span>, <span name="f">f: F</span>)</span><span class="result">: F</span>
+        <span class="name">loop</span>
+        <span class="tparams">[<span name="F">F &lt;: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>]</span>
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="j">j: <span class="extype" name="scala.Int">Int</span></span>, <span name="f">f: F</span>)</span>
+        <span class="result">: F</span>
       </span>
       </h4>
       
@@ -1123,22 +1342,29 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#lowerCase">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#lowerCase">
+      <a id="lowerCase(&lt;:&lt;[Vector[A], Vector[Char]]):Vector[Char]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lowerCase</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+        <span class="name">lowerCase</span>
+        
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#map">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#map">
+      <a id="map[B]((A) ⇒ B):Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (A) ⇒ B</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">map</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="f">f: (A) ⇒ B</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
@@ -1148,14 +1374,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#memoize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#memoize">
+      <a id="memoize:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">memoize</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">memoize</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1165,14 +1394,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#mix">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#mix">
+      <a id="mix(Mixin):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">mix</span><span class="params">(<span name="x">x: <a href="Mixin.html" class="extype" name="com.github.okomok.mada.sequence.vector.Mixin">Mixin</a></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">mix</span>
+        
+        <span class="params">(<span name="x">x: <a href="Mixin.html" class="extype" name="com.github.okomok.mada.sequence.vector.Mixin">Mixin</a></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1182,30 +1414,41 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#mutatingFilter">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#mutatingFilter">
+      <a id="mutatingFilter((A) ⇒ Boolean):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">mutatingFilter</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">mutatingFilter</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#mutatingRemove">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#mutatingRemove">
+      <a id="mutatingRemove((A) ⇒ Boolean):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">mutatingRemove</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">mutatingRemove</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scala.AnyRef#ne">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#ne">
+      <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1219,14 +1462,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notify">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notify">
+      <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1239,14 +1485,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notifyAll">
+      <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1259,14 +1508,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#nth">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#nth">
+      <a id="nth:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">nth</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">nth</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1276,14 +1528,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#of">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#of">
+      <a id="of[B&gt;:A]:Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">of</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">of</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
@@ -1292,19 +1547,27 @@ possible to check whether the contents of the list are of the requested typed.
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#offset">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#offset">
+      <a id="offset(Int,Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">offset</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="j">j: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">offset</span>
+        
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="j">j: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scala.PartialFunction#orElse">
+    </li><li visbl="pub" data-isabs="false" name="scala.PartialFunction#orElse">
+      <a id="orElse[A1&lt;:A, B1&gt;:B](PartialFunction[A1, B1]):PartialFunction[A1, B1]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">orElse</span><span class="tparams">[<span name="A1">A1 &lt;: <span class="extype" name="scala.Int">Int</span></span>, <span name="B1">B1 &gt;: A</span>]</span><span class="params">(<span name="that">that: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[A1, B1]</span>)</span><span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[A1, B1]</span>
+        <span class="name">orElse</span>
+        <span class="tparams">[<span name="A1">A1 &lt;: A</span>, <span name="B1">B1 &gt;: B</span>]</span>
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[A1, B1]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[A1, B1]</span>
       </span>
       </h4>
       
@@ -1313,11 +1576,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: PartialFunction
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#parallel">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#parallel">
+      <a id="parallel:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parallel</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">parallel</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1326,11 +1593,15 @@ possible to check whether the contents of the list are of the requested typed.
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#parallelBy">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#parallelBy">
+      <a id="parallelBy(Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parallelBy</span><span class="params">(<span name="grainSize">grainSize: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">parallelBy</span>
+        
+        <span class="params">(<span name="grainSize">grainSize: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1340,14 +1611,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#parallelize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#parallelize">
+      <a id="parallelize:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parallelize</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">parallelize</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1356,11 +1630,15 @@ possible to check whether the contents of the list are of the requested typed.
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#pareach">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#pareach">
+      <a id="pareach((A) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">pareach</span><span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">pareach</span>
+        
+        <span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1372,14 +1650,17 @@ there is no guarantee <code>f</code> calls are single-threaded.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#permutation">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#permutation">
+      <a id="permutation((Int) ⇒ Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">permutation</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">permutation</span>
+        
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1389,48 +1670,57 @@ there is no guarantee <code>f</code> calls are single-threaded.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#readOnly">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#readOnly">
+      <a id="readOnly:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">readOnly</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">readOnly</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a read only alias of this vector.
 </p></dd></dl>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#reduce">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#reduce">
+      <a id="reduce[B&gt;:A]((B, B) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">reduce</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">reduce</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
+        <span class="result">: B</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>reduceLeft(op)</code>.
 </p></dd></dl>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#reduceLeft">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#reduceLeft">
+      <a id="reduceLeft[B&gt;:A]((B, A) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">reduceLeft</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">reduceLeft</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (B, A) ⇒ B</span>)</span>
+        <span class="result">: B</span>
       </span>
       </h4>
       
@@ -1440,14 +1730,17 @@ there is no guarantee <code>f</code> calls are single-threaded.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#reduceRight">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#reduceRight">
+      <a id="reduceRight[B&gt;:A]((A, B) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">reduceRight</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span><span class="result">: B</span>
+        <span class="name">reduceRight</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (A, B) ⇒ B</span>)</span>
+        <span class="result">: B</span>
       </span>
       </h4>
       
@@ -1457,31 +1750,37 @@ there is no guarantee <code>f</code> calls are single-threaded.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#reducer">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#reducer">
+      <a id="reducer[B&gt;:A]((B, B) ⇒ B):Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">reducer</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">reducer</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>asIterative.reducerLeft(op).toVector</code>.
 </p></dd></dl>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#region">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#region">
+      <a id="region(Int,Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">region</span><span class="params">(<span name="_start">_start: <span class="extype" name="scala.Int">Int</span></span>, <span name="_end">_end: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">region</span>
+        
+        <span class="params">(<span name="_start">_start: <span class="extype" name="scala.Int">Int</span></span>, <span name="_end">_end: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1492,22 +1791,29 @@ Note that a larger vector than <code>this</code> is ALLOWED as far as <code>isDe
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#regionBase">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#regionBase">
+      <a id="regionBase:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">regionBase</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">regionBase</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#reverse">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#reverse">
+      <a id="reverse:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">reverse</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">reverse</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1517,22 +1823,29 @@ Note that a larger vector than <code>this</code> is ALLOWED as far as <code>isDe
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#rotate">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#rotate">
+      <a id="rotate(Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">rotate</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">rotate</span>
+        
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#seal">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#seal">
+      <a id="seal:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">seal</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">seal</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1544,14 +1857,17 @@ Note that a larger vector than <code>this</code> is ALLOWED as far as <code>isDe
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#seek">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#seek">
+      <a id="seek((A) ⇒ Boolean):Option[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">seek</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
+        <span class="name">seek</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
       </span>
       </h4>
       
@@ -1565,22 +1881,29 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#shallowEquals">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#shallowEquals">
+      <a id="shallowEquals[B](Vector[B]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">shallowEquals</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">shallowEquals</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#sideEffect">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#sideEffect">
+      <a id="sideEffect((Vector[A]) ⇒ Unit):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">sideEffect</span><span class="params">(<span name="f">f: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">sideEffect</span>
+        
+        <span class="params">(<span name="f">f: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1589,11 +1912,15 @@ predicate, if any. No guarantee the element is the first one.
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#size">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#size">
+      <a id="size:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">size</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">size</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -1603,22 +1930,29 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#slice">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#slice">
+      <a id="slice(Int,Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">slice</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">slice</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#sort">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#sort">
+      <a id="sort[B&gt;:A](Ordering[B]):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">sort</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[B]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">sort</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="c">c: Ordering[B]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1628,30 +1962,41 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#span">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#span">
+      <a id="span((A) ⇒ Boolean):(Vector[A], Vector[A])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">span</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A])</span>
+        <span class="name">span</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A])</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#splitAt">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#splitAt">
+      <a id="splitAt(Int):(Vector[A], Vector[A])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">splitAt</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A])</span>
+        <span class="name">splitAt</span>
+        
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A])</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#stableSort">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#stableSort">
+      <a id="stableSort[B&gt;:A](Ordering[B]):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">stableSort</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.math.Ordering">Ordering</span>[B]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">stableSort</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="c">c: Ordering[B]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1661,18 +2006,21 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#start">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.vector.Vector#start">
+      <a id="start:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">start</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">start</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
+            <p class="shortcomment cmt"></p>
             <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>start index of this vector, which is NOT guaranteed to be <code>0</code>.
 </p></dd></dl><div class="block">
           attributes: abstract 
@@ -1680,14 +2028,17 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#step">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#step">
+      <a id="step(Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">step</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">step</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1697,22 +2048,29 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#stringize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#stringize">
+      <a id="stringize(&lt;:&lt;[Vector[A], Vector[Char]]):String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">stringize</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">stringize</span>
+        
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span>
+        <span class="result">: String</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
+      <a id="synchronized[T0](T0):T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: T0</span>)</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -1723,11 +2081,15 @@ predicate, if any. No guarantee the element is the first one.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#tail">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#tail">
+      <a id="tail:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">tail</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">tail</span>
+        
+        
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1737,14 +2099,17 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#take">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#take">
+      <a id="take(Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">take</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">take</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1754,14 +2119,17 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#takeWhile">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#takeWhile">
+      <a id="takeWhile((A) ⇒ Boolean):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">takeWhile</span><span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">takeWhile</span>
+        
+        <span class="params">(<span name="p">p: (A) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1771,14 +2139,17 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#times">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#times">
+      <a id="times(Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">times</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">times</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -1789,54 +2160,77 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#toArray">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#toArray">
+      <a id="toArray[B&gt;:A](ClassManifest[B]):Array[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toArray</span><span class="tparams">[<span name="B">B &gt;: A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scala.reflect.ClassManifest">ClassManifest</span>[B]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[B]</span>
+        <span class="name">toArray</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: ClassManifest[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Array">Array</span>[B]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#toJCharSequence">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#toJCharSequence">
+      <a id="toJCharSequence(&lt;:&lt;[Vector[A], Vector[Char]]):CharSequence"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toJCharSequence</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span><span class="result">: <span class="extype" name="java.lang.CharSequence">CharSequence</span></span>
+        <span class="name">toJCharSequence</span>
+        
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span>
+        <span class="result">: <span class="extype" name="java.lang.CharSequence">CharSequence</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#toJList">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#toJList">
+      <a id="toJList:List[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toJList</span><span class="result">: <span class="extype" name="java.util.List">List</span>[A]</span>
+        <span class="name">toJList</span>
+        
+        
+        <span class="result">: <span class="extype" name="java.util.List">List</span>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#toProduct">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#toProduct">
+      <a id="toProduct:Product"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toProduct</span><span class="result">: <span class="extype" name="scala.Product">Product</span></span>
+        <span class="name">toProduct</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#toSIndexedSeq">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#toSIndexedSeq">
+      <a id="toSIndexedSeq:IndexedSeq[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toSIndexedSeq</span><span class="result">: <span class="extype" name="scala.collection.mutable.IndexedSeq">IndexedSeq</span>[A]</span>
+        <span class="name">toSIndexedSeq</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.collection.mutable.IndexedSeq">IndexedSeq</span>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Sequence#toString">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Sequence#toString">
+      <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -1848,14 +2242,17 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#undivide">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#undivide">
+      <a id="undivide[B](&lt;:&lt;[Vector[A], Vector[Vector[B]]]):Vector[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">undivide</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]]]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+        <span class="name">undivide</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]]]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
       </span>
       </h4>
       
@@ -1865,14 +2262,17 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#unzip">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#unzip">
+      <a id="unzip[B, C](&lt;:&lt;[Vector[A], Vector[(B, C)]]):(Vector[B], Vector[C])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unzip</span><span class="tparams">[<span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[(B, C)]]</span>)</span><span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[C])</span>
+        <span class="name">unzip</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="C">C</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[(B, C)]]</span>)</span>
+        <span class="result">: (<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[C])</span>
       </span>
       </h4>
       
@@ -1882,14 +2282,17 @@ predicate, if any. No guarantee the element is the first one.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#update">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#update">
+      <a id="update(Int,A):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">update</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="e">e: A</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">update</span>
+        
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>, <span name="e">e: A</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1901,22 +2304,29 @@ the specified element.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#upperCase">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#upperCase">
+      <a id="upperCase(&lt;:&lt;[Vector[A], Vector[Char]]):Vector[Char]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">upperCase</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+        <span class="name">upperCase</span>
+        
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A], <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Char">Char</span>]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#using">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#using">
+      <a id="using(com.github.okomok.mada.sequence.package.Reactive[_]):Reactive[Vector[A]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">using</span><span class="params">(<span name="a">a: <a href="../reactive/Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <a href="../reactive/Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
+        <span class="name">using</span>
+        
+        <span class="params">(<span name="a">a: com.github.okomok.mada.sequence.package.Reactive[_]</span>)</span>
+        <span class="result">: Reactive[<a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]]</span>
       </span>
       </h4>
       
@@ -1928,14 +2338,17 @@ the specified element.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1946,11 +2359,15 @@ the specified element.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1961,11 +2378,15 @@ the specified element.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1976,19 +2397,27 @@ the specified element.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#window">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#window">
+      <a id="window(Int,Int):Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">window</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">window</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector.Vector#zip">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#zip">
+      <a id="zip[B](Vector[B]):Vector[(A, B)]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">zip</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[(A, B)]</span>
+        <span class="name">zip</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="that">that: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span>
+        <span class="result">: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[(A, B)]</span>
       </span>
       </h4>
       
@@ -1998,12 +2427,29 @@ the specified element.
             
             
             
-            
           </div>
           
     </li></ol>
             </div>
-                
+
+        <div class="parent" name="com.github.okomok.mada.sequence.vector.Sequence">
+              <h3>Inherited from <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a>[A]</h3>
+            </div><div class="parent" name="com.github.okomok.mada.sequence.iterative.Sequence">
+              <h3>Inherited from <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a>[A]</h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.Sequence">
+              <h3>Inherited from <a href="../reactive/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[A]</h3>
+            </div><div class="parent" name="scala.PartialFunction">
+              <h3>Inherited from <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Int">Int</span>, A]</h3>
+            </div><div class="parent" name="scala.Function1">
+              <h3>Inherited from (<span class="extype" name="scala.Int">Int</span>) ⇒ A</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from AnyRef</h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+
       </div>
       
       <div id="tooltip"></div>

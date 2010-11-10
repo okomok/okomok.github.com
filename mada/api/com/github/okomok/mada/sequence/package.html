@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.sequence</title>
+          <title>com.github.okomok.mada.sequence</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a></p>
 
@@ -24,29 +25,42 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">sequence</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="_root_#Cons">
+              <ol><li visbl="pub" data-isabs="false" name="_root_#Cons">
+      <a id="Cons:Cons[A]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Cons</span><span class="result"> = <a href="list/Cons.html" class="extype" name="com.github.okomok.mada.sequence.list.Cons">Cons</a>[A]</span>
+        <span class="name">Cons</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> = <a href="list/Cons.html" class="extype" name="com.github.okomok.mada.sequence.list.Cons">Cons</a>[A]</span>
       </span>
       </h4>
       
@@ -55,11 +69,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Iterative">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Iterative">
+      <a id="Iterative:Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Iterative</span><span class="result"> = <a href="iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">Iterative</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> = <a href="iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -68,11 +86,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Iterator">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Iterator">
+      <a id="Iterator:Iterator[A]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Iterator</span><span class="result"> = <a href="iterator/Iterator.html" class="extype" name="com.github.okomok.mada.sequence.iterator.Iterator">Iterator</a>[A]</span>
+        <span class="name">Iterator</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> = <a href="iterator/Iterator.html" class="extype" name="com.github.okomok.mada.sequence.iterator.Iterator">Iterator</a>[A]</span>
       </span>
       </h4>
       
@@ -81,11 +103,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#List">
+    </li><li visbl="pub" data-isabs="false" name="_root_#List">
+      <a id="List:List[A]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">List</span><span class="result"> = <a href="list/List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
+        <span class="name">List</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> = <a href="list/List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
       </span>
       </h4>
       
@@ -94,11 +120,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Reactive">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Reactive">
+      <a id="Reactive:Reactive[A]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Reactive</span><span class="result"> = <a href="reactive/Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
+        <span class="name">Reactive</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> = <a href="reactive/Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
       </span>
       </h4>
       
@@ -107,11 +137,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Vector">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Vector">
+      <a id="Vector:Vector[A]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Vector</span><span class="result"> = <a href="vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+        <span class="name">Vector</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> = <a href="vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
       </span>
       </h4>
       
@@ -120,11 +154,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#_Iterator">
+    </li><li visbl="pub" data-isabs="false" name="_root_#_Iterator">
+      <a id="_Iterator:_Iterator[A]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_Iterator</span><span class="result"> = <a href="iterator/_Iterator.html" class="extype" name="com.github.okomok.mada.sequence.iterator._Iterator">_Iterator</a>[A]</span>
+        <span class="name">_Iterator</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> = <a href="iterator/_Iterator.html" class="extype" name="com.github.okomok.mada.sequence.iterator._Iterator">_Iterator</a>[A]</span>
       </span>
       </h4>
       
@@ -135,14 +173,18 @@
           
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="_root_##::">
+              <ol><li visbl="pub" data-isabs="false" name="_root_##::">
+      <a id="#:::com.github.okomok.mada.sequence.list.#::.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">#::</span><span class="result">: <a href="list/$hash$colon$colon$.html" class="extype" name="com.github.okomok.mada.sequence.list.#::">#::</a></span>
+        <span class="name">#::</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.list.#::.type</span>
       </span>
       </h4>
       
@@ -151,11 +193,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#::">
+    </li><li visbl="pub" data-isabs="false" name="_root_#::">
+      <a id=":::com.github.okomok.mada.sequence.list.::.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">::</span><span class="result">: <a href="list/$colon$colon$.html" class="extype" name="com.github.okomok.mada.sequence.list.::">::</a></span>
+        <span class="name">::</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.list.::.type</span>
       </span>
       </h4>
       
@@ -164,11 +210,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Iterative">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Iterative">
+      <a id="Iterative:com.github.okomok.mada.sequence.iterative.Iterative.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">Iterative</span><span class="result">: <a href="iterative/Iterative$.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a></span>
+        <span class="name">Iterative</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.iterative.Iterative.type</span>
       </span>
       </h4>
       
@@ -177,11 +227,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Iterator">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Iterator">
+      <a id="Iterator:com.github.okomok.mada.sequence.iterator.Iterator.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">Iterator</span><span class="result">: <a href="iterator/Iterator$.html" class="extype" name="com.github.okomok.mada.sequence.iterator.Iterator">Iterator</a></span>
+        <span class="name">Iterator</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.iterator.Iterator.type</span>
       </span>
       </h4>
       
@@ -190,11 +244,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#List">
+    </li><li visbl="pub" data-isabs="false" name="_root_#List">
+      <a id="List:com.github.okomok.mada.sequence.list.List.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">List</span><span class="result">: <a href="list/List$.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a></span>
+        <span class="name">List</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.list.List.type</span>
       </span>
       </h4>
       
@@ -203,11 +261,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Nil">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Nil">
+      <a id="Nil:com.github.okomok.mada.sequence.list.Nil.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">Nil</span><span class="result">: <a href="list/Nil$.html" class="extype" name="com.github.okomok.mada.sequence.list.Nil">Nil</a></span>
+        <span class="name">Nil</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.list.Nil.type</span>
       </span>
       </h4>
       
@@ -216,11 +278,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Reactive">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Reactive">
+      <a id="Reactive:com.github.okomok.mada.sequence.reactive.Reactive.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">Reactive</span><span class="result">: <a href="reactive/Reactive$.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a></span>
+        <span class="name">Reactive</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.reactive.Reactive.type</span>
       </span>
       </h4>
       
@@ -229,11 +295,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Vector">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Vector">
+      <a id="Vector:com.github.okomok.mada.sequence.vector.Vector.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">Vector</span><span class="result">: <a href="vector/Vector$.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a></span>
+        <span class="name">Vector</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.vector.Vector.type</span>
       </span>
       </h4>
       
@@ -242,49 +312,71 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative">
+      <a id="iterative:iterative"></a>
       <h4 class="signature"><a href="iterative/package.html">
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">iterative</span>
+        
+        
+        
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterator">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterator">
+      <a id="iterator:iterator"></a>
       <h4 class="signature"><a href="iterator/package.html">
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">iterator</span>
+        
+        
+        
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list">
+      <a id="list:list"></a>
       <h4 class="signature"><a href="list/package.html">
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">list</span>
+        
+        
+        
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive">
+      <a id="reactive:reactive"></a>
       <h4 class="signature"><a href="reactive/package.html">
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">reactive</span>
+        
+        
+        
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.vector">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector">
+      <a id="vector:vector"></a>
       <h4 class="signature"><a href="vector/package.html">
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">vector</span>
+        
+        
+        
       </span>
       </a></h4>
       
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

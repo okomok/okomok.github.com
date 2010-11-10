@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.dual.map</title>
+          <title>com.github.okomok.mada.dual.map</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.dual">dual</a></p>
 
@@ -24,62 +25,91 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">map</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.map.AbstractMap">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.map.AbstractMap">
+      <a id="AbstractMap:AbstractMap"></a>
       <h4 class="signature"><a href="AbstractMap.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">AbstractMap</span><span class="result"> extends Map</span>
+        <span class="name">AbstractMap</span>
+        
+        
+        <span class="result"> extends Map</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Common">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.map.Common">
+      <a id="Common:Common"></a>
       <h4 class="signature"><a href="Common.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Common</span><span class="result"> extends AnyRef</span>
+        <span class="name">Common</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Forwarder">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.map.Forwarder">
+      <a id="Forwarder:Forwarder"></a>
       <h4 class="signature"><a href="Forwarder.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Forwarder</span><span class="result"> extends Map with Forwarder</span>
+        <span class="name">Forwarder</span>
+        
+        
+        <span class="result"> extends Map with Forwarder</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Map">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.map.Map">
+      <a id="Map:Map"></a>
       <h4 class="signature"><a href="Map.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Map</span><span class="result"> extends Any</span>
+        <span class="name">Map</span>
+        
+        
+        <span class="result"> extends Any</span>
       </span>
       </a></h4>
       <p class="comment cmt">The dual Map
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Strong">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.map.Strong">
+      <a id="Strong:Strong[m]"></a>
       <h4 class="signature"><a href="Strong.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Strong</span><span class="tparams">[<span name="m">m &lt;: Map</span>]</span><span class="result"> extends Forwarder</span>
+        <span class="name">Strong</span>
+        <span class="tparams">[<span name="m">m &lt;: Map</span>]</span>
+        
+        <span class="result"> extends Forwarder</span>
       </span>
       </a></h4>
       
@@ -88,11 +118,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Common#sorted">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.map.Common#sorted">
+      <a id="sorted:sorted[o]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">sorted</span><span class="result"> = <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[o]</span>
+        <span class="name">sorted</span>
+        <span class="tparams">[<span name="o">o &lt;: Ordering</span>]</span>
+        
+        <span class="result"> = <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[o]</span>
       </span>
       </h4>
       
@@ -101,11 +135,15 @@
           definition classes: <a href="Common.html" class="extype" name="com.github.okomok.mada.dual.map.Common">Common</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Common#sorted1">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.map.Common#sorted1">
+      <a id="sorted1:sorted1[k, v]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">sorted1</span><span class="result"> = <a href="bstree/Node.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Node">Node</a>[k, v, <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[naturalOrdering], <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[naturalOrdering]]</span>
+        <span class="name">sorted1</span>
+        <span class="tparams">[<span name="k">k &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>, <span name="v">v &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        
+        <span class="result"> = <a href="bstree/Node.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Node">Node</a>[k, v, <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[naturalOrdering], <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[naturalOrdering]]</span>
       </span>
       </h4>
       
@@ -116,30 +154,42 @@
           
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.map.Map">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.map.Map">
+      <a id="Map:Map"></a>
       <h4 class="signature"><a href="Map$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Map</span><span class="result"> extends Common</span>
+        <span class="name">Map</span>
+        
+        
+        <span class="result"> extends Common</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.bstree">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.map.bstree">
+      <a id="bstree:bstree"></a>
       <h4 class="signature"><a href="bstree/package.html">
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">bstree</span>
+        
+        
+        
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Common#sorted">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.map.Common#sorted">
+      <a id="sorted[o&lt;:Ordering](o):sorted[o]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">sorted</span><span class="tparams">[<span name="o">o &lt;: <a href="../ordering/Ordering.html" class="extype" name="com.github.okomok.mada.dual.ordering.Ordering">Ordering</a></span>]</span><span class="params">(<span name="o">o: o</span>)</span><span class="result">: <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[o]</span>
+        <span class="name">sorted</span>
+        <span class="tparams">[<span name="o">o &lt;: Ordering</span>]</span>
+        <span class="params">(<span name="o">o: o</span>)</span>
+        <span class="result">: sorted[o]</span>
       </span>
       </h4>
       
@@ -151,14 +201,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.map.Common#sorted1">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.map.Common#sorted1">
+      <a id="sorted1[k&lt;:Any, v&lt;:Any](k,v):sorted1[k, v]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">sorted1</span><span class="tparams">[<span name="k">k &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>, <span name="v">v &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span><span class="params">(<span name="k">k: k</span>, <span name="v">v: v</span>)</span><span class="result">: <a href="bstree/Node.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Node">Node</a>[k, v, <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[naturalOrdering], <a href="bstree/Nil.html" class="extype" name="com.github.okomok.mada.dual.map.bstree.Nil">Nil</a>[naturalOrdering]]</span>
+        <span class="name">sorted1</span>
+        <span class="tparams">[<span name="k">k &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>, <span name="v">v &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        <span class="params">(<span name="k">k: k</span>, <span name="v">v: v</span>)</span>
+        <span class="result">: sorted1[k, v]</span>
       </span>
       </h4>
       
@@ -170,12 +223,13 @@
             
             
             
-            
           </div>
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

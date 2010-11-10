@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.dual.nat.dense</title>
+          <title>com.github.okomok.mada.dual.nat.dense</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada.dual">dual</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.dual.nat">nat</a></p>
 
@@ -24,29 +25,42 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">dense</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Common#::">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.Common#::">
+      <a id=":::$colon$colon[x, xs]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">::</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[x, xs]</span>
+        <span class="name">::</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="../../Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>, <span name="xs">xs &lt;: <a href="Dense.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Dense">Dense</a></span>]</span>
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[x, xs]</span>
       </span>
       </h4>
       
@@ -55,11 +69,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Cons">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.Cons">
+      <a id="Cons:Cons[x, xs]"></a>
       <h4 class="signature"><a href="Cons.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Cons</span><span class="tparams">[<span name="x">x &lt;: Boolean</span>, <span name="xs">xs &lt;: Dense</span>]</span><span class="params">(<span name="head">head: x</span>, <span name="tail">tail: xs</span>)</span><span class="result"> extends AbstractDense with Product</span>
+        <span class="name">Cons</span>
+        <span class="tparams">[<span name="x">x &lt;: Boolean</span>, <span name="xs">xs &lt;: Dense</span>]</span>
+        <span class="params">(<span name="head">head: x</span>, <span name="tail">tail: xs</span>)</span>
+        <span class="result"> extends AbstractDense with Product</span>
       </span>
       </a></h4>
       
@@ -68,11 +86,15 @@
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Dense">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.nat.dense.Dense">
+      <a id="Dense:Dense"></a>
       <h4 class="signature"><a href="Dense.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Dense</span><span class="result"> extends AbstractNat</span>
+        <span class="name">Dense</span>
+        
+        
+        <span class="result"> extends AbstractNat</span>
       </span>
       </a></h4>
       
@@ -81,11 +103,15 @@
           attributes: sealed abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Nil">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.Nil">
+      <a id="Nil:Nil"></a>
       <h4 class="signature"><a href="Nil.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Nil</span><span class="result"> extends AbstractDense</span>
+        <span class="name">Nil</span>
+        
+        
+        <span class="result"> extends AbstractDense</span>
       </span>
       </a></h4>
       
@@ -94,11 +120,15 @@
           attributes: sealed 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0">
+      <a id="_0:_0"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_0</span><span class="result"> = <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a></span>
+        <span class="name">_0</span>
+        
+        
+        <span class="result"> = <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a></span>
       </span>
       </h4>
       
@@ -107,11 +137,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0B">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0B">
+      <a id="_0B:_0B"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_0B</span><span class="result"> = <a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a></span>
+        <span class="name">_0B</span>
+        
+        
+        <span class="result"> = <a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a></span>
       </span>
       </h4>
       
@@ -120,11 +154,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1">
+      <a id="_1:_1"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_1</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]</span>
+        <span class="name">_1</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]</span>
       </span>
       </h4>
       
@@ -133,11 +171,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_10">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_10">
+      <a id="_10:_10"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_10</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_10</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -146,11 +188,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_11">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_11">
+      <a id="_11:_11"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_11</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_11</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -159,11 +205,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_12">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_12">
+      <a id="_12:_12"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_12</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_12</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -172,11 +222,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_13">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_13">
+      <a id="_13:_13"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_13</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_13</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -185,11 +239,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_14">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_14">
+      <a id="_14:_14"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_14</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_14</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -198,11 +256,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_15">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_15">
+      <a id="_15:_15"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_15</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_15</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -211,11 +273,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_16">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_16">
+      <a id="_16:_16"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_16</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_16</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -224,11 +290,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_17">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_17">
+      <a id="_17:_17"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_17</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_17</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -237,11 +307,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_18">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_18">
+      <a id="_18:_18"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_18</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_18</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -250,11 +324,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_19">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_19">
+      <a id="_19:_19"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_19</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_19</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -263,11 +341,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1B">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1B">
+      <a id="_1B:_1B"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_1B</span><span class="result"> = <a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a></span>
+        <span class="name">_1B</span>
+        
+        
+        <span class="result"> = <a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a></span>
       </span>
       </h4>
       
@@ -276,11 +358,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_2">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_2">
+      <a id="_2:_2"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_2</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]</span>
+        <span class="name">_2</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]</span>
       </span>
       </h4>
       
@@ -289,11 +375,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_20">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_20">
+      <a id="_20:_20"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_20</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_20</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -302,11 +392,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_21">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_21">
+      <a id="_21:_21"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_21</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_21</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -315,11 +409,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_22">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_22">
+      <a id="_22:_22"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_22</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_22</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -328,11 +426,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_23">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_23">
+      <a id="_23:_23"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_23</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_23</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -341,11 +443,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_24">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_24">
+      <a id="_24:_24"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_24</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_24</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -354,11 +460,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_25">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_25">
+      <a id="_25:_25"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_25</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_25</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -367,11 +477,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_26">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_26">
+      <a id="_26:_26"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_26</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_26</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -380,11 +494,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_27">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_27">
+      <a id="_27:_27"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_27</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_27</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -393,11 +511,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_28">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_28">
+      <a id="_28:_28"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_28</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_28</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -406,11 +528,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_29">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_29">
+      <a id="_29:_29"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_29</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_29</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -419,11 +545,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_3">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_3">
+      <a id="_3:_3"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_3</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]</span>
+        <span class="name">_3</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]</span>
       </span>
       </h4>
       
@@ -432,11 +562,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_30">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_30">
+      <a id="_30:_30"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_30</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_30</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -445,11 +579,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_31">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_31">
+      <a id="_31:_31"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_31</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_31</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
       </span>
       </h4>
       
@@ -458,11 +596,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_32">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_32">
+      <a id="_32:_32"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_32</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_32</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -471,11 +613,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_33">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_33">
+      <a id="_33:_33"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_33</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_33</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -484,11 +630,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_34">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_34">
+      <a id="_34:_34"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_34</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_34</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -497,11 +647,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_35">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_35">
+      <a id="_35:_35"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_35</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_35</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -510,11 +664,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_36">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_36">
+      <a id="_36:_36"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_36</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_36</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -523,11 +681,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_37">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_37">
+      <a id="_37:_37"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_37</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_37</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -536,11 +698,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_38">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_38">
+      <a id="_38:_38"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_38</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_38</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -549,11 +715,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_39">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_39">
+      <a id="_39:_39"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_39</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_39</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -562,11 +732,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_4">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_4">
+      <a id="_4:_4"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_4</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_4</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
       </span>
       </h4>
       
@@ -575,11 +749,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_40">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_40">
+      <a id="_40:_40"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_40</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_40</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -588,11 +766,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_41">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_41">
+      <a id="_41:_41"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_41</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_41</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -601,11 +783,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_42">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_42">
+      <a id="_42:_42"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_42</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_42</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -614,11 +800,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_43">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_43">
+      <a id="_43:_43"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_43</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_43</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -627,11 +817,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_44">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_44">
+      <a id="_44:_44"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_44</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_44</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -640,11 +834,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_45">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_45">
+      <a id="_45:_45"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_45</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_45</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -653,11 +851,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_46">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_46">
+      <a id="_46:_46"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_46</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_46</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -666,11 +868,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_47">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_47">
+      <a id="_47:_47"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_47</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_47</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -679,11 +885,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_48">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_48">
+      <a id="_48:_48"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_48</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_48</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -692,11 +902,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_49">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_49">
+      <a id="_49:_49"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_49</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_49</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -705,11 +919,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_5">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_5">
+      <a id="_5:_5"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_5</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_5</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
       </span>
       </h4>
       
@@ -718,11 +936,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_50">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_50">
+      <a id="_50:_50"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_50</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_50</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
       </span>
       </h4>
       
@@ -731,11 +953,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_6">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_6">
+      <a id="_6:_6"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_6</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_6</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
       </span>
       </h4>
       
@@ -744,11 +970,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_7">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_7">
+      <a id="_7:_7"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_7</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_7</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_1B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
       </span>
       </h4>
       
@@ -757,11 +987,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_8">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_8">
+      <a id="_8:_8"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_8</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_8</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_0B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -770,11 +1004,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_9">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_9">
+      <a id="_9:_9"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">_9</span><span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_9</span>
+        
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[_1B, __$colon$colon[_0B, __$colon$colon[_0B, __$colon$colon[_1B, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
       </span>
       </h4>
       
@@ -785,14 +1023,18 @@
           
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Common#::">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.Common#::">
+      <a id=":::com.github.okomok.mada.dual.nat.dense.Cons.type"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">::</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</span></span>
+        <span class="name">::</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.dual.nat.dense.Cons.type</span>
       </span>
       </h4>
       
@@ -801,27 +1043,39 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.AsciiLiteral">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.AsciiLiteral">
+      <a id="AsciiLiteral:AsciiLiteral"></a>
       <h4 class="signature"><a href="AsciiLiteral$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">AsciiLiteral</span><span class="result"> extends AnyRef</span>
+        <span class="name">AsciiLiteral</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Dense">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.Dense">
+      <a id="Dense:Dense"></a>
       <h4 class="signature"><a href="Dense$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Dense</span><span class="result"> extends Common</span>
+        <span class="name">Dense</span>
+        
+        
+        <span class="result"> extends Common</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Common#Literal">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.Common#Literal">
+      <a id="Literal:CommonLiteral"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">Literal</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral">CommonLiteral</span></span>
+        <span class="name">Literal</span>
+        
+        
+        <span class="result">: <span class="extype" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral">CommonLiteral</span></span>
       </span>
       </h4>
       
@@ -830,11 +1084,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.Common#Nil">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.Common#Nil">
+      <a id="Nil:Nil"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">Nil</span><span class="result">: <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a></span>
+        <span class="name">Nil</span>
+        
+        
+        <span class="result">: <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a></span>
       </span>
       </h4>
       
@@ -843,19 +1101,27 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.StrongLiteral">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.StrongLiteral">
+      <a id="StrongLiteral:StrongLiteral"></a>
       <h4 class="signature"><a href="StrongLiteral$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">StrongLiteral</span><span class="result"> extends AnyRef</span>
+        <span class="name">StrongLiteral</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0">
+      <a id="_0:_0"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_0</span><span class="result">: <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a></span>
+        <span class="name">_0</span>
+        
+        
+        <span class="result">: _0</span>
       </span>
       </h4>
       
@@ -864,11 +1130,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0B">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_0B">
+      <a id="_0B:false"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_0B</span><span class="result">: <a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a></span>
+        <span class="name">_0B</span>
+        
+        
+        <span class="result">: <a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a></span>
       </span>
       </h4>
       
@@ -877,11 +1147,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1">
+      <a id="_1:_1"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_1</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]</span>
+        <span class="name">_1</span>
+        
+        
+        <span class="result">: _1</span>
       </span>
       </h4>
       
@@ -890,11 +1164,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_10">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_10">
+      <a id="_10:_10"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_10</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_10</span>
+        
+        
+        <span class="result">: _10</span>
       </span>
       </h4>
       
@@ -903,11 +1181,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_11">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_11">
+      <a id="_11:_11"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_11</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_11</span>
+        
+        
+        <span class="result">: _11</span>
       </span>
       </h4>
       
@@ -916,11 +1198,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_12">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_12">
+      <a id="_12:_12"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_12</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_12</span>
+        
+        
+        <span class="result">: _12</span>
       </span>
       </h4>
       
@@ -929,11 +1215,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_13">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_13">
+      <a id="_13:_13"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_13</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_13</span>
+        
+        
+        <span class="result">: _13</span>
       </span>
       </h4>
       
@@ -942,11 +1232,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_14">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_14">
+      <a id="_14:_14"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_14</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_14</span>
+        
+        
+        <span class="result">: _14</span>
       </span>
       </h4>
       
@@ -955,11 +1249,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_15">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_15">
+      <a id="_15:_15"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_15</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_15</span>
+        
+        
+        <span class="result">: _15</span>
       </span>
       </h4>
       
@@ -968,11 +1266,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_16">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_16">
+      <a id="_16:_16"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_16</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_16</span>
+        
+        
+        <span class="result">: _16</span>
       </span>
       </h4>
       
@@ -981,11 +1283,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_17">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_17">
+      <a id="_17:_17"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_17</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_17</span>
+        
+        
+        <span class="result">: _17</span>
       </span>
       </h4>
       
@@ -994,11 +1300,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_18">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_18">
+      <a id="_18:_18"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_18</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_18</span>
+        
+        
+        <span class="result">: _18</span>
       </span>
       </h4>
       
@@ -1007,11 +1317,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_19">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_19">
+      <a id="_19:_19"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_19</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_19</span>
+        
+        
+        <span class="result">: _19</span>
       </span>
       </h4>
       
@@ -1020,11 +1334,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1B">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_1B">
+      <a id="_1B:true"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_1B</span><span class="result">: <a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a></span>
+        <span class="name">_1B</span>
+        
+        
+        <span class="result">: <a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a></span>
       </span>
       </h4>
       
@@ -1033,11 +1351,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_2">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_2">
+      <a id="_2:_2"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_2</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]</span>
+        <span class="name">_2</span>
+        
+        
+        <span class="result">: _2</span>
       </span>
       </h4>
       
@@ -1046,11 +1368,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_20">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_20">
+      <a id="_20:_20"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_20</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_20</span>
+        
+        
+        <span class="result">: _20</span>
       </span>
       </h4>
       
@@ -1059,11 +1385,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_21">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_21">
+      <a id="_21:_21"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_21</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_21</span>
+        
+        
+        <span class="result">: _21</span>
       </span>
       </h4>
       
@@ -1072,11 +1402,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_22">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_22">
+      <a id="_22:_22"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_22</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_22</span>
+        
+        
+        <span class="result">: _22</span>
       </span>
       </h4>
       
@@ -1085,11 +1419,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_23">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_23">
+      <a id="_23:_23"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_23</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_23</span>
+        
+        
+        <span class="result">: _23</span>
       </span>
       </h4>
       
@@ -1098,11 +1436,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_24">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_24">
+      <a id="_24:_24"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_24</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_24</span>
+        
+        
+        <span class="result">: _24</span>
       </span>
       </h4>
       
@@ -1111,11 +1453,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_25">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_25">
+      <a id="_25:_25"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_25</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_25</span>
+        
+        
+        <span class="result">: _25</span>
       </span>
       </h4>
       
@@ -1124,11 +1470,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_26">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_26">
+      <a id="_26:_26"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_26</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_26</span>
+        
+        
+        <span class="result">: _26</span>
       </span>
       </h4>
       
@@ -1137,11 +1487,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_27">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_27">
+      <a id="_27:_27"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_27</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_27</span>
+        
+        
+        <span class="result">: _27</span>
       </span>
       </h4>
       
@@ -1150,11 +1504,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_28">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_28">
+      <a id="_28:_28"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_28</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_28</span>
+        
+        
+        <span class="result">: _28</span>
       </span>
       </h4>
       
@@ -1163,11 +1521,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_29">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_29">
+      <a id="_29:_29"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_29</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_29</span>
+        
+        
+        <span class="result">: _29</span>
       </span>
       </h4>
       
@@ -1176,11 +1538,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_3">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_3">
+      <a id="_3:_3"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_3</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]</span>
+        <span class="name">_3</span>
+        
+        
+        <span class="result">: _3</span>
       </span>
       </h4>
       
@@ -1189,11 +1555,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_30">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_30">
+      <a id="_30:_30"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_30</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_30</span>
+        
+        
+        <span class="result">: _30</span>
       </span>
       </h4>
       
@@ -1202,11 +1572,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_31">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_31">
+      <a id="_31:_31"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_31</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]</span>
+        <span class="name">_31</span>
+        
+        
+        <span class="result">: _31</span>
       </span>
       </h4>
       
@@ -1215,11 +1589,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_32">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_32">
+      <a id="_32:_32"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_32</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_32</span>
+        
+        
+        <span class="result">: _32</span>
       </span>
       </h4>
       
@@ -1228,11 +1606,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_33">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_33">
+      <a id="_33:_33"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_33</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_33</span>
+        
+        
+        <span class="result">: _33</span>
       </span>
       </h4>
       
@@ -1241,11 +1623,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_34">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_34">
+      <a id="_34:_34"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_34</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_34</span>
+        
+        
+        <span class="result">: _34</span>
       </span>
       </h4>
       
@@ -1254,11 +1640,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_35">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_35">
+      <a id="_35:_35"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_35</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_35</span>
+        
+        
+        <span class="result">: _35</span>
       </span>
       </h4>
       
@@ -1267,11 +1657,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_36">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_36">
+      <a id="_36:_36"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_36</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_36</span>
+        
+        
+        <span class="result">: _36</span>
       </span>
       </h4>
       
@@ -1280,11 +1674,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_37">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_37">
+      <a id="_37:_37"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_37</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_37</span>
+        
+        
+        <span class="result">: _37</span>
       </span>
       </h4>
       
@@ -1293,11 +1691,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_38">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_38">
+      <a id="_38:_38"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_38</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_38</span>
+        
+        
+        <span class="result">: _38</span>
       </span>
       </h4>
       
@@ -1306,11 +1708,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_39">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_39">
+      <a id="_39:_39"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_39</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_39</span>
+        
+        
+        <span class="result">: _39</span>
       </span>
       </h4>
       
@@ -1319,11 +1725,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_4">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_4">
+      <a id="_4:_4"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_4</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_4</span>
+        
+        
+        <span class="result">: _4</span>
       </span>
       </h4>
       
@@ -1332,11 +1742,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_40">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_40">
+      <a id="_40:_40"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_40</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_40</span>
+        
+        
+        <span class="result">: _40</span>
       </span>
       </h4>
       
@@ -1345,11 +1759,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_41">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_41">
+      <a id="_41:_41"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_41</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_41</span>
+        
+        
+        <span class="result">: _41</span>
       </span>
       </h4>
       
@@ -1358,11 +1776,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_42">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_42">
+      <a id="_42:_42"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_42</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_42</span>
+        
+        
+        <span class="result">: _42</span>
       </span>
       </h4>
       
@@ -1371,11 +1793,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_43">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_43">
+      <a id="_43:_43"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_43</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_43</span>
+        
+        
+        <span class="result">: _43</span>
       </span>
       </h4>
       
@@ -1384,11 +1810,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_44">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_44">
+      <a id="_44:_44"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_44</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_44</span>
+        
+        
+        <span class="result">: _44</span>
       </span>
       </h4>
       
@@ -1397,11 +1827,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_45">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_45">
+      <a id="_45:_45"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_45</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_45</span>
+        
+        
+        <span class="result">: _45</span>
       </span>
       </h4>
       
@@ -1410,11 +1844,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_46">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_46">
+      <a id="_46:_46"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_46</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_46</span>
+        
+        
+        <span class="result">: _46</span>
       </span>
       </h4>
       
@@ -1423,11 +1861,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_47">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_47">
+      <a id="_47:_47"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_47</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_47</span>
+        
+        
+        <span class="result">: _47</span>
       </span>
       </h4>
       
@@ -1436,11 +1878,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_48">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_48">
+      <a id="_48:_48"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_48</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_48</span>
+        
+        
+        <span class="result">: _48</span>
       </span>
       </h4>
       
@@ -1449,11 +1895,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_49">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_49">
+      <a id="_49:_49"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_49</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_49</span>
+        
+        
+        <span class="result">: _49</span>
       </span>
       </h4>
       
@@ -1462,11 +1912,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_5">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_5">
+      <a id="_5:_5"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_5</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_5</span>
+        
+        
+        <span class="result">: _5</span>
       </span>
       </h4>
       
@@ -1475,11 +1929,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_50">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_50">
+      <a id="_50:_50"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_50</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]]]</span>
+        <span class="name">_50</span>
+        
+        
+        <span class="result">: _50</span>
       </span>
       </h4>
       
@@ -1488,11 +1946,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_6">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_6">
+      <a id="_6:_6"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_6</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_6</span>
+        
+        
+        <span class="result">: _6</span>
       </span>
       </h4>
       
@@ -1501,11 +1963,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_7">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_7">
+      <a id="_7:_7"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_7</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]</span>
+        <span class="name">_7</span>
+        
+        
+        <span class="result">: _7</span>
       </span>
       </h4>
       
@@ -1514,11 +1980,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_8">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_8">
+      <a id="_8:_8"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_8</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_8</span>
+        
+        
+        <span class="result">: _8</span>
       </span>
       </h4>
       
@@ -1527,11 +1997,15 @@
           definition classes: CommonLiteral
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_9">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.nat.dense.CommonLiteral#_9">
+      <a id="_9:_9"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">_9</span><span class="result">: <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../false.html" class="extype" name="com.github.okomok.mada.dual.false">false</a>, <a href="Cons.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Cons">Cons</a>[<a href="../../true.html" class="extype" name="com.github.okomok.mada.dual.true">true</a>, <a href="Nil.html" class="extype" name="com.github.okomok.mada.dual.nat.dense.Nil">Nil</a>]]]]</span>
+        <span class="name">_9</span>
+        
+        
+        <span class="result">: _9</span>
       </span>
       </h4>
       
@@ -1542,7 +2016,9 @@
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

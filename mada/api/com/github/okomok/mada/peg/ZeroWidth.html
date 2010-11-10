@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.peg.ZeroWidth</title>
+          <title>com.github.okomok.mada.peg.ZeroWidth</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type">
+        <body class="type" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.peg">peg</a></p>
 
@@ -23,44 +24,61 @@
       <h4 class="signature" id="signature">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">ZeroWidth</span><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">ZeroWidth</span>
+        <span class="tparams">[<span name="A">-A</span>]</span>
+        
+        <span class="result"> extends <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="comment cmt"><p>Trivial mixin for zero-width peg.
 </p></div><div class="block">
+            linear super types: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A], AnyRef, <span class="extype" name="scala.Any">Any</span>
+          </div><div class="block">
             known subclasses: <a href="RegionActions$EndWith.html" class="extype" name="com.github.okomok.mada.peg.RegionActions.EndWith">EndWith</a>, <a href="RegionActions$StartAt.html" class="extype" name="com.github.okomok.mada.peg.RegionActions.StartAt">StartAt</a>
           </div>
             
             
             
-            
           </div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in">Alphabetic</li><li class="inherit out">By inheritance</li></ol>
+              </div>
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.peg.Peg">Peg</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.peg.ZeroWidth">ZeroWidth</li><li class="in" name="com.github.okomok.mada.peg.Peg">Peg</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
+
         
-        
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=">
+              <ol><li visbl="pub" data-isabs="false" name="scala.AnyRef#!=">
+      <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -71,11 +89,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#!=">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#!=">
+      <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -89,14 +111,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef###">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef###">
+      <a id="##():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">##</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -107,11 +132,15 @@
           definition classes: AnyRef → Any
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$asInstanceOf">
+      <a id="$asInstanceOf[T0]():T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+        <span class="name">$asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -122,11 +151,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$isInstanceOf">
+      <a id="$isInstanceOf[T0]():Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">$isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -137,11 +170,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&amp;">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&amp;">
+      <a id="&amp;[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&amp;</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">&amp;</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -152,11 +189,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#*">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#*">
+      <a id="*:Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">*</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">*</span>
+        
+        
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -171,14 +212,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#+">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#+">
+      <a id="+:Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">+</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">+</span>
+        
+        
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -193,14 +237,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#-">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#-">
+      <a id="-[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">-</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">-</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -211,11 +258,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&lt;&lt;!">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&lt;&lt;!">
+      <a id="&lt;&lt;!:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&lt;&lt;!</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">&lt;&lt;!</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -226,11 +277,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&lt;&lt;~">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&lt;&lt;~">
+      <a id="&lt;&lt;~:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&lt;&lt;~</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">&lt;&lt;~</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -241,11 +296,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&lt;=!">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&lt;=!">
+      <a id="&lt;=!:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&lt;=!</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">&lt;=!</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -256,11 +315,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&lt;=~">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&lt;=~">
+      <a id="&lt;=~:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&lt;=~</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">&lt;=~</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -271,11 +334,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#==">
+      <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -289,14 +356,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Any#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#==">
+      <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -310,14 +380,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&gt;-&gt;">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&gt;-&gt;">
+      <a id="&gt;-&gt;[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&gt;-&gt;</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">&gt;-&gt;</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -328,11 +401,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&gt;&gt;">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&gt;&gt;">
+      <a id="&gt;&gt;[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&gt;&gt;</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">&gt;&gt;</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -347,14 +424,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&gt;?&gt;:">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&gt;?&gt;:">
+      <a id="&gt;?&gt;:[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&gt;?&gt;:</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">&gt;?&gt;:</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -365,11 +445,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#&gt;|&gt;">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#&gt;|&gt;">
+      <a id="&gt;|&gt;[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">&gt;|&gt;</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">&gt;|&gt;</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -380,11 +464,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#?">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#?">
+      <a id="?:Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">?</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">?</span>
+        
+        
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -399,14 +487,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#^">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#^">
+      <a id="^[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">^</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">^</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -417,11 +508,15 @@
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#and">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#and">
+      <a id="and[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">and</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">and</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -438,14 +533,17 @@
                   <li><p>&amp;amp; as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
+      <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -460,14 +558,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#asPeg">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#asPeg">
+      <a id="asPeg:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asPeg</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">asPeg</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -478,11 +579,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="prt" name="scala.AnyRef#clone">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
+      <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span>
+        
+        <span class="params">()</span>
+        <span class="result">: AnyRef</span>
       </span>
       </h4>
       
@@ -496,14 +601,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#eq">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#eq">
+      <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -530,14 +638,17 @@ should be equal to each other (<code>o1 == o2</code>) and they should hash to th
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#equals">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#equals">
+      <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -559,14 +670,17 @@ scala.Int
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#filterFrom">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#filterFrom">
+      <a id="filterFrom[B&lt;:A](Vector[B]):Iterative[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">filterFrom</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[B]</span>
+        <span class="name">filterFrom</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="v">v: Vector[B]</span>)</span>
+        <span class="result">: Iterative[B]</span>
       </span>
       </h4>
       
@@ -580,14 +694,17 @@ scala.Int
             
             
             
-            
           </div>
           
-    </li><li visbl="prt" name="scala.AnyRef#finalize">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#finalize">
+      <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -602,18 +719,21 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#find">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#find">
+      <a id="find[B&lt;:A](Vector[B]):Option[Vector[B]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">find</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]]</span>
+        <span class="name">find</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="v">v: Vector[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[Vector[B]]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">Finds <code>sequence.</p>
+            <p class="shortcomment cmt">Finds <code>sequence.vector.Region</code> which this peg matches.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Finds <code>sequence.vector.Region</code> which this peg matches.
 </p></div><div class="block">
           attributes: final 
@@ -623,14 +743,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#findRange">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#findRange">
+      <a id="findRange(Vector[A],Int,Int):(Int, Int)"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">findRange</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="_start">_start: <span class="extype" name="scala.Int">Int</span></span>, <span name="end">end: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>)</span>
+        <span class="name">findRange</span>
+        
+        <span class="params">(<span name="v">v: Vector[A]</span>, <span name="_start">_start: <span class="extype" name="scala.Int">Int</span></span>, <span name="end">end: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: (<span class="extype" name="scala.Int">Int</span>, <span class="extype" name="scala.Int">Int</span>)</span>
       </span>
       </h4>
       
@@ -644,14 +767,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#getClass">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#getClass">
+      <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span>
+        <span class="result">: java.lang.Class[_]</span>
       </span>
       </h4>
       
@@ -665,14 +791,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#hashCode">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#hashCode">
+      <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -688,14 +817,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#identity">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#identity">
+      <a id="identity:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">identity</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">identity</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -709,14 +841,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#inCase">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#inCase">
+      <a id="inCase[B&lt;:A](B):(B, Peg[B])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">inCase</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="e">e: B</span>)</span><span class="result">: (B, <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B])</span>
+        <span class="name">inCase</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="e">e: B</span>)</span>
+        <span class="result">: (B, <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B])</span>
       </span>
       </h4>
       
@@ -727,11 +862,15 @@ to verify that the behavior is consistent with the <code>equals</code> method.
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#isInstanceOf">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -747,14 +886,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#lookahead">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#lookahead">
+      <a id="lookahead:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lookahead</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">lookahead</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -772,14 +914,17 @@ possible to check whether the contents of the list are of the requested typed.
                   <li><p>unary_~ as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#lookback">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#lookback">
+      <a id="lookback:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lookback</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">lookback</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -796,14 +941,17 @@ possible to check whether the contents of the list are of the requested typed.
                   <li><p>&amp;gt;&amp;gt;~ as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#lookbehind">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#lookbehind">
+      <a id="lookbehind:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lookbehind</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">lookbehind</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -821,14 +969,17 @@ possible to check whether the contents of the list are of the requested typed.
                   <li><p>&amp;gt;=~ as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#lookingAt">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#lookingAt">
+      <a id="lookingAt(Vector[A]):Option[Int]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lookingAt</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>
+        <span class="name">lookingAt</span>
+        
+        <span class="params">(<span name="v">v: Vector[A]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       
@@ -842,14 +993,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#lowerCaseRead">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#lowerCaseRead">
+      <a id="lowerCaseRead(&lt;:&lt;[Peg[A], Peg[Char]]):Peg[Char]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">lowerCaseRead</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
+        <span class="name">lowerCaseRead</span>
+        
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A], <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[<span class="extype" name="scala.Char">Char</span>]</span>
       </span>
       </h4>
       
@@ -863,14 +1017,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#matches">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#matches">
+      <a id="matches(Vector[A]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">matches</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">matches</span>
+        
+        <span class="params">(<span name="v">v: Vector[A]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -884,14 +1041,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#minus">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#minus">
+      <a id="minus[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">minus</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">minus</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -908,14 +1068,17 @@ possible to check whether the contents of the list are of the requested typed.
                   <li><p>- as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#named">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#named">
+      <a id="named(String):Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">named</span><span class="params">(<span name="name">name: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">named</span>
+        
+        <span class="params">(<span name="name">name: String</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -929,14 +1092,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#ne">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#ne">
+      <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -950,14 +1116,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#negate">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#negate">
+      <a id="negate:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">negate</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">negate</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -975,14 +1144,17 @@ Doesn't work unless this peg has constant width.
                   <li><p>unary_- as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notify">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notify">
+      <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -995,14 +1167,17 @@ Doesn't work unless this peg has constant width.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notifyAll">
+      <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1015,14 +1190,17 @@ Doesn't work unless this peg has constant width.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#of">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#of">
+      <a id="of[B&lt;:A]:Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">of</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">of</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -1033,11 +1211,15 @@ Doesn't work unless this peg has constant width.
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#opt">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#opt">
+      <a id="opt:Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">opt</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">opt</span>
+        
+        
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -1055,14 +1237,17 @@ Doesn't work unless this peg has constant width.
                   <li><p>? as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#or">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#or">
+      <a id="or[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">or</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">or</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -1080,14 +1265,17 @@ Doesn't work unless this peg has constant width.
                   <li><p>| as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#parse">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.peg.Peg#parse">
+      <a id="parse(Vector[A],Int,Int):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parse</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">parse</span>
+        
+        <span class="params">(<span name="v">v: Vector[A]</span>, <span name="first">first: <span class="extype" name="scala.Int">Int</span></span>, <span name="last">last: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -1103,14 +1291,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#plus">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#plus">
+      <a id="plus:Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">plus</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">plus</span>
+        
+        
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -1128,14 +1319,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
                   <li><p>+ as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#readMap">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#readMap">
+      <a id="readMap[Z]((Vector[Z]) ⇒ Vector[A]):Peg[Z]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">readMap</span><span class="tparams">[<span name="Z">Z</span>]</span><span class="params">(<span name="f">f: (<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[Z]) ⇒ <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[Z]</span>
+        <span class="name">readMap</span>
+        <span class="tparams">[<span name="Z">Z</span>]</span>
+        <span class="params">(<span name="f">f: (Vector[Z]) ⇒ Vector[A]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[Z]</span>
       </span>
       </h4>
       
@@ -1149,14 +1343,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#repeat">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#repeat">
+      <a id="repeat(Int,Int):Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">repeat</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">repeat</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -1170,14 +1367,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#repeat">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#repeat">
+      <a id="repeat(Int,Unit):Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">repeat</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="u">u: <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">repeat</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="u">u: <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -1191,14 +1391,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#repeat">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#repeat">
+      <a id="repeat(Int):Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">repeat</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">repeat</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -1212,14 +1415,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#seqAnd">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#seqAnd">
+      <a id="seqAnd[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">seqAnd</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">seqAnd</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -1237,19 +1443,22 @@ This apparently legacy interface is designed so that heap-allocation is removal.
                   <li><p>&amp;gt;&amp;gt; as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#seqImply">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#seqImply">
+      <a id="seqImply[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">seqImply</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">seqImply</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">Equivalent to <code>!this | this &amp;gt;&amp;gt; that</code>, but parses <code>this</code> once.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Equivalent to <code>!this | this &amp;gt;&amp;gt; that</code>, but parses <code>this</code> once.
+            <p class="shortcomment cmt">Equivalent to <code>!this | this &gt;&gt; that</code>, but parses <code>this</code> once.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Equivalent to <code>!this | this &gt;&gt; that</code>, but parses <code>this</code> once.
 </p></div><div class="block">
           attributes: final 
         </div><div class="block">
@@ -1261,20 +1470,23 @@ This apparently legacy interface is designed so that heap-allocation is removal.
                   <li><p>&amp;gt;-&amp;gt; as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#seqOpt_:">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#seqOpt_:">
+      <a id="seqOpt_:[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">seqOpt_:</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">seqOpt_:</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
             <p class="shortcomment cmt">Goes sequence as long as possible.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Goes sequence as long as possible.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>that &amp;gt;&amp;gt; this.?</code>.</p></dd></dl><div class="block">
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>that &gt;&gt; this.?</code>.</p></dd></dl><div class="block">
           attributes: final 
         </div><div class="block">
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
@@ -1285,19 +1497,22 @@ This apparently legacy interface is designed so that heap-allocation is removal.
                   <li><p>&amp;gt;?&amp;gt;: as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#seqOr">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#seqOr">
+      <a id="seqOr[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">seqOr</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">seqOr</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">no summary matey</p>
-            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>(this &amp;gt;&amp;gt; that.?) | that</code>.</p></dd></dl><div class="block">
+            <p class="shortcomment cmt"></p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>(this &gt;&gt; that.?) | that</code>.</p></dd></dl><div class="block">
           attributes: final 
         </div><div class="block">
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
@@ -1308,14 +1523,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
                   <li><p>&amp;gt;|&amp;gt; as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#split">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#split">
+      <a id="split[B&lt;:A](Vector[B]):Iterative[Vector[B]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">split</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]]</span>
+        <span class="name">split</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="v">v: Vector[B]</span>)</span>
+        <span class="result">: Iterative[Vector[B]]</span>
       </span>
       </h4>
       
@@ -1329,14 +1547,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#star">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#star">
+      <a id="star:Quantified[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">star</span><span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
+        <span class="name">star</span>
+        
+        
+        <span class="result">: <a href="Quantified.html" class="extype" name="com.github.okomok.mada.peg.Quantified">Quantified</a>[A]</span>
       </span>
       </h4>
       
@@ -1354,14 +1575,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
                   <li><p>* as alias.
 </p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#synchronize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#synchronize">
+      <a id="synchronize:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronize</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">synchronize</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -1375,14 +1599,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
+      <a id="synchronized[T0](T0):T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: T0</span>)</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -1393,11 +1620,15 @@ This apparently legacy interface is designed so that heap-allocation is removal.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#toString">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#toString">
+      <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -1409,14 +1640,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#tokenize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#tokenize">
+      <a id="tokenize[B&lt;:A](Vector[B]):Iterative[Vector[B]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">tokenize</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <a href="../sequence/iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]]</span>
+        <span class="name">tokenize</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="v">v: Vector[B]</span>)</span>
+        <span class="result">: Iterative[Vector[B]]</span>
       </span>
       </h4>
       
@@ -1430,14 +1664,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#unapply">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#unapply">
+      <a id="unapply[B&lt;:A](Vector[B]):Option[Vector[B]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unapply</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="v">v: <a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../sequence/vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]]</span>
+        <span class="name">unapply</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="v">v: Vector[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[Vector[B]]</span>
       </span>
       </h4>
       
@@ -1448,11 +1685,15 @@ This apparently legacy interface is designed so that heap-allocation is removal.
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#unary_!">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#unary_!">
+      <a id="unary_!:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unary_!</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">unary_!</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -1467,14 +1708,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#unary_-">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#unary_-">
+      <a id="unary_-:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unary_-</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">unary_-</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -1485,11 +1729,15 @@ This apparently legacy interface is designed so that heap-allocation is removal.
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#unary_~">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#unary_~">
+      <a id="unary_~:Peg[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unary_~</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
+        <span class="name">unary_~</span>
+        
+        
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</span>
       </span>
       </h4>
       
@@ -1504,14 +1752,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#unmap">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#unmap">
+      <a id="unmap[Z]((Z) ⇒ A):Peg[Z]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unmap</span><span class="tparams">[<span name="Z">Z</span>]</span><span class="params">(<span name="f">f: (Z) ⇒ A</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[Z]</span>
+        <span class="name">unmap</span>
+        <span class="tparams">[<span name="Z">Z</span>]</span>
+        <span class="params">(<span name="f">f: (Z) ⇒ A</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[Z]</span>
       </span>
       </h4>
       
@@ -1522,11 +1773,15 @@ This apparently legacy interface is designed so that heap-allocation is removal.
           definition classes: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1537,11 +1792,15 @@ This apparently legacy interface is designed so that heap-allocation is removal.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1552,11 +1811,15 @@ This apparently legacy interface is designed so that heap-allocation is removal.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1567,11 +1830,15 @@ This apparently legacy interface is designed so that heap-allocation is removal.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.ZeroWidth#width">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.ZeroWidth#width">
+      <a id="width:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">width</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">width</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -1583,14 +1850,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#xor">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#xor">
+      <a id="xor[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">xor</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">xor</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -1607,14 +1877,17 @@ This apparently legacy interface is designed so that heap-allocation is removal.
                   <li><p><sup> as alias.
 </sup></p></li>
                 </ol></div>
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.peg.Peg#|">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.peg.Peg#|">
+      <a id="|[B&lt;:A](Peg[B]):Peg[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">|</span><span class="tparams">[<span name="B">B &lt;: A</span>]</span><span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
+        <span class="name">|</span>
+        <span class="tparams">[<span name="B">B &lt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span>
+        <span class="result">: <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>
       </span>
       </h4>
       
@@ -1629,12 +1902,19 @@ This apparently legacy interface is designed so that heap-allocation is removal.
             
             
             
-            
           </div>
           
     </li></ol>
             </div>
-                
+
+        <div class="parent" name="com.github.okomok.mada.peg.Peg">
+              <h3>Inherited from <a href="Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[A]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from AnyRef</h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+
       </div>
       
       <div id="tooltip"></div>

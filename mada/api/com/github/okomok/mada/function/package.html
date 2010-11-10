@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.function</title>
+          <title>com.github.okomok.mada.function</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a></p>
 
@@ -24,37 +25,54 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">function</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.function.Parameter">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.function.Parameter">
+      <a id="Parameter:Parameter[A]"></a>
       <h4 class="signature"><a href="Parameter.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Parameter</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">Parameter</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       <p class="comment cmt">Represents named parameter.</p>
-    </li><li visbl="pub" name="_root_#Predicate1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Predicate1">
+      <a id="Predicate1:Predicate1[T1]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Predicate1</span><span class="result"> = (T1) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">Predicate1</span>
+        <span class="tparams">[<span name="T1">-T1</span>]</span>
+        
+        <span class="result"> = (T1) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -63,11 +81,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Predicate2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Predicate2">
+      <a id="Predicate2:Predicate2[T1, T2]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Predicate2</span><span class="result"> = (T1, T2) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">Predicate2</span>
+        <span class="tparams">[<span name="T1">-T1</span>, <span name="T2">-T2</span>]</span>
+        
+        <span class="result"> = (T1, T2) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -76,11 +98,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Predicate3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Predicate3">
+      <a id="Predicate3:Predicate3[T1, T2, T3]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Predicate3</span><span class="result"> = (T1, T2, T3) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">Predicate3</span>
+        <span class="tparams">[<span name="T1">-T1</span>, <span name="T2">-T2</span>, <span name="T3">-T3</span>]</span>
+        
+        <span class="result"> = (T1, T2, T3) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -89,11 +115,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#Transform">
+    </li><li visbl="pub" data-isabs="false" name="_root_#Transform">
+      <a id="Transform:Transform[T]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">Transform</span><span class="result"> = (T) ⇒ T</span>
+        <span class="name">Transform</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        
+        <span class="result"> = (T) ⇒ T</span>
       </span>
       </h4>
       
@@ -104,14 +134,18 @@
           
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="_root_#discard">
+              <ol><li visbl="pub" data-isabs="false" name="_root_#discard">
+      <a id="discard[T, U]((T) ⇒ U):(T) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">discard</span><span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span><span class="params">(<span name="f">f: (T) ⇒ U</span>)</span><span class="result">: (T) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">discard</span>
+        <span class="tparams">[<span name="T">T</span>, <span name="U">U</span>]</span>
+        <span class="params">(<span name="f">f: (T) ⇒ U</span>)</span>
+        <span class="result">: (T) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -124,14 +158,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#empty1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#empty1">
+      <a id="empty1:(Any) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">empty1</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">empty1</span>
+        
+        
+        <span class="result">: (<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -143,14 +180,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#empty2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#empty2">
+      <a id="empty2:(Any, Any) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">empty2</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">empty2</span>
+        
+        
+        <span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -159,11 +199,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#empty3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#empty3">
+      <a id="empty3:(Any, Any, Any) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">empty3</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">empty3</span>
+        
+        
+        <span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -172,11 +216,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#equal">
+    </li><li visbl="pub" data-isabs="false" name="_root_#equal">
+      <a id="equal:Predicate2[Any, Any]"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">equal</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equal</span>
+        
+        
+        <span class="result">: Predicate2[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       
@@ -185,11 +233,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#equalTo">
+    </li><li visbl="pub" data-isabs="false" name="_root_#equalTo">
+      <a id="equalTo(Any):Predicate1[Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">equalTo</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: (<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equalTo</span>
+        
+        <span class="params">(<span name="x">x: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: Predicate1[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       
@@ -198,11 +250,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#fix">
+    </li><li visbl="pub" data-isabs="false" name="_root_#fix">
+      <a id="fix[T, R](((T) ⇒ R) ⇒ (T) ⇒ R):(T) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fix</span><span class="tparams">[<span name="T">T</span>, <span name="R">R</span>]</span><span class="params">(<span name="g">g: ((T) ⇒ R) ⇒ (T) ⇒ R</span>)</span><span class="result">: (T) ⇒ R</span>
+        <span class="name">fix</span>
+        <span class="tparams">[<span name="T">T</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="g">g: ((T) ⇒ R) ⇒ (T) ⇒ R</span>)</span>
+        <span class="result">: (T) ⇒ R</span>
       </span>
       </h4>
       
@@ -215,14 +271,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#flip">
+    </li><li visbl="pub" data-isabs="false" name="_root_#flip">
+      <a id="flip[T1, T2, R]((T1, T2) ⇒ R):(T2, T1) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">flip</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="result">: (T2, T1) ⇒ R</span>
+        <span class="name">flip</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span>
+        <span class="result">: (T2, T1) ⇒ R</span>
       </span>
       </h4>
       
@@ -235,14 +294,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#fuse">
+    </li><li visbl="pub" data-isabs="false" name="_root_#fuse">
+      <a id="fuse[T1, T2, T3, R]((T1, T2, T3) ⇒ R):((T1, T2, T3)) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fuse</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="result">: ((T1, T2, T3)) ⇒ R</span>
+        <span class="name">fuse</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span>
+        <span class="result">: ((T1, T2, T3)) ⇒ R</span>
       </span>
       </h4>
       
@@ -251,11 +313,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#fuse">
+    </li><li visbl="pub" data-isabs="false" name="_root_#fuse">
+      <a id="fuse[T1, T2, R]((T1, T2) ⇒ R):((T1, T2)) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fuse</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="result">: ((T1, T2)) ⇒ R</span>
+        <span class="name">fuse</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span>
+        <span class="result">: ((T1, T2)) ⇒ R</span>
       </span>
       </h4>
       
@@ -264,11 +330,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#fuse">
+    </li><li visbl="pub" data-isabs="false" name="_root_#fuse">
+      <a id="fuse[T1, R]((T1) ⇒ R):((T1)) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fuse</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="result">: ((T1)) ⇒ R</span>
+        <span class="name">fuse</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span>
+        <span class="result">: ((T1)) ⇒ R</span>
       </span>
       </h4>
       
@@ -277,11 +347,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#fuse1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#fuse1">
+      <a id="fuse1[T1, R]((T1) ⇒ R):((T1)) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fuse1</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="result">: ((T1)) ⇒ R</span>
+        <span class="name">fuse1</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span>
+        <span class="result">: ((T1)) ⇒ R</span>
       </span>
       </h4>
       
@@ -293,14 +367,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#fuse2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#fuse2">
+      <a id="fuse2[T1, T2, R]((T1, T2) ⇒ R):((T1, T2)) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fuse2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="result">: ((T1, T2)) ⇒ R</span>
+        <span class="name">fuse2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span>
+        <span class="result">: ((T1, T2)) ⇒ R</span>
       </span>
       </h4>
       
@@ -309,11 +386,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#fuse3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#fuse3">
+      <a id="fuse3[T1, T2, T3, R]((T1, T2, T3) ⇒ R):((T1, T2, T3)) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fuse3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="result">: ((T1, T2, T3)) ⇒ R</span>
+        <span class="name">fuse3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span>
+        <span class="result">: ((T1, T2, T3)) ⇒ R</span>
       </span>
       </h4>
       
@@ -322,11 +403,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#identity">
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity">
+      <a id="identity[T]:Transform[T]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">identity</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: (T) ⇒ T</span>
+        <span class="name">identity</span>
+        <span class="tparams">[<span name="T">T</span>]</span>
+        
+        <span class="result">: Transform[T]</span>
       </span>
       </h4>
       
@@ -339,14 +424,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#identity1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity1">
+      <a id="identity1[T1]:(T1) ⇒ (T1)"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">identity1</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="result">: (T1) ⇒ (T1)</span>
+        <span class="name">identity1</span>
+        <span class="tparams">[<span name="T1">T1</span>]</span>
+        
+        <span class="result">: (T1) ⇒ (T1)</span>
       </span>
       </h4>
       
@@ -355,11 +443,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#identity2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity2">
+      <a id="identity2[T1, T2]:(T1, T2) ⇒ (T1, T2)"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">identity2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="result">: (T1, T2) ⇒ (T1, T2)</span>
+        <span class="name">identity2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span>
+        
+        <span class="result">: (T1, T2) ⇒ (T1, T2)</span>
       </span>
       </h4>
       
@@ -368,11 +460,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#identity3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity3">
+      <a id="identity3[T1, T2, T3]:(T1, T2, T3) ⇒ (T1, T2, T3)"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">identity3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span><span class="result">: (T1, T2, T3) ⇒ (T1, T2, T3)</span>
+        <span class="name">identity3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span>
+        
+        <span class="result">: (T1, T2, T3) ⇒ (T1, T2, T3)</span>
       </span>
       </h4>
       
@@ -381,11 +477,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#identity4">
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity4">
+      <a id="identity4[T1, T2, T3, T4]:(T1, T2, T3, T4) ⇒ (T1, T2, T3, T4)"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">identity4</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span><span class="result">: (T1, T2, T3, T4) ⇒ (T1, T2, T3, T4)</span>
+        <span class="name">identity4</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span>
+        
+        <span class="result">: (T1, T2, T3, T4) ⇒ (T1, T2, T3, T4)</span>
       </span>
       </h4>
       
@@ -394,11 +494,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#identity5">
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity5">
+      <a id="identity5[T1, T2, T3, T4, T5]:(T1, T2, T3, T4, T5) ⇒ (T1, T2, T3, T4, T5)"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">identity5</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>]</span><span class="result">: (T1, T2, T3, T4, T5) ⇒ (T1, T2, T3, T4, T5)</span>
+        <span class="name">identity5</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>]</span>
+        
+        <span class="result">: (T1, T2, T3, T4, T5) ⇒ (T1, T2, T3, T4, T5)</span>
       </span>
       </h4>
       
@@ -407,11 +511,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#infer">
+    </li><li visbl="pub" data-isabs="false" name="_root_#infer">
+      <a id="infer[T1, T2, T3, R]((T1, T2, T3) ⇒ R):(T1, T2, T3) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">infer</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="result">: (T1, T2, T3) ⇒ R</span>
+        <span class="name">infer</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2, T3) ⇒ R</span>
       </span>
       </h4>
       
@@ -420,11 +528,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#infer">
+    </li><li visbl="pub" data-isabs="false" name="_root_#infer">
+      <a id="infer[T1, T2, R]((T1, T2) ⇒ R):(T1, T2) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">infer</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="result">: (T1, T2) ⇒ R</span>
+        <span class="name">infer</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2) ⇒ R</span>
       </span>
       </h4>
       
@@ -433,11 +545,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#infer">
+    </li><li visbl="pub" data-isabs="false" name="_root_#infer">
+      <a id="infer[T1, R]((T1) ⇒ R):(T1) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">infer</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="result">: (T1) ⇒ R</span>
+        <span class="name">infer</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span>
+        <span class="result">: (T1) ⇒ R</span>
       </span>
       </h4>
       
@@ -446,11 +562,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#infer1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#infer1">
+      <a id="infer1[T1, R]((T1) ⇒ R):(T1) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">infer1</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="result">: (T1) ⇒ R</span>
+        <span class="name">infer1</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span>
+        <span class="result">: (T1) ⇒ R</span>
       </span>
       </h4>
       
@@ -462,14 +582,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#infer2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#infer2">
+      <a id="infer2[T1, T2, R]((T1, T2) ⇒ R):(T1, T2) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">infer2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="result">: (T1, T2) ⇒ R</span>
+        <span class="name">infer2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2) ⇒ R</span>
       </span>
       </h4>
       
@@ -478,11 +601,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#infer3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#infer3">
+      <a id="infer3[T1, T2, T3, R]((T1, T2, T3) ⇒ R):(T1, T2, T3) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">infer3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="result">: (T1, T2, T3) ⇒ R</span>
+        <span class="name">infer3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2, T3) ⇒ R</span>
       </span>
       </h4>
       
@@ -491,11 +618,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#memoize">
+    </li><li visbl="pub" data-isabs="false" name="_root_#memoize">
+      <a id="memoize[T, R](((T) ⇒ R) ⇒ (T) ⇒ R):(T) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">memoize</span><span class="tparams">[<span name="T">T</span>, <span name="R">R</span>]</span><span class="params">(<span name="g">g: ((T) ⇒ R) ⇒ (T) ⇒ R</span>)</span><span class="result">: (T) ⇒ R</span>
+        <span class="name">memoize</span>
+        <span class="tparams">[<span name="T">T</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="g">g: ((T) ⇒ R) ⇒ (T) ⇒ R</span>)</span>
+        <span class="result">: (T) ⇒ R</span>
       </span>
       </h4>
       
@@ -507,14 +638,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#not">
+    </li><li visbl="pub" data-isabs="false" name="_root_#not">
+      <a id="not[T1, T2, T3](Predicate3[T1, T2, T3]):Predicate3[T1, T2, T3]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">not</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (T1, T2, T3) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">not</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span>
+        <span class="params">(<span name="f">f: Predicate3[T1, T2, T3]</span>)</span>
+        <span class="result">: Predicate3[T1, T2, T3]</span>
       </span>
       </h4>
       
@@ -523,11 +657,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#not">
+    </li><li visbl="pub" data-isabs="false" name="_root_#not">
+      <a id="not[T1, T2](Predicate2[T1, T2]):Predicate2[T1, T2]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">not</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (T1, T2) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">not</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span>
+        <span class="params">(<span name="f">f: Predicate2[T1, T2]</span>)</span>
+        <span class="result">: Predicate2[T1, T2]</span>
       </span>
       </h4>
       
@@ -536,11 +674,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#not">
+    </li><li visbl="pub" data-isabs="false" name="_root_#not">
+      <a id="not[T1](Predicate1[T1]):Predicate1[T1]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">not</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (T1) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">not</span>
+        <span class="tparams">[<span name="T1">T1</span>]</span>
+        <span class="params">(<span name="f">f: Predicate1[T1]</span>)</span>
+        <span class="result">: Predicate1[T1]</span>
       </span>
       </h4>
       
@@ -549,11 +691,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#not1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#not1">
+      <a id="not1[T1](Predicate1[T1]):Predicate1[T1]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">not1</span><span class="tparams">[<span name="T1">T1</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (T1) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">not1</span>
+        <span class="tparams">[<span name="T1">T1</span>]</span>
+        <span class="params">(<span name="f">f: Predicate1[T1]</span>)</span>
+        <span class="result">: Predicate1[T1]</span>
       </span>
       </h4>
       
@@ -565,14 +711,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#not2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#not2">
+      <a id="not2[T1, T2](Predicate2[T1, T2]):Predicate2[T1, T2]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">not2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (T1, T2) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">not2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span>
+        <span class="params">(<span name="f">f: Predicate2[T1, T2]</span>)</span>
+        <span class="result">: Predicate2[T1, T2]</span>
       </span>
       </h4>
       
@@ -581,11 +730,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#not3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#not3">
+      <a id="not3[T1, T2, T3](Predicate3[T1, T2, T3]):Predicate3[T1, T2, T3]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">not3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (T1, T2, T3) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">not3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span>
+        <span class="params">(<span name="f">f: Predicate3[T1, T2, T3]</span>)</span>
+        <span class="result">: Predicate3[T1, T2, T3]</span>
       </span>
       </h4>
       
@@ -594,11 +747,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#parameterize">
+    </li><li visbl="pub" data-isabs="false" name="_root_#parameterize">
+      <a id="parameterize[T1, T2, T3, R]((T1, T2, T3) ⇒ R)(Parameter[T1],Parameter[T2],Parameter[T3]):(Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parameterize</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>, <span name="q3">q3: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T3]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.Iterable">Iterable</span>[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
+        <span class="name">parameterize</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>, <span name="q3">q3: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T3]</span>)</span>
+        <span class="result">: (Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
       </span>
       </h4>
       
@@ -607,11 +764,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#parameterize">
+    </li><li visbl="pub" data-isabs="false" name="_root_#parameterize">
+      <a id="parameterize[T1, T2, R]((T1, T2) ⇒ R)(Parameter[T1],Parameter[T2]):(Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parameterize</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.Iterable">Iterable</span>[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
+        <span class="name">parameterize</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>)</span>
+        <span class="result">: (Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
       </span>
       </h4>
       
@@ -620,11 +781,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#parameterize">
+    </li><li visbl="pub" data-isabs="false" name="_root_#parameterize">
+      <a id="parameterize[T1, R]((T1) ⇒ R)(Parameter[T1]):(Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parameterize</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.Iterable">Iterable</span>[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
+        <span class="name">parameterize</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>)</span>
+        <span class="result">: (Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
       </span>
       </h4>
       
@@ -633,11 +798,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#parameterize1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#parameterize1">
+      <a id="parameterize1[T1, R]((T1) ⇒ R)(Parameter[T1]):(Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parameterize1</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.Iterable">Iterable</span>[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
+        <span class="name">parameterize1</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>)</span>
+        <span class="result">: (Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
       </span>
       </h4>
       
@@ -646,11 +815,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#parameterize2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#parameterize2">
+      <a id="parameterize2[T1, T2, R]((T1, T2) ⇒ R)(Parameter[T1],Parameter[T2]):(Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parameterize2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.Iterable">Iterable</span>[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
+        <span class="name">parameterize2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>)</span>
+        <span class="result">: (Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
       </span>
       </h4>
       
@@ -659,11 +832,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#parameterize3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#parameterize3">
+      <a id="parameterize3[T1, T2, T3, R]((T1, T2, T3) ⇒ R)(Parameter[T1],Parameter[T2],Parameter[T3]):(Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">parameterize3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>, <span name="q3">q3: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T3]</span>)</span><span class="result">: (<span class="extype" name="scala.collection.Iterable">Iterable</span>[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
+        <span class="name">parameterize3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="params">(<span name="q1">q1: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T1]</span>, <span name="q2">q2: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T2]</span>, <span name="q3">q3: <a href="Parameter.html" class="extype" name="com.github.okomok.mada.function.Parameter">Parameter</a>[T3]</span>)</span>
+        <span class="result">: (Iterable[com.github.okomok.mada.function.Parameter[_]]) ⇒ R</span>
       </span>
       </h4>
       
@@ -672,11 +849,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#synchronize">
+    </li><li visbl="pub" data-isabs="false" name="_root_#synchronize">
+      <a id="synchronize[T1, T2, T3, R]((T1, T2, T3) ⇒ R):(T1, T2, T3) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronize</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="result">: (T1, T2, T3) ⇒ R</span>
+        <span class="name">synchronize</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2, T3) ⇒ R</span>
       </span>
       </h4>
       
@@ -685,11 +866,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#synchronize">
+    </li><li visbl="pub" data-isabs="false" name="_root_#synchronize">
+      <a id="synchronize[T1, T2, R]((T1, T2) ⇒ R):(T1, T2) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronize</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="result">: (T1, T2) ⇒ R</span>
+        <span class="name">synchronize</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2) ⇒ R</span>
       </span>
       </h4>
       
@@ -698,11 +883,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#synchronize">
+    </li><li visbl="pub" data-isabs="false" name="_root_#synchronize">
+      <a id="synchronize[T1, R]((T1) ⇒ R):(T1) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronize</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="result">: (T1) ⇒ R</span>
+        <span class="name">synchronize</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span>
+        <span class="result">: (T1) ⇒ R</span>
       </span>
       </h4>
       
@@ -711,11 +900,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#synchronize1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#synchronize1">
+      <a id="synchronize1[T1, R]((T1) ⇒ R):(T1) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronize1</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span><span class="result">: (T1) ⇒ R</span>
+        <span class="name">synchronize1</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1) ⇒ R</span>)</span>
+        <span class="result">: (T1) ⇒ R</span>
       </span>
       </h4>
       
@@ -727,14 +920,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#synchronize2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#synchronize2">
+      <a id="synchronize2[T1, T2, R]((T1, T2) ⇒ R):(T1, T2) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronize2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span><span class="result">: (T1, T2) ⇒ R</span>
+        <span class="name">synchronize2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2) ⇒ R</span>
       </span>
       </h4>
       
@@ -743,11 +939,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#synchronize3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#synchronize3">
+      <a id="synchronize3[T1, T2, T3, R]((T1, T2, T3) ⇒ R):(T1, T2, T3) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronize3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span><span class="result">: (T1, T2, T3) ⇒ R</span>
+        <span class="name">synchronize3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: (T1, T2, T3) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2, T3) ⇒ R</span>
       </span>
       </h4>
       
@@ -756,11 +956,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#unfuse1">
+    </li><li visbl="pub" data-isabs="false" name="_root_#unfuse1">
+      <a id="unfuse1[T1, R](((T1)) ⇒ R):(T1) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unfuse1</span><span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: ((T1)) ⇒ R</span>)</span><span class="result">: (T1) ⇒ R</span>
+        <span class="name">unfuse1</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: ((T1)) ⇒ R</span>)</span>
+        <span class="result">: (T1) ⇒ R</span>
       </span>
       </h4>
       
@@ -772,14 +976,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#unfuse2">
+    </li><li visbl="pub" data-isabs="false" name="_root_#unfuse2">
+      <a id="unfuse2[T1, T2, R](((T1, T2)) ⇒ R):(T1, T2) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unfuse2</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: ((T1, T2)) ⇒ R</span>)</span><span class="result">: (T1, T2) ⇒ R</span>
+        <span class="name">unfuse2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: ((T1, T2)) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2) ⇒ R</span>
       </span>
       </h4>
       
@@ -788,11 +995,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#unfuse3">
+    </li><li visbl="pub" data-isabs="false" name="_root_#unfuse3">
+      <a id="unfuse3[T1, T2, T3, R](((T1, T2, T3)) ⇒ R):(T1, T2, T3) ⇒ R"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unfuse3</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span><span class="params">(<span name="f">f: ((T1, T2, T3)) ⇒ R</span>)</span><span class="result">: (T1, T2, T3) ⇒ R</span>
+        <span class="name">unfuse3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="f">f: ((T1, T2, T3)) ⇒ R</span>)</span>
+        <span class="result">: (T1, T2, T3) ⇒ R</span>
       </span>
       </h4>
       
@@ -803,7 +1014,9 @@
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.stack</title>
+          <title>com.github.okomok.mada.stack</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a></p>
 
@@ -24,67 +25,96 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">stack</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.stack.Compatibles">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.stack.Compatibles">
+      <a id="Compatibles:Compatibles"></a>
       <h4 class="signature"><a href="Compatibles.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Compatibles</span><span class="result"> extends AnyRef</span>
+        <span class="name">Compatibles</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.stack.Forwarder">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.stack.Forwarder">
+      <a id="Forwarder:Forwarder[A]"></a>
       <h4 class="signature"><a href="Forwarder.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Forwarder</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Stack[A] with Forwarder</span>
+        <span class="name">Forwarder</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends Stack[A] with Forwarder</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.stack.Stack">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.stack.Stack">
+      <a id="Stack:Stack[A]"></a>
       <h4 class="signature"><a href="Stack.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Stack</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">Stack</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       <p class="comment cmt">Trivial stack interface
 </p>
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.stack.Stack">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.stack.Stack">
+      <a id="Stack:Stack"></a>
       <h4 class="signature"><a href="Stack$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Stack</span><span class="result"> extends Common with Compatibles</span>
+        <span class="name">Stack</span>
+        
+        
+        <span class="result"> extends Common with Compatibles</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.stack.Common#from">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.stack.Common#from">
+      <a id="from[A](Stack[A]):Stack[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">from</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="to">to: <a href="Stack.html" class="extype" name="com.github.okomok.mada.stack.Stack">Stack</a>[A]</span>)</span><span class="result">: <a href="Stack.html" class="extype" name="com.github.okomok.mada.stack.Stack">Stack</a>[A]</span>
+        <span class="name">from</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="to">to: <a href="Stack.html" class="extype" name="com.github.okomok.mada.stack.Stack">Stack</a>[A]</span>)</span>
+        <span class="result">: <a href="Stack.html" class="extype" name="com.github.okomok.mada.stack.Stack">Stack</a>[A]</span>
       </span>
       </h4>
       
@@ -95,7 +125,9 @@
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

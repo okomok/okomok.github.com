@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.dual.Option</title>
+          <title>com.github.okomok.mada.dual.Option</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type">
+        <body class="type" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.dual">dual</a></p>
 
@@ -23,7 +24,10 @@
       <h4 class="signature" id="signature">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Option</span><span class="result"> extends <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>
+        <span class="name">Option</span>
+        
+        
+        <span class="result"> extends <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="comment cmt"><p>The dual Option
@@ -31,47 +35,67 @@
           attributes: sealed abstract 
         </div><div class="block">
             go to: <a href="Option$.html">companion</a>
+          </div><div class="block">
+            linear super types: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>, <span class="extype" name="scala.Equals">Equals</span>, AnyRef, <span class="extype" name="scala.Any">Any</span>
+          </div><div class="block">
+            known subclasses: <a href="Some.html" class="extype" name="com.github.okomok.mada.dual.Some">Some</a>, <a href="None.html" class="extype" name="com.github.okomok.mada.dual.None">None</a>
           </div>
             
             
             
-            
           </div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in">Alphabetic</li><li class="inherit out">By inheritance</li></ol>
+              </div>
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.dual.Any">Any</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.dual.Option">Option</li><li class="in" name="com.github.okomok.mada.dual.Any">Any</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
-        
+
         <div class="members" id="constructors">
               <h3>Instance constructors</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.Option#this">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Option#this">
+      <a id="this:Option"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol">
-        <span class="name">Option</span><span class="params">()</span>
+        <span class="name">Option</span>
+        
+        <span class="params">()</span>
+        
       </span>
       </h4>
       
     </li></ol>
-            </div>        
-        
-        <div class="members" id="types">
+            </div>
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.Any#asBoolean">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asBoolean">
+      <a id="asBoolean:asBoolean"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asBoolean</span><span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
+        <span class="name">asBoolean</span>
+        
+        
+        <span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
       </span>
       </h4>
       
@@ -82,11 +106,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asEither">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asEither">
+      <a id="asEither:asEither"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asEither</span><span class="result"> &lt;: <a href="Either.html" class="extype" name="com.github.okomok.mada.dual.Either">Either</a></span>
+        <span class="name">asEither</span>
+        
+        
+        <span class="result"> &lt;: <a href="Either.html" class="extype" name="com.github.okomok.mada.dual.Either">Either</a></span>
       </span>
       </h4>
       
@@ -97,11 +125,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asEquiv">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asEquiv">
+      <a id="asEquiv:asEquiv"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asEquiv</span><span class="result"> &lt;: <a href="Equiv.html" class="extype" name="com.github.okomok.mada.dual.Equiv">Equiv</a></span>
+        <span class="name">asEquiv</span>
+        
+        
+        <span class="result"> &lt;: <a href="Equiv.html" class="extype" name="com.github.okomok.mada.dual.Equiv">Equiv</a></span>
       </span>
       </h4>
       
@@ -112,11 +144,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction0">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asFunction0">
+      <a id="asFunction0:asFunction0"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asFunction0</span><span class="result"> &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>
+        <span class="name">asFunction0</span>
+        
+        
+        <span class="result"> &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>
       </span>
       </h4>
       
@@ -127,11 +163,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction1">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asFunction1">
+      <a id="asFunction1:asFunction1"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asFunction1</span><span class="result"> &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>
+        <span class="name">asFunction1</span>
+        
+        
+        <span class="result"> &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>
       </span>
       </h4>
       
@@ -142,11 +182,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction2">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asFunction2">
+      <a id="asFunction2:asFunction2"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asFunction2</span><span class="result"> &lt;: <a href="Function2.html" class="extype" name="com.github.okomok.mada.dual.Function2">Function2</a></span>
+        <span class="name">asFunction2</span>
+        
+        
+        <span class="result"> &lt;: <a href="Function2.html" class="extype" name="com.github.okomok.mada.dual.Function2">Function2</a></span>
       </span>
       </h4>
       
@@ -157,11 +201,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction3">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asFunction3">
+      <a id="asFunction3:asFunction3"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asFunction3</span><span class="result"> &lt;: <a href="Function3.html" class="extype" name="com.github.okomok.mada.dual.Function3">Function3</a></span>
+        <span class="name">asFunction3</span>
+        
+        
+        <span class="result"> &lt;: <a href="Function3.html" class="extype" name="com.github.okomok.mada.dual.Function3">Function3</a></span>
       </span>
       </h4>
       
@@ -172,11 +220,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asList">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asList">
+      <a id="asList:asList"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asList</span><span class="result"> &lt;: <a href="list/List.html" class="extype" name="com.github.okomok.mada.dual.list.List">List</a></span>
+        <span class="name">asList</span>
+        
+        
+        <span class="result"> &lt;: List</span>
       </span>
       </h4>
       
@@ -187,11 +239,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asMap">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asMap">
+      <a id="asMap:asMap"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asMap</span><span class="result"> &lt;: <a href="map/Map.html" class="extype" name="com.github.okomok.mada.dual.map.Map">Map</a></span>
+        <span class="name">asMap</span>
+        
+        
+        <span class="result"> &lt;: Map</span>
       </span>
       </h4>
       
@@ -202,11 +258,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asNat">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asNat">
+      <a id="asNat:asNat"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asNat</span><span class="result"> &lt;: <a href="nat/Nat.html" class="extype" name="com.github.okomok.mada.dual.nat.Nat">Nat</a></span>
+        <span class="name">asNat</span>
+        
+        
+        <span class="result"> &lt;: Nat</span>
       </span>
       </h4>
       
@@ -217,11 +277,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asOption">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asOption">
+      <a id="asOption:asOption"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asOption</span><span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
+        <span class="name">asOption</span>
+        
+        
+        <span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
       </span>
       </h4>
       
@@ -232,11 +296,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asOrdering">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asOrdering">
+      <a id="asOrdering:asOrdering"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asOrdering</span><span class="result"> &lt;: <a href="ordering/Ordering.html" class="extype" name="com.github.okomok.mada.dual.ordering.Ordering">Ordering</a></span>
+        <span class="name">asOrdering</span>
+        
+        
+        <span class="result"> &lt;: Ordering</span>
       </span>
       </h4>
       
@@ -247,11 +315,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asOrderingResult">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asOrderingResult">
+      <a id="asOrderingResult:asOrderingResult"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asOrderingResult</span><span class="result"> &lt;: <a href="ordering/Result.html" class="extype" name="com.github.okomok.mada.dual.ordering.Result">Result</a></span>
+        <span class="name">asOrderingResult</span>
+        
+        
+        <span class="result"> &lt;: <a href="ordering/Result.html" class="extype" name="com.github.okomok.mada.dual.ordering.Result">Result</a></span>
       </span>
       </h4>
       
@@ -262,11 +334,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asPeg">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asPeg">
+      <a id="asPeg:asPeg"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asPeg</span><span class="result"> &lt;: <a href="peg/Peg.html" class="extype" name="com.github.okomok.mada.dual.peg.Peg">Peg</a></span>
+        <span class="name">asPeg</span>
+        
+        
+        <span class="result"> &lt;: Peg</span>
       </span>
       </h4>
       
@@ -277,11 +353,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asPegResult">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asPegResult">
+      <a id="asPegResult:asPegResult"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asPegResult</span><span class="result"> &lt;: <a href="peg/Result.html" class="extype" name="com.github.okomok.mada.dual.peg.Result">Result</a></span>
+        <span class="name">asPegResult</span>
+        
+        
+        <span class="result"> &lt;: <a href="peg/Result.html" class="extype" name="com.github.okomok.mada.dual.peg.Result">Result</a></span>
       </span>
       </h4>
       
@@ -292,11 +372,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asProduct">
+      <a id="asProduct:asProduct"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asProduct</span><span class="result"> &lt;: <a href="Product.html" class="extype" name="com.github.okomok.mada.dual.Product">Product</a></span>
+        <span class="name">asProduct</span>
+        
+        
+        <span class="result"> &lt;: <a href="Product.html" class="extype" name="com.github.okomok.mada.dual.Product">Product</a></span>
       </span>
       </h4>
       
@@ -307,11 +391,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct1">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asProduct1">
+      <a id="asProduct1:asProduct1"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asProduct1</span><span class="result"> &lt;: <a href="Product1.html" class="extype" name="com.github.okomok.mada.dual.Product1">Product1</a></span>
+        <span class="name">asProduct1</span>
+        
+        
+        <span class="result"> &lt;: <a href="Product1.html" class="extype" name="com.github.okomok.mada.dual.Product1">Product1</a></span>
       </span>
       </h4>
       
@@ -322,11 +410,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct2">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asProduct2">
+      <a id="asProduct2:asProduct2"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asProduct2</span><span class="result"> &lt;: <a href="Product2.html" class="extype" name="com.github.okomok.mada.dual.Product2">Product2</a></span>
+        <span class="name">asProduct2</span>
+        
+        
+        <span class="result"> &lt;: <a href="Product2.html" class="extype" name="com.github.okomok.mada.dual.Product2">Product2</a></span>
       </span>
       </h4>
       
@@ -337,11 +429,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct3">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asProduct3">
+      <a id="asProduct3:asProduct3"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asProduct3</span><span class="result"> &lt;: <a href="Product3.html" class="extype" name="com.github.okomok.mada.dual.Product3">Product3</a></span>
+        <span class="name">asProduct3</span>
+        
+        
+        <span class="result"> &lt;: <a href="Product3.html" class="extype" name="com.github.okomok.mada.dual.Product3">Product3</a></span>
       </span>
       </h4>
       
@@ -352,11 +448,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asSet">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asSet">
+      <a id="asSet:asSet"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asSet</span><span class="result"> &lt;: <a href="set/Set.html" class="extype" name="com.github.okomok.mada.dual.set.Set">Set</a></span>
+        <span class="name">asSet</span>
+        
+        
+        <span class="result"> &lt;: Set</span>
       </span>
       </h4>
       
@@ -367,11 +467,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asUnit">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#asUnit">
+      <a id="asUnit:asUnit"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">asUnit</span><span class="result"> &lt;: <a href="Unit.html" class="extype" name="com.github.okomok.mada.dual.Unit">Unit</a></span>
+        <span class="name">asUnit</span>
+        
+        
+        <span class="result"> &lt;: <a href="Unit.html" class="extype" name="com.github.okomok.mada.dual.Unit">Unit</a></span>
       </span>
       </h4>
       
@@ -382,11 +486,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#exists">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#exists">
+      <a id="exists:exists[f]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">exists</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
       </span>
       </h4>
       
@@ -395,11 +503,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#filter">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#filter">
+      <a id="filter:filter[f]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">filter</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
       </span>
       </h4>
       
@@ -408,11 +520,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#flatMap">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#flatMap">
+      <a id="flatMap:flatMap[f]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">flatMap</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
       </span>
       </h4>
       
@@ -421,11 +537,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#foreach">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#foreach">
+      <a id="foreach:foreach[f]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">foreach</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="Unit.html" class="extype" name="com.github.okomok.mada.dual.Unit">Unit</a></span>
       </span>
       </h4>
       
@@ -434,11 +554,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#get">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#get">
+      <a id="get:get"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">get</span><span class="result"> &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>
+        <span class="name">get</span>
+        
+        
+        <span class="result"> &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>
       </span>
       </h4>
       
@@ -447,11 +571,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#getOrElse">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#getOrElse">
+      <a id="getOrElse:getOrElse[f]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">getOrElse</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>
       </span>
       </h4>
       
@@ -460,11 +588,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#getOrNaturalEquiv">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#getOrNaturalEquiv">
+      <a id="getOrNaturalEquiv:getOrNaturalEquiv[x]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">getOrNaturalEquiv</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="Equiv.html" class="extype" name="com.github.okomok.mada.dual.Equiv">Equiv</a></span>
       </span>
       </h4>
       
@@ -473,11 +605,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#getOrNaturalOrdering">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#getOrNaturalOrdering">
+      <a id="getOrNaturalOrdering:getOrNaturalOrdering[x]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">getOrNaturalOrdering</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        
+        <span class="result"> &lt;: Ordering</span>
       </span>
       </h4>
       
@@ -486,11 +622,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#isDefined">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#isDefined">
+      <a id="isDefined:isDefined"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">isDefined</span><span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
+        <span class="name">isDefined</span>
+        
+        
+        <span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
       </span>
       </h4>
       
@@ -499,11 +639,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#isEmpty">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#isEmpty">
+      <a id="isEmpty:isEmpty"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">isEmpty</span><span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
+        <span class="name">isEmpty</span>
+        
+        
+        <span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
       </span>
       </h4>
       
@@ -512,11 +656,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#map">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#map">
+      <a id="map:map[f]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">map</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
       </span>
       </h4>
       
@@ -525,11 +673,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#naturalOrdering">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Any#naturalOrdering">
+      <a id="naturalOrdering:naturalOrdering"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">naturalOrdering</span><span class="result"> &lt;: <a href="ordering/Ordering.html" class="extype" name="com.github.okomok.mada.dual.ordering.Ordering">Ordering</a></span>
+        <span class="name">naturalOrdering</span>
+        
+        
+        <span class="result"> &lt;: Ordering</span>
       </span>
       </h4>
       
@@ -540,11 +692,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.dual.Any#noSuchElement">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.dual.Any#noSuchElement">
+      <a id="noSuchElement:noSuchElement[_]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">noSuchElement</span><span class="result"> = <span class="extype" name="scala.Nothing">Nothing</span></span>
+        <span class="name">noSuchElement</span>
+        <span class="tparams">[<span name="_">_</span>]</span>
+        
+        <span class="result"> = <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
       </h4>
       
@@ -555,11 +711,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#nonEmpty">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#nonEmpty">
+      <a id="nonEmpty:nonEmpty"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">nonEmpty</span><span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
+        <span class="name">nonEmpty</span>
+        
+        
+        <span class="result"> &lt;: <a href="Boolean.html" class="extype" name="com.github.okomok.mada.dual.Boolean">Boolean</a></span>
       </span>
       </h4>
       
@@ -568,11 +728,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#orElse">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#orElse">
+      <a id="orElse:orElse[f]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
         <span class="name">orElse</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>]</span>
+        
+        <span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
       </span>
       </h4>
       
@@ -581,26 +745,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#self">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#self">
+      <a id="self:self"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">self</span><span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
-      </span>
-      </h4>
-      
-            
-            <div class="fullcomment"><div class="block">
-          attributes: abstract 
-        </div><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a> → <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
-        </div></div>
-          
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#undual">
-      <h4 class="signature">
-      <span class="kind">type</span>
-      <span class="symbol">
-        <span class="name">undual</span><span class="result"> &lt;: Option[_]</span>
+        <span class="name">self</span>
+        
+        
+        <span class="result"> &lt;: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a></span>
       </span>
       </h4>
       
@@ -611,11 +764,34 @@
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a> → <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.dual.Any#unsupported">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#undual">
+      <a id="undual:undual"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">unsupported</span><span class="result"> = <span class="extype" name="scala.Nothing">Nothing</span></span>
+        <span class="name">undual</span>
+        
+        
+        <span class="result"> &lt;: Option[_]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: abstract 
+        </div><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.dual.Option">Option</a> → <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
+        </div></div>
+          
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.dual.Any#unsupported">
+      <a id="unsupported:unsupported[_]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">unsupported</span>
+        <span class="tparams">[<span name="_">_</span>]</span>
+        
+        <span class="result"> = <span class="extype" name="scala.Nothing">Nothing</span></span>
       </span>
       </h4>
       
@@ -628,14 +804,18 @@
           
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=">
+              <ol><li visbl="pub" data-isabs="false" name="scala.AnyRef#!=">
+      <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -646,11 +826,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#!=">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#!=">
+      <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -664,14 +848,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef###">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef###">
+      <a id="##():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">##</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -682,11 +869,15 @@
           definition classes: AnyRef → Any
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$asInstanceOf">
+      <a id="$asInstanceOf[T0]():T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+        <span class="name">$asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -697,11 +888,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$isInstanceOf">
+      <a id="$isInstanceOf[T0]():Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">$isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -712,11 +907,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#==">
+      <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -730,14 +929,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Any#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#==">
+      <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -751,14 +953,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asBoolean">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asBoolean">
+      <a id="asBoolean:asBoolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asBoolean</span><span class="result">: asBoolean</span>
+        <span class="name">asBoolean</span>
+        
+        
+        <span class="result">: asBoolean</span>
       </span>
       </h4>
       
@@ -767,11 +972,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asEither">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asEither">
+      <a id="asEither:asEither"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asEither</span><span class="result">: asEither</span>
+        <span class="name">asEither</span>
+        
+        
+        <span class="result">: asEither</span>
       </span>
       </h4>
       
@@ -780,11 +989,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asEquiv">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asEquiv">
+      <a id="asEquiv:asEquiv"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asEquiv</span><span class="result">: asEquiv</span>
+        <span class="name">asEquiv</span>
+        
+        
+        <span class="result">: asEquiv</span>
       </span>
       </h4>
       
@@ -793,11 +1006,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction0">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asFunction0">
+      <a id="asFunction0:asFunction0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asFunction0</span><span class="result">: asFunction0</span>
+        <span class="name">asFunction0</span>
+        
+        
+        <span class="result">: asFunction0</span>
       </span>
       </h4>
       
@@ -806,11 +1023,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction1">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asFunction1">
+      <a id="asFunction1:asFunction1"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asFunction1</span><span class="result">: asFunction1</span>
+        <span class="name">asFunction1</span>
+        
+        
+        <span class="result">: asFunction1</span>
       </span>
       </h4>
       
@@ -819,11 +1040,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction2">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asFunction2">
+      <a id="asFunction2:asFunction2"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asFunction2</span><span class="result">: asFunction2</span>
+        <span class="name">asFunction2</span>
+        
+        
+        <span class="result">: asFunction2</span>
       </span>
       </h4>
       
@@ -832,11 +1057,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asFunction3">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asFunction3">
+      <a id="asFunction3:asFunction3"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asFunction3</span><span class="result">: asFunction3</span>
+        <span class="name">asFunction3</span>
+        
+        
+        <span class="result">: asFunction3</span>
       </span>
       </h4>
       
@@ -845,11 +1074,15 @@
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
+      <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -864,14 +1097,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asList">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asList">
+      <a id="asList:asList"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asList</span><span class="result">: asList</span>
+        <span class="name">asList</span>
+        
+        
+        <span class="result">: asList</span>
       </span>
       </h4>
       
@@ -880,11 +1116,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asMap">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asMap">
+      <a id="asMap:asMap"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asMap</span><span class="result">: asMap</span>
+        <span class="name">asMap</span>
+        
+        
+        <span class="result">: asMap</span>
       </span>
       </h4>
       
@@ -893,11 +1133,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asNat">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asNat">
+      <a id="asNat:asNat"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asNat</span><span class="result">: asNat</span>
+        <span class="name">asNat</span>
+        
+        
+        <span class="result">: asNat</span>
       </span>
       </h4>
       
@@ -906,11 +1150,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asOption">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asOption">
+      <a id="asOption:asOption"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asOption</span><span class="result">: asOption</span>
+        <span class="name">asOption</span>
+        
+        
+        <span class="result">: asOption</span>
       </span>
       </h4>
       
@@ -919,11 +1167,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asOrdering">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asOrdering">
+      <a id="asOrdering:asOrdering"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asOrdering</span><span class="result">: asOrdering</span>
+        <span class="name">asOrdering</span>
+        
+        
+        <span class="result">: asOrdering</span>
       </span>
       </h4>
       
@@ -932,11 +1184,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asOrderingResult">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asOrderingResult">
+      <a id="asOrderingResult:asOrderingResult"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asOrderingResult</span><span class="result">: asOrderingResult</span>
+        <span class="name">asOrderingResult</span>
+        
+        
+        <span class="result">: asOrderingResult</span>
       </span>
       </h4>
       
@@ -945,11 +1201,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asPeg">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asPeg">
+      <a id="asPeg:asPeg"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asPeg</span><span class="result">: asPeg</span>
+        <span class="name">asPeg</span>
+        
+        
+        <span class="result">: asPeg</span>
       </span>
       </h4>
       
@@ -958,11 +1218,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asPegResult">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asPegResult">
+      <a id="asPegResult:asPegResult"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asPegResult</span><span class="result">: asPegResult</span>
+        <span class="name">asPegResult</span>
+        
+        
+        <span class="result">: asPegResult</span>
       </span>
       </h4>
       
@@ -971,11 +1235,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asProduct">
+      <a id="asProduct:asProduct"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asProduct</span><span class="result">: asProduct</span>
+        <span class="name">asProduct</span>
+        
+        
+        <span class="result">: asProduct</span>
       </span>
       </h4>
       
@@ -984,11 +1252,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct1">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asProduct1">
+      <a id="asProduct1:asProduct1"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asProduct1</span><span class="result">: asProduct1</span>
+        <span class="name">asProduct1</span>
+        
+        
+        <span class="result">: asProduct1</span>
       </span>
       </h4>
       
@@ -997,11 +1269,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct2">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asProduct2">
+      <a id="asProduct2:asProduct2"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asProduct2</span><span class="result">: asProduct2</span>
+        <span class="name">asProduct2</span>
+        
+        
+        <span class="result">: asProduct2</span>
       </span>
       </h4>
       
@@ -1010,11 +1286,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asProduct3">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asProduct3">
+      <a id="asProduct3:asProduct3"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asProduct3</span><span class="result">: asProduct3</span>
+        <span class="name">asProduct3</span>
+        
+        
+        <span class="result">: asProduct3</span>
       </span>
       </h4>
       
@@ -1023,11 +1303,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asSet">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asSet">
+      <a id="asSet:asSet"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asSet</span><span class="result">: asSet</span>
+        <span class="name">asSet</span>
+        
+        
+        <span class="result">: asSet</span>
       </span>
       </h4>
       
@@ -1036,11 +1320,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#asUnit">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#asUnit">
+      <a id="asUnit:asUnit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asUnit</span><span class="result">: asUnit</span>
+        <span class="name">asUnit</span>
+        
+        
+        <span class="result">: asUnit</span>
       </span>
       </h4>
       
@@ -1049,11 +1337,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.Equals#canEqual">
+    </li><li visbl="pub" data-isabs="true" name="scala.Equals#canEqual">
+      <a id="canEqual(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">canEqual</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">canEqual</span>
+        
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1064,11 +1356,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: Equals
         </div></div>
           
-    </li><li visbl="prt" name="scala.AnyRef#clone">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
+      <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span>
+        
+        <span class="params">()</span>
+        <span class="result">: AnyRef</span>
       </span>
       </h4>
       
@@ -1082,14 +1378,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#eq">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#eq">
+      <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1116,14 +1415,17 @@ should be equal to each other (<code>o1 == o2</code>) and they should hash to th
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#equals">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#equals">
+      <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1145,14 +1447,17 @@ scala.Int
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#exists">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#exists">
+      <a id="exists[f&lt;:Function1](f):exists[f]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">exists</span><span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span><span class="params">(<span name="f">f: f</span>)</span><span class="result">: exists[f]</span>
+        <span class="name">exists</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        <span class="params">(<span name="f">f: f</span>)</span>
+        <span class="result">: exists[f]</span>
       </span>
       </h4>
       
@@ -1161,11 +1466,15 @@ scala.Int
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#filter">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#filter">
+      <a id="filter[f&lt;:Function1](f):filter[f]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">filter</span><span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span><span class="params">(<span name="f">f: f</span>)</span><span class="result">: filter[f]</span>
+        <span class="name">filter</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        <span class="params">(<span name="f">f: f</span>)</span>
+        <span class="result">: filter[f]</span>
       </span>
       </h4>
       
@@ -1174,11 +1483,15 @@ scala.Int
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="prt" name="scala.AnyRef#finalize">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#finalize">
+      <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1193,14 +1506,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#flatMap">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#flatMap">
+      <a id="flatMap[f&lt;:Function1](f):flatMap[f]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">flatMap</span><span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span><span class="params">(<span name="f">f: f</span>)</span><span class="result">: flatMap[f]</span>
+        <span class="name">flatMap</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        <span class="params">(<span name="f">f: f</span>)</span>
+        <span class="result">: flatMap[f]</span>
       </span>
       </h4>
       
@@ -1209,11 +1525,15 @@ there are no more references to the object.</p><p>The details of when and if the
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#foreach">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#foreach">
+      <a id="foreach[f&lt;:Function1](f):foreach[f]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">foreach</span><span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span><span class="params">(<span name="f">f: f</span>)</span><span class="result">: foreach[f]</span>
+        <span class="name">foreach</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        <span class="params">(<span name="f">f: f</span>)</span>
+        <span class="result">: foreach[f]</span>
       </span>
       </h4>
       
@@ -1222,11 +1542,15 @@ there are no more references to the object.</p><p>The details of when and if the
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#get">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#get">
+      <a id="get:get"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">get</span><span class="result">: get</span>
+        <span class="name">get</span>
+        
+        
+        <span class="result">: get</span>
       </span>
       </h4>
       
@@ -1235,11 +1559,15 @@ there are no more references to the object.</p><p>The details of when and if the
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#getClass">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#getClass">
+      <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span>
+        <span class="result">: java.lang.Class[_]</span>
       </span>
       </h4>
       
@@ -1253,14 +1581,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#getOrElse">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#getOrElse">
+      <a id="getOrElse[f&lt;:Function0](f):getOrElse[f]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">getOrElse</span><span class="tparams">[<span name="f">f &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>]</span><span class="params">(<span name="f">f: f</span>)</span><span class="result">: getOrElse[f]</span>
+        <span class="name">getOrElse</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>]</span>
+        <span class="params">(<span name="f">f: f</span>)</span>
+        <span class="result">: getOrElse[f]</span>
       </span>
       </h4>
       
@@ -1269,11 +1600,15 @@ there are no more references to the object.</p><p>The details of when and if the
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#getOrNaturalEquiv">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#getOrNaturalEquiv">
+      <a id="getOrNaturalEquiv[x&lt;:Any](x):getOrNaturalEquiv[x]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">getOrNaturalEquiv</span><span class="tparams">[<span name="x">x &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span><span class="params">(<span name="x">x: x</span>)</span><span class="result">: getOrNaturalEquiv[x]</span>
+        <span class="name">getOrNaturalEquiv</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        <span class="params">(<span name="x">x: x</span>)</span>
+        <span class="result">: getOrNaturalEquiv[x]</span>
       </span>
       </h4>
       
@@ -1282,11 +1617,15 @@ there are no more references to the object.</p><p>The details of when and if the
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#getOrNaturalOrdering">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#getOrNaturalOrdering">
+      <a id="getOrNaturalOrdering[x&lt;:Any](x):getOrNaturalOrdering[x]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">getOrNaturalOrdering</span><span class="tparams">[<span name="x">x &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span><span class="params">(<span name="x">x: x</span>)</span><span class="result">: getOrNaturalOrdering[x]</span>
+        <span class="name">getOrNaturalOrdering</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        <span class="params">(<span name="x">x: x</span>)</span>
+        <span class="result">: getOrNaturalOrdering[x]</span>
       </span>
       </h4>
       
@@ -1295,11 +1634,15 @@ there are no more references to the object.</p><p>The details of when and if the
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#hashCode">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#hashCode">
+      <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -1315,14 +1658,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#isDefined">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#isDefined">
+      <a id="isDefined:isDefined"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isDefined</span><span class="result">: isDefined</span>
+        <span class="name">isDefined</span>
+        
+        
+        <span class="result">: isDefined</span>
       </span>
       </h4>
       
@@ -1331,11 +1677,15 @@ to verify that the behavior is consistent with the <code>equals</code> method.
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#isEmpty">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#isEmpty">
+      <a id="isEmpty:isEmpty"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isEmpty</span><span class="result">: isEmpty</span>
+        <span class="name">isEmpty</span>
+        
+        
+        <span class="result">: isEmpty</span>
       </span>
       </h4>
       
@@ -1344,11 +1694,15 @@ to verify that the behavior is consistent with the <code>equals</code> method.
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#isInstanceOf">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1364,14 +1718,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#map">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#map">
+      <a id="map[f&lt;:Function1](f):map[f]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span><span class="params">(<span name="f">f: f</span>)</span><span class="result">: map[f]</span>
+        <span class="name">map</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function1.html" class="extype" name="com.github.okomok.mada.dual.Function1">Function1</a></span>]</span>
+        <span class="params">(<span name="f">f: f</span>)</span>
+        <span class="result">: map[f]</span>
       </span>
       </h4>
       
@@ -1380,11 +1737,15 @@ possible to check whether the contents of the list are of the requested typed.
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#naturalOrdering">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#naturalOrdering">
+      <a id="naturalOrdering:naturalOrdering"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">naturalOrdering</span><span class="result">: naturalOrdering</span>
+        <span class="name">naturalOrdering</span>
+        
+        
+        <span class="result">: naturalOrdering</span>
       </span>
       </h4>
       
@@ -1396,14 +1757,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#ne">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#ne">
+      <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1417,14 +1781,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.dual.Any#noSuchElement">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.dual.Any#noSuchElement">
+      <a id="noSuchElement(String):Option.this.noSuchElement[_]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">noSuchElement</span><span class="params">(<span name="what">what: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+        <span class="name">noSuchElement</span>
+        
+        <span class="params">(<span name="what">what: String</span>)</span>
+        <span class="result">: Option.this.noSuchElement[_]</span>
       </span>
       </h4>
       
@@ -1439,14 +1806,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#nonEmpty">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#nonEmpty">
+      <a id="nonEmpty:nonEmpty"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">nonEmpty</span><span class="result">: nonEmpty</span>
+        <span class="name">nonEmpty</span>
+        
+        
+        <span class="result">: nonEmpty</span>
       </span>
       </h4>
       
@@ -1455,11 +1825,15 @@ possible to check whether the contents of the list are of the requested typed.
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notify">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notify">
+      <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1472,14 +1846,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notifyAll">
+      <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1492,14 +1869,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Option#orElse">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.Option#orElse">
+      <a id="orElse[f&lt;:Function0](f):orElse[f]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">orElse</span><span class="tparams">[<span name="f">f &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>]</span><span class="params">(<span name="f">f: f</span>)</span><span class="result">: orElse[f]</span>
+        <span class="name">orElse</span>
+        <span class="tparams">[<span name="f">f &lt;: <a href="Function0.html" class="extype" name="com.github.okomok.mada.dual.Function0">Function0</a></span>]</span>
+        <span class="params">(<span name="f">f: f</span>)</span>
+        <span class="result">: orElse[f]</span>
       </span>
       </h4>
       
@@ -1508,11 +1888,15 @@ possible to check whether the contents of the list are of the requested typed.
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.dual.Any#refEquals">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.dual.Any#refEquals">
+      <a id="refEquals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">refEquals</span><span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">refEquals</span>
+        
+        <span class="params">(<span name="that">that: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -1523,11 +1907,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.dual.Any#refHashCode">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.dual.Any#refHashCode">
+      <a id="refHashCode:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">refHashCode</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">refHashCode</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -1538,11 +1926,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.dual.Any#refToString">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.dual.Any#refToString">
+      <a id="refToString:String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">refToString</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">refToString</span>
+        
+        
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -1553,11 +1945,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#self">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#self">
+      <a id="self:self"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">self</span><span class="result">: self</span>
+        <span class="name">self</span>
+        
+        
+        <span class="result">: self</span>
       </span>
       </h4>
       
@@ -1568,11 +1964,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
+      <a id="synchronized[T0](T0):T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: T0</span>)</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -1583,11 +1983,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#toString">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#toString">
+      <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -1599,14 +2003,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.Any#undual">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.Any#undual">
+      <a id="undual:undual"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">undual</span><span class="result">: undual</span>
+        <span class="name">undual</span>
+        
+        
+        <span class="result">: undual</span>
       </span>
       </h4>
       
@@ -1618,14 +2025,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.dual.Any#unsupported">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.dual.Any#unsupported">
+      <a id="unsupported(String):Option.this.unsupported[_]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unsupported</span><span class="params">(<span name="what">what: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Nothing">Nothing</span></span>
+        <span class="name">unsupported</span>
+        
+        <span class="params">(<span name="what">what: String</span>)</span>
+        <span class="result">: Option.this.unsupported[_]</span>
       </span>
       </h4>
       
@@ -1640,14 +2050,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1658,11 +2071,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1673,11 +2090,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1690,7 +2111,17 @@ possible to check whether the contents of the list are of the requested typed.
           
     </li></ol>
             </div>
-                
+
+        <div class="parent" name="com.github.okomok.mada.dual.Any">
+              <h3>Inherited from <a href="Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from AnyRef</h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+
       </div>
       
       <div id="tooltip"></div>

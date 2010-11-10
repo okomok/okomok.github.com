@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.sequence.list</title>
+          <title>com.github.okomok.mada.sequence.list</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a></p>
 
@@ -24,94 +25,135 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">list</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.list.Compatibles">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.list.Compatibles">
+      <a id="Compatibles:Compatibles"></a>
       <h4 class="signature"><a href="Compatibles.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Compatibles</span><span class="result"> extends AnyRef</span>
+        <span class="name">Compatibles</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Cons">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Cons">
+      <a id="Cons:Cons[A]"></a>
       <h4 class="signature"><a href="Cons.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Cons</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends List[A]</span>
+        <span class="name">Cons</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends List[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">The cons list
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.List">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.list.List">
+      <a id="List:List[A]"></a>
       <h4 class="signature"><a href="List.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">List</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Sequence[A]</span>
+        <span class="name">List</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends Sequence[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">Lazy list</p>
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.list.#::">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.#::">
+      <a id="#:::#::"></a>
       <h4 class="signature"><a href="$hash$colon$colon$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">#::</span><span class="result"> extends AnyRef</span>
+        <span class="name">#::</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       <p class="comment cmt">The strict matcher for cons list
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.::">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.::">
+      <a id=":::::"></a>
       <h4 class="signature"><a href="$colon$colon$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">::</span><span class="result"> extends AnyRef</span>
+        <span class="name">::</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       <p class="comment cmt">The matcher for cons list
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.List">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List">
+      <a id="List:List"></a>
       <h4 class="signature"><a href="List$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">List</span><span class="result"> extends Common with Compatibles</span>
+        <span class="name">List</span>
+        
+        
+        <span class="result"> extends Common with Compatibles</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Nil">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Nil">
+      <a id="Nil:Nil"></a>
       <h4 class="signature"><a href="Nil$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Nil</span><span class="result"> extends List[Nothing] with Product</span>
+        <span class="name">Nil</span>
+        
+        
+        <span class="result"> extends List[Nothing] with Product</span>
       </span>
       </a></h4>
       <p class="comment cmt">The nil list
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#apply">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#apply">
+      <a id="apply[A](A*):List[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: A*</span>)</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
+        <span class="name">apply</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="from">from: A*</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
       </span>
       </h4>
       
@@ -120,11 +162,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#empty">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#empty">
+      <a id="empty:List[Nothing]"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">empty</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+        <span class="name">empty</span>
+        
+        
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       
@@ -133,11 +179,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#iterate">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#iterate">
+      <a id="iterate[A](A)((A) ⇒ A):List[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">iterate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="params">(<span name="f">f: (A) ⇒ A</span>)</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
+        <span class="name">iterate</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="x">x: A</span>)</span><span class="params">(<span name="f">f: (A) ⇒ A</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
       </span>
       </h4>
       
@@ -149,14 +199,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#range">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#range">
+      <a id="range(Int,Int):List[Int]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">range</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+        <span class="name">range</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[<span class="extype" name="scala.Int">Int</span>]</span>
       </span>
       </h4>
       
@@ -168,14 +221,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#repeat">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#repeat">
+      <a id="repeat[A](A):List[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">repeat</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
+        <span class="name">repeat</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="x">x: A</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
       </span>
       </h4>
       
@@ -187,14 +243,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#replicate">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#replicate">
+      <a id="replicate[A](Int,A):List[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">replicate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="x">x: A</span>)</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
+        <span class="name">replicate</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="x">x: A</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
       </span>
       </h4>
       
@@ -206,14 +265,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#single">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#single">
+      <a id="single[A](A):List[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">single</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
+        <span class="name">single</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="x">x: A</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>
       </span>
       </h4>
       
@@ -222,11 +284,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#unapplySeq">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#unapplySeq">
+      <a id="unapplySeq[A](List[A]):Option[Seq[A]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unapplySeq</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.collection.Seq">Seq</span>[A]]</span>
+        <span class="name">unapplySeq</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="from">from: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[A]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[Seq[A]]</span>
       </span>
       </h4>
       
@@ -235,11 +301,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.list.Common#unfoldRight">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.Common#unfoldRight">
+      <a id="unfoldRight[A, B](A)((A) ⇒ Option[(B, A)]):List[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unfoldRight</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Option">Option</span>[(B, A)]</span>)</span><span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
+        <span class="name">unfoldRight</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span name="x">x: A</span>)</span><span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Option">Option</span>[(B, A)]</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
       </span>
       </h4>
       
@@ -251,12 +321,13 @@
             
             
             
-            
           </div>
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

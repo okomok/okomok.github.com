@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.sequence.reactive</title>
+          <title>com.github.okomok.mada.sequence.reactive</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a></p>
 
@@ -24,181 +25,266 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">reactive</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Compatibles">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Compatibles">
+      <a id="Compatibles:Compatibles"></a>
       <h4 class="signature"><a href="Compatibles.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Compatibles</span><span class="result"> extends AnyRef</span>
+        <span class="name">Compatibles</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Forwarder">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Forwarder">
+      <a id="Forwarder:Forwarder[A]"></a>
       <h4 class="signature"><a href="Forwarder.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Forwarder</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Reactive[A] with Forwarder[A]</span>
+        <span class="name">Forwarder</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends Reactive[A] with Forwarder[A]</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Reactive">
+      <a id="Reactive:Reactive[A]"></a>
       <h4 class="signature"><a href="Reactive.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Reactive</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Sequence[A] with Closeable</span>
+        <span class="name">Reactive</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends Sequence[A] with Closeable</span>
       </span>
       </a></h4>
       <p class="comment cmt">Reactive sequence, which is built upon asynchronous foreach.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">
+      <a id="ReactiveOnce:ReactiveOnce[A]"></a>
       <h4 class="signature"><a href="ReactiveOnce.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">ReactiveOnce</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Reactive[A]</span>
+        <span class="name">ReactiveOnce</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends Reactive[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">Mixin for a sequence which doesn't allow re-foreach.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.ReactiveOnceException">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.ReactiveOnceException">
+      <a id="ReactiveOnceException:ReactiveOnceException[A]"></a>
       <h4 class="signature"><a href="ReactiveOnceException.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">ReactiveOnceException</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="_1">_1: Reactive[A]</span>)</span><span class="result"> extends RuntimeException with Product</span>
+        <span class="name">ReactiveOnceException</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="_1">_1: Reactive[A]</span>)</span>
+        <span class="result"> extends RuntimeException with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactor">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Reactor">
+      <a id="Reactor:Reactor"></a>
       <h4 class="signature"><a href="Reactor.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Reactor</span><span class="result"> extends Actor</span>
+        <span class="name">Reactor</span>
+        
+        
+        <span class="result"> extends Actor</span>
       </span>
       </a></h4>
       <p class="comment cmt">The Reactive Actor
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Resource">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Resource">
+      <a id="Resource:Resource[A]"></a>
       <h4 class="signature"><a href="Resource.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Resource</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends ReactiveOnce[A]</span>
+        <span class="name">Resource</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends ReactiveOnce[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">Mixin for a Reactive resource.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Rist">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Rist">
+      <a id="Rist:Rist[A]"></a>
       <h4 class="signature"><a href="Rist.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Rist</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Reactive[A]</span>
+        <span class="name">Rist</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends Reactive[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">Reactive list (immutable)
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule">
+      <a id="Schedule:Schedule"></a>
       <h4 class="signature"><a href="Schedule.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Schedule</span><span class="params">(<span name="scheduler">scheduler: (TimerTask) ⇒ Unit</span>)</span><span class="result"> extends Resource[Unit] with Product</span>
+        <span class="name">Schedule</span>
+        
+        <span class="params">(<span name="scheduler">scheduler: (TimerTask) ⇒ Unit</span>)</span>
+        <span class="result"> extends Resource[Unit] with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Sequence">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Sequence">
+      <a id="Sequence:Sequence[A]"></a>
       <h4 class="signature"><a href="Sequence.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Sequence</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">Sequence</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       <p class="comment cmt">The bridge between phisical and logical hierarchy
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Var">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Var">
+      <a id="Var:Var[A]"></a>
       <h4 class="signature"><a href="Var.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Var</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Reactive[A]</span>
+        <span class="name">Var</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends Reactive[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">A sequence of variables, considered as a lightweight <code>Rist</code>.</p>
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Nio">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Nio">
+      <a id="Nio:Nio"></a>
       <h4 class="signature"><a href="Nio$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Nio</span><span class="result"> extends AnyRef</span>
+        <span class="name">Nio</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive">
+      <a id="Reactive:Reactive"></a>
       <h4 class="signature"><a href="Reactive$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Reactive</span><span class="result"> extends Common with Compatibles</span>
+        <span class="name">Reactive</span>
+        
+        
+        <span class="result"> extends Common with Compatibles</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactor">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactor">
+      <a id="Reactor:Reactor"></a>
       <h4 class="signature"><a href="Reactor$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Reactor</span><span class="result"> extends AnyRef</span>
+        <span class="name">Reactor</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Rist">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Rist">
+      <a id="Rist:Rist"></a>
       <h4 class="signature"><a href="Rist$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Rist</span><span class="result"> extends AnyRef</span>
+        <span class="name">Rist</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Sequence">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Sequence">
+      <a id="Sequence:Sequence"></a>
       <h4 class="signature"><a href="Sequence$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Sequence</span><span class="result"> extends AnyRef</span>
+        <span class="name">Sequence</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Swing">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing">
+      <a id="Swing:Swing"></a>
       <h4 class="signature"><a href="Swing$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Swing</span><span class="result"> extends AnyRef</span>
+        <span class="name">Swing</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Var">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Var">
+      <a id="Var:Var"></a>
       <h4 class="signature"><a href="Var$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Var</span><span class="result"> extends AnyRef</span>
+        <span class="name">Var</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Common#block">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#block">
+      <a id="block[A](⇒ A @scala.util.continuations.cpsParam[A,Any]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">block</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="ctx">ctx: ⇒ A @scala.util.continuations.cpsParam[A,Any]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">block</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="ctx">ctx: ⇒ A @scala.util.continuations.cpsParam[A,Any]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -207,11 +293,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Common#byName">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#byName">
+      <a id="byName[A](⇒ Reactive[A]):Reactive[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">byName</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="r">r: ⇒ <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
+        <span class="name">byName</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="r">r: ⇒ <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
       </span>
       </h4>
       
@@ -223,14 +313,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Common#empty">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#empty">
+      <a id="empty:Reactive[Nothing]"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">empty</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+        <span class="name">empty</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       
@@ -243,14 +336,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Common#from">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#from">
+      <a id="from[A](Reactive[A]):Reactive[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">from</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="to">to: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
+        <span class="name">from</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="to">to: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
       </span>
       </h4>
       
@@ -259,11 +355,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Common#infinite">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#infinite">
+      <a id="infinite:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">infinite</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">infinite</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -276,14 +376,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Common#multi">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#multi">
+      <a id="multi[A](Iterative[(A) ⇒ Unit]):(A) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">multi</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="fs">fs: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[(A) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>)</span><span class="result">: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">multi</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="fs">fs: Iterative[(A) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>)</span>
+        <span class="result">: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -295,14 +398,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Common#multi">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#multi">
+      <a id="multi[A](Reactive[(A) ⇒ Unit]):(A) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">multi</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="fs">fs: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(A) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>)</span><span class="result">: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">multi</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="fs">fs: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(A) ⇒ <span class="extype" name="scala.Unit">Unit</span>]</span>)</span>
+        <span class="result">: (A) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -314,12 +420,13 @@
             
             
             
-            
           </div>
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.dual.peg</title>
+          <title>com.github.okomok.mada.dual.peg</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.dual">dual</a></p>
 
@@ -24,37 +25,54 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">peg</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.peg.AbstractPeg">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.AbstractPeg">
+      <a id="AbstractPeg:AbstractPeg"></a>
       <h4 class="signature"><a href="AbstractPeg.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">AbstractPeg</span><span class="result"> extends Peg</span>
+        <span class="name">AbstractPeg</span>
+        
+        
+        <span class="result"> extends Peg</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Failure">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Failure">
+      <a id="Failure:Failure[ys]"></a>
       <h4 class="signature"><a href="Failure.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Failure</span><span class="tparams">[<span name="ys">ys &lt;: List</span>]</span><span class="params">(<span name="next">next: ys</span>)</span><span class="result"> extends AbstractResult with Product</span>
+        <span class="name">Failure</span>
+        <span class="tparams">[<span name="ys">ys &lt;: List</span>]</span>
+        <span class="params">(<span name="next">next: ys</span>)</span>
+        <span class="result"> extends AbstractResult with Product</span>
       </span>
       </a></h4>
       
@@ -63,19 +81,27 @@
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.OneWidth">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.OneWidth">
+      <a id="OneWidth:OneWidth"></a>
       <h4 class="signature"><a href="OneWidth.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">OneWidth</span><span class="result"> extends Peg</span>
+        <span class="name">OneWidth</span>
+        
+        
+        <span class="result"> extends Peg</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.ParseError">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.ParseError">
+      <a id="ParseError:ParseError"></a>
       <h4 class="signature"><a href="ParseError.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">ParseError</span><span class="params">(<span name="input">input: String</span>)</span><span class="result"> extends Error with Product</span>
+        <span class="name">ParseError</span>
+        
+        <span class="params">(<span name="input">input: String</span>)</span>
+        <span class="result"> extends Error with Product</span>
       </span>
       </a></h4>
       
@@ -84,19 +110,27 @@
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Peg">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.Peg">
+      <a id="Peg:Peg"></a>
       <h4 class="signature"><a href="Peg.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Peg</span><span class="result"> extends Any with ReferenceEquality</span>
+        <span class="name">Peg</span>
+        
+        
+        <span class="result"> extends Any with ReferenceEquality</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Result">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.Result">
+      <a id="Result:Result"></a>
       <h4 class="signature"><a href="Result.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Result</span><span class="result"> extends Any</span>
+        <span class="name">Result</span>
+        
+        
+        <span class="result"> extends Any</span>
       </span>
       </a></h4>
       
@@ -105,19 +139,27 @@
           attributes: sealed abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Rule">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.Rule">
+      <a id="Rule:Rule"></a>
       <h4 class="signature"><a href="Rule.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Rule</span><span class="result"> extends AbstractPeg</span>
+        <span class="name">Rule</span>
+        
+        
+        <span class="result"> extends AbstractPeg</span>
       </span>
       </a></h4>
       <p class="comment cmt">Helps to build a recursive grammar.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Strong">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.Strong">
+      <a id="Strong:Strong[p]"></a>
       <h4 class="signature"><a href="Strong.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Strong</span><span class="tparams">[<span name="p">p &lt;: Peg</span>]</span><span class="result"> extends AbstractPeg</span>
+        <span class="name">Strong</span>
+        <span class="tparams">[<span name="p">p &lt;: Peg</span>]</span>
+        
+        <span class="result"> extends AbstractPeg</span>
       </span>
       </a></h4>
       
@@ -126,11 +168,15 @@
           attributes: abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Success">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Success">
+      <a id="Success:Success[x, ys]"></a>
       <h4 class="signature"><a href="Success.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Success</span><span class="tparams">[<span name="x">x &lt;: Any</span>, <span name="ys">ys &lt;: List</span>]</span><span class="params">(<span name="get">get: x</span>, <span name="next">next: ys</span>)</span><span class="result"> extends AbstractResult with Product</span>
+        <span class="name">Success</span>
+        <span class="tparams">[<span name="x">x &lt;: Any</span>, <span name="ys">ys &lt;: List</span>]</span>
+        <span class="params">(<span name="get">get: x</span>, <span name="next">next: ys</span>)</span>
+        <span class="result"> extends AbstractResult with Product</span>
       </span>
       </a></h4>
       
@@ -139,11 +185,15 @@
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.UndualFailure">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.UndualFailure">
+      <a id="UndualFailure:UndualFailure"></a>
       <h4 class="signature"><a href="UndualFailure.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">UndualFailure</span><span class="params">(<span name="next">next: Seq[Any]</span>)</span><span class="result"> extends UndualResult[Nothing] with Product</span>
+        <span class="name">UndualFailure</span>
+        
+        <span class="params">(<span name="next">next: Seq[Any]</span>)</span>
+        <span class="result"> extends UndualResult[Nothing] with Product</span>
       </span>
       </a></h4>
       
@@ -152,11 +202,15 @@
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.UndualResult">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.UndualResult">
+      <a id="UndualResult:UndualResult[T]"></a>
       <h4 class="signature"><a href="UndualResult.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">UndualResult</span><span class="tparams">[<span name="T">+T</span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">UndualResult</span>
+        <span class="tparams">[<span name="T">+T</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
@@ -165,11 +219,15 @@
           attributes: sealed abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.UndualSuccess">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.UndualSuccess">
+      <a id="UndualSuccess:UndualSuccess[T]"></a>
       <h4 class="signature"><a href="UndualSuccess.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">UndualSuccess</span><span class="tparams">[<span name="T">+T</span>]</span><span class="params">(<span name="get">get: T</span>, <span name="next">next: Seq[Any]</span>)</span><span class="result"> extends UndualResult[T] with Product</span>
+        <span class="name">UndualSuccess</span>
+        <span class="tparams">[<span name="T">+T</span>]</span>
+        <span class="params">(<span name="get">get: T</span>, <span name="next">next: Seq[Any]</span>)</span>
+        <span class="result"> extends UndualResult[T] with Product</span>
       </span>
       </a></h4>
       
@@ -178,19 +236,27 @@
           attributes: final 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.ZeroWidth">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.dual.peg.ZeroWidth">
+      <a id="ZeroWidth:ZeroWidth"></a>
       <h4 class="signature"><a href="ZeroWidth.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">ZeroWidth</span><span class="result"> extends Peg</span>
+        <span class="name">ZeroWidth</span>
+        
+        
+        <span class="result"> extends Peg</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#dot">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#dot">
+      <a id="dot:dot"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">dot</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Dot.Impl">Impl</span></span>
+        <span class="name">dot</span>
+        
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Dot.Impl">Impl</span></span>
       </span>
       </h4>
       
@@ -199,11 +265,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#eps">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#eps">
+      <a id="eps:eps"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">eps</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Eps">Eps</span></span>
+        <span class="name">eps</span>
+        
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Eps">Eps</span></span>
       </span>
       </h4>
       
@@ -212,11 +282,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#error">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#error">
+      <a id="error:error"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">error</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Error">Error</span></span>
+        <span class="name">error</span>
+        
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Error">Error</span></span>
       </span>
       </h4>
       
@@ -225,11 +299,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#fail">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#fail">
+      <a id="fail:fail"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">fail</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Fail">Fail</span></span>
+        <span class="name">fail</span>
+        
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Fail">Fail</span></span>
       </span>
       </h4>
       
@@ -238,11 +316,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#fromList">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#fromList">
+      <a id="fromList:fromList[ys]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">fromList</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.FromList.Impl">Impl</span>[ys]</span>
+        <span class="name">fromList</span>
+        <span class="tparams">[<span name="ys">ys &lt;: List</span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.FromList.Impl">Impl</span>[ys]</span>
       </span>
       </h4>
       
@@ -251,11 +333,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#term">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#term">
+      <a id="term:term[y]"></a>
       <h4 class="signature">
       <span class="kind">type</span>
       <span class="symbol">
-        <span class="name">term</span><span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Term.Impl">Impl</span>[y]</span>
+        <span class="name">term</span>
+        <span class="tparams">[<span name="y">y &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.mada.dual.peg.Term.Impl">Impl</span>[y]</span>
       </span>
       </h4>
       
@@ -266,30 +352,42 @@
           
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.dual.peg.Peg">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Peg">
+      <a id="Peg:Peg"></a>
       <h4 class="signature"><a href="Peg$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Peg</span><span class="result"> extends Common</span>
+        <span class="name">Peg</span>
+        
+        
+        <span class="result"> extends Common</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.StartsWith">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.StartsWith">
+      <a id="StartsWith:StartsWith"></a>
       <h4 class="signature"><a href="StartsWith$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">StartsWith</span><span class="result"> extends AnyRef</span>
+        <span class="name">StartsWith</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#dot">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#dot">
+      <a id="dot:dot"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">dot</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.peg.Dot.Impl">Impl</span></span>
+        <span class="name">dot</span>
+        
+        
+        <span class="result">: dot</span>
       </span>
       </h4>
       
@@ -301,14 +399,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#eps">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#eps">
+      <a id="eps:eps"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">eps</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.peg.Eps">Eps</span></span>
+        <span class="name">eps</span>
+        
+        
+        <span class="result">: eps</span>
       </span>
       </h4>
       
@@ -321,14 +422,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#error">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#error">
+      <a id="error:error"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">error</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.peg.Error">Error</span></span>
+        <span class="name">error</span>
+        
+        
+        <span class="result">: error</span>
       </span>
       </h4>
       
@@ -340,14 +444,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#fail">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#fail">
+      <a id="fail:fail"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">fail</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.peg.Fail">Fail</span></span>
+        <span class="name">fail</span>
+        
+        
+        <span class="result">: fail</span>
       </span>
       </h4>
       
@@ -359,14 +466,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#fromList">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#fromList">
+      <a id="fromList[ys&lt;:List](ys):fromList[ys]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fromList</span><span class="tparams">[<span name="ys">ys &lt;: <a href="../list/List.html" class="extype" name="com.github.okomok.mada.dual.list.List">List</a></span>]</span><span class="params">(<span name="ys">ys: ys</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.peg.FromList.Impl">Impl</span>[ys]</span>
+        <span class="name">fromList</span>
+        <span class="tparams">[<span name="ys">ys &lt;: List</span>]</span>
+        <span class="params">(<span name="ys">ys: ys</span>)</span>
+        <span class="result">: fromList[ys]</span>
       </span>
       </h4>
       
@@ -378,14 +488,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.dual.peg.Common#term">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.dual.peg.Common#term">
+      <a id="term[y&lt;:Any](y):term[y]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">term</span><span class="tparams">[<span name="y">y &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span><span class="params">(<span name="y">y: y</span>)</span><span class="result">: <span class="extype" name="com.github.okomok.mada.dual.peg.Term.Impl">Impl</span>[y]</span>
+        <span class="name">term</span>
+        <span class="tparams">[<span name="y">y &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.mada.dual.Any">Any</a></span>]</span>
+        <span class="params">(<span name="y">y: y</span>)</span>
+        <span class="result">: term[y]</span>
       </span>
       </h4>
       
@@ -398,12 +511,13 @@
             
             
             
-            
           </div>
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

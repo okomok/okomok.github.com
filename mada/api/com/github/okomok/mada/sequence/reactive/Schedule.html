@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.sequence.reactive.Schedule</title>
+          <title>com.github.okomok.mada.sequence.reactive.Schedule</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type">
+        <body class="type" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.sequence.reactive">reactive</a></p>
 
@@ -21,51 +22,73 @@
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Schedule</span><span class="params">(<span name="scheduler">scheduler: (<span class="extype" name="java.util.TimerTask">TimerTask</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result"> extends <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="scala.Unit">Unit</span>] with <span class="extype" name="scala.Product">Product</span></span>
+        <span class="name">Schedule</span>
+        
+        <span class="params">(<span name="scheduler">scheduler: (<span class="extype" name="java.util.TimerTask">TimerTask</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result"> extends <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="scala.Unit">Unit</span>] with <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="block">
             go to: <a href="Schedule$.html">companion</a>
+          </div><div class="block">
+            linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <span class="extype" name="java.io.Closeable">Closeable</span>, <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[<span class="extype" name="scala.Unit">Unit</span>], AnyRef, <span class="extype" name="scala.Any">Any</span>
           </div></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          <div id="order">
+                <span class="filtertype">Ordering</span>
+                <ol><li class="alpha in">Alphabetic</li><li class="inherit out">By inheritance</li></ol>
+              </div>
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</li><li class="in" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</li><li class="in" name="java.io.Closeable">Closeable</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</li><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</li><li class="in" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</li><li class="in" name="java.io.Closeable">Closeable</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
-        
+
         <div class="members" id="constructors">
               <h3>Instance constructors</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#this">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#this">
+      <a id="this:Schedule"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol">
-        <span class="name">Schedule</span><span class="params">(<span name="scheduler">scheduler: (<span class="extype" name="java.util.TimerTask">TimerTask</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="name">Schedule</span>
+        
+        <span class="params">(<span name="scheduler">scheduler: (<span class="extype" name="java.util.TimerTask">TimerTask</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        
       </span>
       </h4>
       
     </li></ol>
-            </div>        
+            </div>
+
         
-        
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="scala.AnyRef#!=">
+              <ol><li visbl="pub" data-isabs="false" name="scala.AnyRef#!=">
+      <a id="!=(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -76,11 +99,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#!=">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#!=">
+      <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">!=</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -94,14 +121,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef###">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef###">
+      <a id="##():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">##</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -112,11 +142,15 @@
           definition classes: AnyRef → Any
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$asInstanceOf">
+      <a id="$asInstanceOf[T0]():T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: T0</span>
+        <span class="name">$asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -127,11 +161,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#$isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#$isInstanceOf">
+      <a id="$isInstanceOf[T0]():Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">$isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">$isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -142,11 +180,15 @@
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#==">
+      <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -160,14 +202,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Any#==">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#==">
+      <a id="==(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">==</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -181,14 +226,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#actor">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#actor">
+      <a id="actor:Actor"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">actor</span><span class="result">: <span class="extype" name="scala.actors.Actor">Actor</span></span>
+        <span class="name">actor</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.actors.Actor">Actor</span></span>
       </span>
       </h4>
       
@@ -197,11 +245,15 @@
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#adjacent">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#adjacent">
+      <a id="adjacent(Int):Reactive[Vector[Unit]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">adjacent</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="../vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Unit">Unit</span>]]</span>
+        <span class="name">adjacent</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[Vector[<span class="extype" name="scala.Unit">Unit</span>]]</span>
       </span>
       </h4>
       
@@ -213,14 +265,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.Any#asInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
+      <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: T0</span>
+        <span class="name">asInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -235,14 +290,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#asReactive">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#asReactive">
+      <a id="asReactive:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">asReactive</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">asReactive</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -251,11 +309,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a> → <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#break">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#break">
+      <a id="break:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">break</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">break</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -267,14 +329,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#canEqual">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#canEqual">
+      <a id="canEqual(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">canEqual</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">canEqual</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -283,11 +348,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</a> → Equals
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#catching">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#catching">
+      <a id="catching(PartialFunction[Throwable, Unit]):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">catching</span><span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="java.lang.Throwable">Throwable</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">catching</span>
+        
+        <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[Throwable, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -300,14 +369,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="prt" name="scala.AnyRef#clone">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
+      <a id="clone():AnyRef"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: AnyRef</span>
+        <span class="name">clone</span>
+        
+        <span class="params">()</span>
+        <span class="result">: AnyRef</span>
       </span>
       </h4>
       
@@ -321,14 +393,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Resource#close">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Resource#close">
+      <a id="close:Unit"></a>
       <h4 class="signature">
       <span class="kind">lazy val</span>
       <span class="symbol">
-        <span class="name">close</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">close</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -339,11 +414,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a> → <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a> → Closeable
         </div></div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.sequence.reactive.Schedule#closeResource">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#closeResource">
+      <a id="closeResource:Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">closeResource</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">closeResource</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -354,11 +433,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</a> → <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#collect">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#collect">
+      <a id="collect[B](PartialFunction[Unit, B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">collect</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Unit">Unit</span>, B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">collect</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Unit">Unit</span>, B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -367,11 +450,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#doing">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#doing">
+      <a id="doing(⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">doing</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">doing</span>
+        
+        <span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -382,11 +469,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#drop">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#drop">
+      <a id="drop(Int):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">drop</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">drop</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -395,11 +486,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#dropUntil">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#dropUntil">
+      <a id="dropUntil(com.github.okomok.mada.sequence.reactive.Reactive[_]):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">dropUntil</span><span class="params">(<span name="that">that: com.github.okomok.mada.sequence.reactive.Reactive[_]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">dropUntil</span>
+        
+        <span class="params">(<span name="that">that: com.github.okomok.mada.sequence.reactive.Reactive[_]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -411,14 +506,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#dropWhile">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#dropWhile">
+      <a id="dropWhile((Unit) ⇒ Boolean):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">dropWhile</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">dropWhile</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -427,11 +525,15 @@ part of compilation it is not possible to check whether the contents of the list
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#duplicate">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#duplicate">
+      <a id="duplicate:(Reactive[Unit], Reactive[Unit])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">duplicate</span><span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
+        <span class="name">duplicate</span>
+        
+        
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
       </span>
       </h4>
       
@@ -443,14 +545,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#each">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#each">
+      <a id="each:Unit @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">each</span><span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="name">each</span>
+        
+        
+        <span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -464,14 +569,17 @@ part of compilation it is not possible to check whether the contents of the list
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#eq">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#eq">
+      <a id="eq(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -498,14 +606,17 @@ should be equal to each other (<code>o1 == o2</code>) and they should hash to th
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#equals">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#equals">
+      <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -527,14 +638,17 @@ scala.Int
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#filter">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#filter">
+      <a id="filter((Unit) ⇒ Boolean):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">filter</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">filter</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -543,11 +657,15 @@ scala.Int
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="prt" name="scala.AnyRef#finalize">
+    </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#finalize">
+      <a id="finalize():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -562,14 +680,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#find">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#find">
+      <a id="find((Unit) ⇒ Boolean):Unit @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">find</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="name">find</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -580,11 +701,15 @@ there are no more references to the object.</p><p>The details of when and if the
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#flatMap">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#flatMap">
+      <a id="flatMap[B]((Unit) ⇒ Reactive[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">flatMap</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -593,11 +718,15 @@ there are no more references to the object.</p><p>The details of when and if the
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#flatten">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#flatten">
+      <a id="flatten[B](&lt;:&lt;[Reactive[Unit], Reactive[Sequence[B]]]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">flatten</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">flatten</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -606,11 +735,15 @@ there are no more references to the object.</p><p>The details of when and if the
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce#foreach">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce#foreach">
+      <a id="foreach((Unit) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">foreach</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">foreach</span>
+        
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -624,14 +757,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Resource#foreachOnce">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Resource#foreachOnce">
+      <a id="foreachOnce((Unit) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">foreachOnce</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">foreachOnce</span>
+        
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -642,11 +778,15 @@ there are no more references to the object.</p><p>The details of when and if the
           definition classes: <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a> → <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#fork">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#fork">
+      <a id="fork((Reactive[Unit]) ⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">fork</span><span class="params">(<span name="f">f: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">fork</span>
+        
+        <span class="params">(<span name="f">f: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -658,14 +798,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#generate">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#generate">
+      <a id="generate[B](Iterative[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">generate</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="it">it: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">generate</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="it">it: Iterative[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -677,14 +820,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#getClass">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#getClass">
+      <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">getClass</span><span class="params">()</span><span class="result">: java.lang.Class[_]</span>
+        <span class="name">getClass</span>
+        
+        <span class="params">()</span>
+        <span class="result">: java.lang.Class[_]</span>
       </span>
       </h4>
       
@@ -698,14 +844,17 @@ there are no more references to the object.</p><p>The details of when and if the
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#hashCode">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#hashCode">
+      <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -721,14 +870,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#head">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#head">
+      <a id="head:Unit @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">head</span><span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="name">head</span>
+        
+        
+        <span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -739,11 +891,15 @@ to verify that the behavior is consistent with the <code>equals</code> method.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#header">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#header">
+      <a id="header[B&gt;:A](Iterative[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">header</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="it">it: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">header</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="it">it: Iterative[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -755,14 +911,17 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#init">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#init">
+      <a id="init:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">init</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">init</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -771,11 +930,15 @@ to verify that the behavior is consistent with the <code>equals</code> method.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.Any#isInstanceOf">
+    </li><li visbl="pub" data-isabs="false" name="scala.Any#isInstanceOf">
+      <a id="isInstanceOf[T0]:Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -791,14 +954,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#map">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#map">
+      <a id="map[B]((Unit) ⇒ B):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ B</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">map</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ B</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -807,11 +973,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#merge">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#merge">
+      <a id="merge[B&gt;:A](Reactive[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">merge</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="that">that: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">merge</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -820,11 +990,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#ne">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#ne">
+      <a id="ne(AnyRef):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span>
+        
+        <span class="params">(<span name="arg0">arg0: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -838,14 +1012,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notify">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notify">
+      <a id="notify():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -858,14 +1035,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#notifyAll">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#notifyAll">
+      <a id="notifyAll():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -878,14 +1058,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#nth">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#nth">
+      <a id="nth(Int):Unit @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">nth</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="name">nth</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: Unit @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -896,11 +1079,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#of">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#of">
+      <a id="of[B&gt;:A]:Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">of</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">of</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -911,11 +1098,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#onClose">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#onClose">
+      <a id="onClose(⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">onClose</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">onClose</span>
+        
+        <span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -927,14 +1118,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#onHead">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#onHead">
+      <a id="onHead((Unit) ⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">onHead</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">onHead</span>
+        
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -946,14 +1140,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#onNth">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#onNth">
+      <a id="onNth(Int)((Unit) ⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">onNth</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">onNth</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -965,14 +1162,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="prt" name="com.github.okomok.mada.sequence.reactive.Schedule#openResource">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#openResource">
+      <a id="openResource((Unit) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">openResource</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">openResource</span>
+        
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -983,11 +1183,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</a> → <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#partition">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#partition">
+      <a id="partition((Unit) ⇒ Boolean):(Reactive[Unit], Reactive[Unit])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">partition</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
+        <span class="name">partition</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
       </span>
       </h4>
       
@@ -996,11 +1200,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#productArity">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#productArity">
+      <a id="productArity:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">productArity</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">productArity</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -1009,11 +1217,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</a> → Product
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#productElement">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#productElement">
+      <a id="productElement(Int):Any"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">productElement</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+        <span class="name">productElement</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Any">Any</span></span>
       </span>
       </h4>
       
@@ -1022,11 +1234,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</a> → Product
         </div></div>
           
-    </li><li visbl="pub" name="scala.Product#productElements">
+    </li><li visbl="pub" data-isabs="false" name="scala.Product#productElements">
+      <a id="productElements:Iterator[Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name deprecated">productElements</span><span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+        <span class="name deprecated">productElements</span>
+        
+        
+        <span class="result">: Iterator[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       
@@ -1037,11 +1253,15 @@ possible to check whether the contents of the list are of the requested typed.
           <li><p>use productIterator instead</p></li>
         </ol></div></div>
           
-    </li><li visbl="pub" name="scala.Product#productIterator">
+    </li><li visbl="pub" data-isabs="false" name="scala.Product#productIterator">
+      <a id="productIterator:Iterator[Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">productIterator</span><span class="result">: <span class="extype" name="scala.collection.Iterator">Iterator</span>[<span class="extype" name="scala.Any">Any</span>]</span>
+        <span class="name">productIterator</span>
+        
+        
+        <span class="result">: Iterator[<span class="extype" name="scala.Any">Any</span>]</span>
       </span>
       </h4>
       
@@ -1050,11 +1270,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: Product
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#productPrefix">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#productPrefix">
+      <a id="productPrefix:String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">productPrefix</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">productPrefix</span>
+        
+        
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
       </h4>
       
@@ -1063,11 +1287,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</a> → Product
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#protect">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#protect">
+      <a id="protect:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">protect</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">protect</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1079,14 +1307,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#react">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#react">
+      <a id="react(PartialFunction[Unit, Unit]):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">react</span><span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">react</span>
+        
+        <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1098,14 +1329,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#reactTotal">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#reactTotal">
+      <a id="reactTotal((Unit) ⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">reactTotal</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">reactTotal</span>
+        
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1117,14 +1351,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#remove">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#remove">
+      <a id="remove((Unit) ⇒ Boolean):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">remove</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">remove</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1133,11 +1370,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#replace">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#replace">
+      <a id="replace[B&gt;:A](Iterative[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">replace</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="it">it: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">replace</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="it">it: Iterative[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -1149,14 +1390,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#replaceRegion">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#replaceRegion">
+      <a id="replaceRegion[B&gt;:A](Int,Int,Iterative[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">replaceRegion</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>, <span name="it">it: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">replaceRegion</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>, <span name="it">it: Iterative[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -1168,14 +1412,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#scanLeft">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#scanLeft">
+      <a id="scanLeft[B](B)((B, Unit) ⇒ B):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">scanLeft</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, <span class="extype" name="scala.Unit">Unit</span>) ⇒ B</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">scanLeft</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, <span class="extype" name="scala.Unit">Unit</span>) ⇒ B</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -1184,11 +1431,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#scanLeft1">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#scanLeft1">
+      <a id="scanLeft1[B&gt;:A]((B, Unit) ⇒ B):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">scanLeft1</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="op">op: (B, <span class="extype" name="scala.Unit">Unit</span>) ⇒ B</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">scanLeft1</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (B, <span class="extype" name="scala.Unit">Unit</span>) ⇒ B</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -1197,11 +1448,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#scanl">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#scanl">
+      <a id="scanl[B](B):AnyRef {...}"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">scanl</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="z">z: B</span>)</span><span class="result">: AnyRef {...}</span>
+        <span class="name">scanl</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span>
+        <span class="result">: AnyRef {...}</span>
       </span>
       </h4>
       
@@ -1212,19 +1467,27 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#scheduler">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#scheduler">
+      <a id="scheduler:(TimerTask) ⇒ Unit"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">scheduler</span><span class="result">: (<span class="extype" name="java.util.TimerTask">TimerTask</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">scheduler</span>
+        
+        
+        <span class="result">: (<span class="extype" name="java.util.TimerTask">TimerTask</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#shift">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#shift">
+      <a id="shift((ByName[Unit]) ⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">shift</span><span class="params">(<span name="g">g: (<a href="../../util/ByName.html" class="extype" name="com.github.okomok.mada.util.ByName">ByName</a>[<span class="extype" name="scala.Unit">Unit</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">shift</span>
+        
+        <span class="params">(<span name="g">g: (<a href="../../util/ByName.html" class="extype" name="com.github.okomok.mada.util.ByName">ByName</a>[<span class="extype" name="scala.Unit">Unit</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1236,14 +1499,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#shiftReact">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#shiftReact">
+      <a id="shiftReact[B&gt;:A]((B) ⇒ ((B) ⇒ Unit) ⇒ Unit):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">shiftReact</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="g">g: (B) ⇒ ((B) ⇒ <span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">shiftReact</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="g">g: (B) ⇒ ((B) ⇒ <span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -1255,14 +1521,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#slice">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#slice">
+      <a id="slice(Int,Int):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">slice</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">slice</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1271,11 +1540,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#span">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#span">
+      <a id="span((Unit) ⇒ Boolean):(Reactive[Unit], Reactive[Unit])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">span</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
+        <span class="name">span</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
       </span>
       </h4>
       
@@ -1284,11 +1557,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#splitAt">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#splitAt">
+      <a id="splitAt(Int):(Reactive[Unit], Reactive[Unit])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">splitAt</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
+        <span class="name">splitAt</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>])</span>
       </span>
       </h4>
       
@@ -1297,11 +1574,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#start">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#start">
+      <a id="start:Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">start</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">start</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1310,11 +1591,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#step">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#step">
+      <a id="step(Int):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">step</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">step</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1326,14 +1611,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#stepTime">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#stepTime">
+      <a id="stepTime(Long):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">stepTime</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">stepTime</span>
+        
+        <span class="params">(<span name="i">i: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1345,14 +1633,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#synchronized">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
+      <a id="synchronized[T0](T0):T0"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: T0</span>)</span><span class="result">: T0</span>
+        <span class="name">synchronized</span>
+        <span class="tparams">[<span name="T0">T0</span>]</span>
+        <span class="params">(<span name="arg0">arg0: T0</span>)</span>
+        <span class="result">: T0</span>
       </span>
       </h4>
       
@@ -1363,11 +1654,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#tail">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#tail">
+      <a id="tail:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">tail</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">tail</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1376,11 +1671,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#take">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#take">
+      <a id="take(Int):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">take</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">take</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1389,11 +1688,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#takeUntil">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#takeUntil">
+      <a id="takeUntil(com.github.okomok.mada.sequence.reactive.Reactive[_]):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">takeUntil</span><span class="params">(<span name="that">that: com.github.okomok.mada.sequence.reactive.Reactive[_]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">takeUntil</span>
+        
+        <span class="params">(<span name="that">that: com.github.okomok.mada.sequence.reactive.Reactive[_]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1405,14 +1708,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#takeWhile">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#takeWhile">
+      <a id="takeWhile((Unit) ⇒ Boolean):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">takeWhile</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">takeWhile</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1421,11 +1727,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#then">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#then">
+      <a id="then(⇒ Unit):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">then</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">then</span>
+        
+        <span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1437,14 +1747,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#then_++">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#then_++">
+      <a id="then_++[B&gt;:A](Reactive[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">then_++</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="that">that: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">then_++</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -1456,14 +1769,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#toIterative">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#toIterative">
+      <a id="toIterative:Iterative[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toIterative</span><span class="result">: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">toIterative</span>
+        
+        
+        <span class="result">: Iterative[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1472,11 +1788,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#toResponder">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#toResponder">
+      <a id="toResponder:Responder[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toResponder</span><span class="result">: <span class="extype" name="scala.Responder">Responder</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">toResponder</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Responder">Responder</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1485,11 +1805,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Schedule#toString">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule#toString">
+      <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">toString</span>
+        
+        <span class="params">()</span>
+        <span class="result">: String</span>
       </span>
       </h4>
       
@@ -1501,14 +1825,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#tokenize">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#tokenize">
+      <a id="tokenize[B&gt;:A](Peg[B]):Reactive[Vector[B]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">tokenize</span><span class="tparams">[<span name="B">B &gt;: <span class="extype" name="scala.Unit">Unit</span></span>]</span><span class="params">(<span name="p">p: <a href="../../peg/Peg.html" class="extype" name="com.github.okomok.mada.peg.Peg">Peg</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="../vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]]</span>
+        <span class="name">tokenize</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="p">p: Peg[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[Vector[B]]</span>
       </span>
       </h4>
       
@@ -1520,14 +1847,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#unique">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#unique">
+      <a id="unique:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unique</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">unique</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1539,14 +1869,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#uniqueBy">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#uniqueBy">
+      <a id="uniqueBy((Unit, Unit) ⇒ Boolean):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">uniqueBy</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">uniqueBy</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>, <span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1558,14 +1891,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#unsplit">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#unsplit">
+      <a id="unsplit[B](Reactive[B])(&lt;:&lt;[Reactive[Unit], Reactive[Sequence[B]]]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unsplit</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="sep">sep: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
+        <span class="name">unsplit</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="sep">sep: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
       
@@ -1577,14 +1913,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#unzip">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#unzip">
+      <a id="unzip[B, C](&lt;:&lt;[Reactive[Unit], Reactive[(B, C)]]):(Reactive[B], Reactive[C])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unzip</span><span class="tparams">[<span name="B">B</span>, <span name="C">C</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(B, C)]]</span>)</span><span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[C])</span>
+        <span class="name">unzip</span>
+        <span class="tparams">[<span name="B">B</span>, <span name="C">C</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(B, C)]]</span>)</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[C])</span>
       </span>
       </h4>
       
@@ -1593,11 +1932,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Resource#used">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Resource#used">
+      <a id="used:Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">used</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">used</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1608,11 +1951,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#using">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#using">
+      <a id="using(Closeable):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">using</span><span class="params">(<span name="c">c: <span class="extype" name="java.io.Closeable">Closeable</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">using</span>
+        
+        <span class="params">(<span name="c">c: <span class="extype" name="java.io.Closeable">Closeable</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1624,14 +1971,17 @@ possible to check whether the contents of the list are of the requested typed.
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1642,11 +1992,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long,Int):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1657,11 +2011,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="scala.AnyRef#wait">
+    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
+      <a id="wait(Long):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -1672,11 +2030,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#withFilter">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#withFilter">
+      <a id="withFilter((Unit) ⇒ Boolean):Reactive[Unit]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">withFilter</span><span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
+        <span class="name">withFilter</span>
+        
+        <span class="params">(<span name="p">p: (<span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       </h4>
       
@@ -1687,11 +2049,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.reactive.Reactive#zip">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#zip">
+      <a id="zip[B](Reactive[B]):Reactive[(Unit, B)]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">zip</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="that">that: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(<span class="extype" name="scala.Unit">Unit</span>, B)]</span>
+        <span class="name">zip</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="that">that: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(<span class="extype" name="scala.Unit">Unit</span>, B)]</span>
       </span>
       </h4>
       
@@ -1702,7 +2068,27 @@ possible to check whether the contents of the list are of the requested typed.
           
     </li></ol>
             </div>
-                
+
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.Resource">
+              <h3>Inherited from <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="scala.Unit">Unit</span>]</h3>
+            </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">
+              <h3>Inherited from <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>[<span class="extype" name="scala.Unit">Unit</span>]</h3>
+            </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.Reactive">
+              <h3>Inherited from <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Unit">Unit</span>]</h3>
+            </div><div class="parent" name="java.io.Closeable">
+              <h3>Inherited from <span class="extype" name="java.io.Closeable">Closeable</span></h3>
+            </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.Sequence">
+              <h3>Inherited from <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[<span class="extype" name="scala.Unit">Unit</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from AnyRef</h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+
       </div>
       
       <div id="tooltip"></div>

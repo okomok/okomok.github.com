@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.util</title>
+          <title>com.github.okomok.mada.util</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a></p>
 
@@ -24,45 +25,42 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">util</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.util.ByLazy">
-      <h4 class="signature"><a href="ByLazy.html">
+              <ol><li visbl="pub" data-isabs="false" name="_root_.BackwardPipe">
+      <a id="BackwardPipe:BackwardPipe[A]"></a>
+      <h4 class="signature"><a href="../../../../../BackwardPipe.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">ByLazy</span><span class="tparams">[<span name="R">+R</span>]</span><span class="params">(<span name="_1">_1: () ⇒ R</span>)</span><span class="result"> extends () ⇒ R with Product</span>
-      </span>
-      </a></h4>
-      
-    </li><li visbl="pub" name="com.github.okomok.mada.util.ByName">
-      <h4 class="signature"><a href="ByName.html">
-      <span class="kind">class</span>
-      <span class="symbol">
-        <span class="name">ByName</span><span class="tparams">[<span name="R">+R</span>]</span><span class="params">(<span name="_1">_1: () ⇒ R</span>)</span><span class="result"> extends () ⇒ R with Product</span>
-      </span>
-      </a></h4>
-      
-    </li><li visbl="pub" name="_root_.ForwardPipe">
-      <h4 class="signature"><a href="../../../../../ForwardPipe.html">
-      <span class="kind">class</span>
-      <span class="symbol">
-        <span class="name">ForwardPipe</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">BackwardPipe</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
@@ -71,27 +69,92 @@
           attributes: sealed 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.util.Forwarder">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByEdt">
+      <a id="ByEdt:ByEdt[R]"></a>
+      <h4 class="signature"><a href="ByEdt.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">ByEdt</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByLazy">
+      <a id="ByLazy:ByLazy[R]"></a>
+      <h4 class="signature"><a href="ByLazy.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">ByLazy</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByName">
+      <a id="ByName:ByName[R]"></a>
+      <h4 class="signature"><a href="ByName.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">ByName</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="_root_.ForwardPipe">
+      <a id="ForwardPipe:ForwardPipe[A]"></a>
+      <h4 class="signature"><a href="../../../../../ForwardPipe.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ForwardPipe</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.util.Forwarder">
+      <a id="Forwarder:Forwarder"></a>
       <h4 class="signature"><a href="Forwarder.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Forwarder</span><span class="result"> extends AnyRef</span>
+        <span class="name">Forwarder</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
-      <p class="comment cmt">Equivalent to <code>scala.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.util.Future">
+      <p class="comment cmt">Equivalent to <code>scala.Proxy</code> (with slightly different names).</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future">
+      <a id="Future:Future[R]"></a>
       <h4 class="signature"><a href="Future.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Future</span><span class="tparams">[<span name="R">+R</span>]</span><span class="params">(<span name="_1">_1: () ⇒ R</span>)</span><span class="result"> extends () ⇒ R with Product</span>
+        <span class="name">Future</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.util.HasImplicit">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.util.HasImplicit">
+      <a id="HasImplicit:HasImplicit[A]"></a>
       <h4 class="signature"><a href="HasImplicit.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">HasImplicit</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends () ⇒ Boolean</span>
+        <span class="name">HasImplicit</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends () ⇒ Boolean</span>
       </span>
       </a></h4>
       
@@ -100,11 +163,15 @@
           attributes: sealed abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.util.Overload">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.util.Overload">
+      <a id="Overload:Overload"></a>
       <h4 class="signature"><a href="Overload.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Overload</span><span class="result"> extends AnyRef</span>
+        <span class="name">Overload</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
@@ -113,19 +180,27 @@
           attributes: sealed abstract 
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.util.Parallel">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel">
+      <a id="Parallel:Parallel[R]"></a>
       <h4 class="signature"><a href="Parallel.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Parallel</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="_1">_1: () ⇒ R</span>)</span><span class="result"> extends () ⇒ R with Product</span>
+        <span class="name">Parallel</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.util.||">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.util.||">
+      <a id="||:||[T1, T2]"></a>
       <h4 class="signature"><a href="$bar$bar.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">||</span><span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span><span class="result"> extends AnyRef</span>
+        <span class="name">||</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
@@ -136,46 +211,78 @@
           
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.util.ByLazy">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByEdt">
+      <a id="ByEdt:ByEdt"></a>
+      <h4 class="signature"><a href="ByEdt$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ByEdt</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByLazy">
+      <a id="ByLazy:ByLazy"></a>
       <h4 class="signature"><a href="ByLazy$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">ByLazy</span><span class="result"> extends AnyRef</span>
+        <span class="name">ByLazy</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.util.ByName">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByName">
+      <a id="ByName:ByName"></a>
       <h4 class="signature"><a href="ByName$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">ByName</span><span class="result"> extends AnyRef</span>
+        <span class="name">ByName</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.util.Future">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future">
+      <a id="Future:Future"></a>
       <h4 class="signature"><a href="Future$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Future</span><span class="result"> extends AnyRef</span>
+        <span class="name">Future</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.util.HasImplicit">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.HasImplicit">
+      <a id="HasImplicit:HasImplicit"></a>
       <h4 class="signature"><a href="HasImplicit$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">HasImplicit</span><span class="result"> extends AnyRef</span>
+        <span class="name">HasImplicit</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="_root_#NoneOf">
+    </li><li visbl="pub" data-isabs="false" name="_root_#NoneOf">
+      <a id="NoneOf[A]:Option[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">NoneOf</span><span class="tparams">[<span name="A">A</span>]</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
+        <span class="name">NoneOf</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
       </span>
       </h4>
       
@@ -186,30 +293,41 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.util.Overload">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Overload">
+      <a id="Overload:Overload"></a>
       <h4 class="signature"><a href="Overload$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Overload</span><span class="result"> extends AnyRef</span>
+        <span class="name">Overload</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.util.Parallel">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel">
+      <a id="Parallel:Parallel"></a>
       <h4 class="signature"><a href="Parallel$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Parallel</span><span class="result"> extends AnyRef</span>
+        <span class="name">Parallel</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="_root_#compatible">
+    </li><li visbl="pub" data-isabs="false" name="_root_#compatible">
+      <a id="compatible[A, B](&lt;%&lt;[A, B]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">compatible</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.Predef.&lt;%&lt;">&lt;%&lt;</span>[A, B]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">compatible</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.Predef.&lt;%&lt;">&lt;%&lt;</span>[A, B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -221,14 +339,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#conforms">
+    </li><li visbl="pub" data-isabs="false" name="_root_#conforms">
+      <a id="conforms[A, B](&lt;:&lt;[A, B]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">conforms</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[A, B]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">conforms</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[A, B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -240,14 +361,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#hasImplicit">
+    </li><li visbl="pub" data-isabs="false" name="_root_#hasImplicit">
+      <a id="hasImplicit[A](HasImplicit[A]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hasImplicit</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="_hasImplicit">_hasImplicit: <a href="HasImplicit.html" class="extype" name="com.github.okomok.mada.util.HasImplicit">HasImplicit</a>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">hasImplicit</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="_hasImplicit">_hasImplicit: <a href="HasImplicit.html" class="extype" name="com.github.okomok.mada.util.HasImplicit">HasImplicit</a>[A]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -259,14 +383,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#hashCodeOfInt">
+    </li><li visbl="pub" data-isabs="false" name="_root_#hashCodeOfInt">
+      <a id="hashCodeOfInt(Int):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hashCodeOfInt</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCodeOfInt</span>
+        
+        <span class="params">(<span name="x">x: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -277,14 +404,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#hashCodeOfLong">
+    </li><li visbl="pub" data-isabs="false" name="_root_#hashCodeOfLong">
+      <a id="hashCodeOfLong(Long):Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hashCodeOfLong</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCodeOfLong</span>
+        
+        <span class="params">(<span name="x">x: <span class="extype" name="scala.Long">Long</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
       </span>
       </h4>
       
@@ -295,53 +425,90 @@
             
             
             
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#hashCodeOfRef">
+      <a id="hashCodeOfRef(AnyRef):Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">hashCodeOfRef</span>
+        
+        <span class="params">(<span name="x">x: AnyRef</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#ignore">
+      <a id="ignore(Any):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">ignore</span>
+        
+        <span class="params">(<span name="x">x: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#implies">
+      <a id="implies(Boolean,⇒ Boolean):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">implies</span>
+        
+        <span class="params">(<span name="pre">pre: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="post">post: ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#inEdt">
+      <a id="inEdt[R](⇒ R):R"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">inEdt</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="body">body: ⇒ R</span>)</span>
+        <span class="result">: R</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Evaluates <code>body</code> in the event-dispatch-thread.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Evaluates <code>body</code> in the event-dispatch-thread.
+</p></div><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div>
+            
+            
             
           </div>
           
-    </li><li visbl="pub" name="_root_#hashCodeOfRef">
+    </li><li visbl="pub" data-isabs="false" name="_root_#isSame">
+      <a id="isSame[A, B](=:=[A, B]):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">hashCodeOfRef</span><span class="params">(<span name="x">x: AnyRef</span>)</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      </h4>
-      
-            
-            <div class="fullcomment"><div class="block">
-          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
-        </div></div>
-          
-    </li><li visbl="pub" name="_root_#ignore">
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">ignore</span><span class="params">(<span name="x">x: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
-            
-            <div class="fullcomment"><div class="block">
-          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
-        </div></div>
-          
-    </li><li visbl="pub" name="_root_#implies">
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">implies</span><span class="params">(<span name="pre">pre: <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="post">post: ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      
-            
-            <div class="fullcomment"><div class="block">
-          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
-        </div></div>
-          
-    </li><li visbl="pub" name="_root_#isSame">
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">isSame</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.Predef.=:=">=:=</span>[A, B]</span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isSame</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="c">c: <span class="extype" name="scala.Predef.=:=">=:=</span>[A, B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
       
@@ -353,14 +520,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#nullInstance">
+    </li><li visbl="pub" data-isabs="false" name="_root_#nullInstance">
+      <a id="nullInstance[A]:A"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">nullInstance</span><span class="tparams">[<span name="A">A</span>]</span><span class="result">: A</span>
+        <span class="name">nullInstance</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result">: A</span>
       </span>
       </h4>
       
@@ -369,11 +539,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#optional">
+    </li><li visbl="pub" data-isabs="false" name="_root_#optional">
+      <a id="optional[R](⇒ R):Option[R]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">optional</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span name="body">body: ⇒ R</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[R]</span>
+        <span class="name">optional</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="body">body: ⇒ R</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[R]</span>
       </span>
       </h4>
       
@@ -385,14 +559,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#repeat">
+    </li><li visbl="pub" data-isabs="false" name="_root_#repeat">
+      <a id="repeat(⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">repeat</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">repeat</span>
+        
+        <span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -404,14 +581,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#theUnit">
+    </li><li visbl="pub" data-isabs="false" name="_root_#theUnit">
+      <a id="theUnit:Unit"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">theUnit</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">theUnit</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -420,11 +600,15 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="_root_#times">
+    </li><li visbl="pub" data-isabs="false" name="_root_#times">
+      <a id="times(Int)(⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">times</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">times</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -436,14 +620,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#timesParallel">
+    </li><li visbl="pub" data-isabs="false" name="_root_#timesParallel">
+      <a id="timesParallel(Int)(⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">timesParallel</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">timesParallel</span>
+        
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
@@ -455,14 +642,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="_root_#|&gt;">
+    </li><li visbl="pub" data-isabs="false" name="_root_#|&lt;">
+      <a id="|&lt;[A](A):BackwardPipe[A]"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol">
-        <span class="name">|&gt;</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="x">x: A</span>)</span><span class="result">: <a href="../../../../../ForwardPipe.html" class="extype" name="ForwardPipe">ForwardPipe</a>[A]</span>
+        <span class="name">|&lt;</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="x">x: A</span>)</span>
+        <span class="result">: <a href="../../../../../BackwardPipe.html" class="extype" name="BackwardPipe">BackwardPipe</a>[A]</span>
       </span>
       </h4>
       
@@ -473,17 +663,42 @@
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.util.||">
+    </li><li visbl="pub" data-isabs="false" name="_root_#|&gt;">
+      <a id="|&gt;[A](A):ForwardPipe[A]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
+      <span class="symbol">
+        <span class="name">|&gt;</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="x">x: A</span>)</span>
+        <span class="result">: <a href="../../../../../ForwardPipe.html" class="extype" name="ForwardPipe">ForwardPipe</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: implicit 
+        </div><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.||">
+      <a id="||:||"></a>
       <h4 class="signature"><a href="$bar$bar$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">||</span><span class="result"> extends AnyRef</span>
+        <span class="name">||</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>

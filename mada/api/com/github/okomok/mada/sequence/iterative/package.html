@@ -2,16 +2,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>Scaladoc for com.github.okomok.mada.sequence.iterative</title>
+          <title>com.github.okomok.mada.sequence.iterative</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="value">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a></p>
 
@@ -24,111 +25,164 @@
       <span class="kind">package</span>
       <span class="symbol">
         <span class="name">iterative</span>
+        
+        
+        
       </span>
       </h4>
       <div class="fullcomment" id="comment"></div>
-      
+
       <div id="template">
 
         <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
           
           <div id="visbl">
-            <span class="filtertype">Visibility</span>
-            <ol><li class="public in">Public</li><li class="all out">All</li></ol>
-          </div>
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
         </div>
+
         
-                
-        
-        <div class="members" id="types">
+
+        <div class="types members" id="types">
               <h3>Type Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Compatibles">
+              <ol><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.iterative.Compatibles">
+      <a id="Compatibles:Compatibles"></a>
       <h4 class="signature"><a href="Compatibles.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Compatibles</span><span class="result"> extends AnyRef</span>
+        <span class="name">Compatibles</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Expr">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Expr">
+      <a id="Expr:Expr[A]"></a>
       <h4 class="signature"><a href="Expr.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Expr</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="_1">_1: Iterative[A]</span>)</span><span class="result"> extends Forwarder[A] with Product</span>
+        <span class="name">Expr</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        <span class="params">(<span name="_1">_1: Iterative[A]</span>)</span>
+        <span class="result"> extends Forwarder[A] with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Force">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Force">
+      <a id="Force:Force[A]"></a>
       <h4 class="signature"><a href="Force.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Force</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="_1">_1: Iterative[A]</span>)</span><span class="result"> extends Iterative[A] with Product</span>
+        <span class="name">Force</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        <span class="params">(<span name="_1">_1: Iterative[A]</span>)</span>
+        <span class="result"> extends Iterative[A] with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Forwarder">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.iterative.Forwarder">
+      <a id="Forwarder:Forwarder[A]"></a>
       <h4 class="signature"><a href="Forwarder.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Forwarder</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Iterative[A] with Forwarder[A]</span>
+        <span class="name">Forwarder</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends Iterative[A] with Forwarder[A]</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Infinite">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Infinite">
+      <a id="Infinite:Infinite[A]"></a>
       <h4 class="signature"><a href="Infinite.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Infinite</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Iterative[A]</span>
+        <span class="name">Infinite</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends Iterative[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">Helps to implement recursive infinite sequences.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Iterative">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.iterative.Iterative">
+      <a id="Iterative:Iterative[A]"></a>
       <h4 class="signature"><a href="Iterative.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Iterative</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Sequence[A]</span>
+        <span class="name">Iterative</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends Sequence[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">Yet another Iterable
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Map">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Map">
+      <a id="Map:Map[A, B]"></a>
       <h4 class="signature"><a href="Map.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Map</span><span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span><span class="params">(<span name="_1">_1: Iterative[A]</span>, <span name="_2">_2: (A) ⇒ B</span>)</span><span class="result"> extends Iterative[B] with Product</span>
+        <span class="name">Map</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">+B</span>]</span>
+        <span class="params">(<span name="_1">_1: Iterative[A]</span>, <span name="_2">_2: (A) ⇒ B</span>)</span>
+        <span class="result"> extends Iterative[B] with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Mix">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Mix">
+      <a id="Mix:Mix[A]"></a>
       <h4 class="signature"><a href="Mix.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Mix</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="_1">_1: Iterative[A]</span>, <span name="_2">_2: Mixin</span>)</span><span class="result"> extends Forwarder[A] with Product</span>
+        <span class="name">Mix</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        <span class="params">(<span name="_1">_1: Iterative[A]</span>, <span name="_2">_2: Mixin</span>)</span>
+        <span class="result"> extends Forwarder[A] with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Mixin">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.iterative.Mixin">
+      <a id="Mixin:Mixin"></a>
       <h4 class="signature"><a href="Mixin.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Mixin</span><span class="result"> extends AnyRef</span>
+        <span class="name">Mixin</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       <p class="comment cmt">Mixin
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Recursive">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Recursive">
+      <a id="Recursive:Recursive[A]"></a>
       <h4 class="signature"><a href="Recursive.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name deprecated">Recursive</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Iterative[A]</span>
+        <span class="name deprecated">Recursive</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends Iterative[A]</span>
       </span>
       </a></h4>
       <p class="comment cmt">Helps to implement recursive sequences.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.RecursiveForwarder">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.RecursiveForwarder">
+      <a id="RecursiveForwarder:RecursiveForwarder[A]"></a>
       <h4 class="signature"><a href="RecursiveForwarder.html">
       <span class="kind">class</span>
       <span class="symbol">
-        <span class="name deprecated">RecursiveForwarder</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends Forwarder[A]</span>
+        <span class="name deprecated">RecursiveForwarder</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends Forwarder[A]</span>
       </span>
       </a></h4>
       
@@ -137,81 +191,117 @@
           <li><p>use List instead</p></li>
         </ol></div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Sequence">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.iterative.Sequence">
+      <a id="Sequence:Sequence[A]"></a>
       <h4 class="signature"><a href="Sequence.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Sequence</span><span class="tparams">[<span name="A">+A</span>]</span><span class="result"> extends Sequence[A] with Equals</span>
+        <span class="name">Sequence</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends Sequence[A] with Equals</span>
       </span>
       </a></h4>
       <p class="comment cmt">The bridge between phisical and logical hierarchy
 </p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Slice">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Slice">
+      <a id="Slice:Slice[A]"></a>
       <h4 class="signature"><a href="Slice.html">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Slice</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="_1">_1: Iterative[A]</span>, <span name="_2">_2: Int</span>, <span name="_3">_3: Int</span>)</span><span class="result"> extends Forwarder[A] with Product</span>
+        <span class="name">Slice</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        <span class="params">(<span name="_1">_1: Iterative[A]</span>, <span name="_2">_2: Int</span>, <span name="_3">_3: Int</span>)</span>
+        <span class="result"> extends Forwarder[A] with Product</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Yield">
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.iterative.Yield">
+      <a id="Yield:Yield[A]"></a>
       <h4 class="signature"><a href="Yield.html">
       <span class="kind">trait</span>
       <span class="symbol">
-        <span class="name">Yield</span><span class="tparams">[<span name="A">-A</span>]</span><span class="result"> extends (A) ⇒ Unit</span>
+        <span class="name">Yield</span>
+        <span class="tparams">[<span name="A">-A</span>]</span>
+        
+        <span class="result"> extends (A) ⇒ Unit</span>
       </span>
       </a></h4>
       
     </li></ol>
             </div>
-        
-        <div class="members" id="values">
+
+        <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Eval">
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Eval">
+      <a id="Eval:Eval"></a>
       <h4 class="signature"><a href="Eval$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Eval</span><span class="result"> extends AnyRef</span>
+        <span class="name">Eval</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Iterative">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Iterative">
+      <a id="Iterative:Iterative"></a>
       <h4 class="signature"><a href="Iterative$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Iterative</span><span class="result"> extends Common with Compatibles</span>
+        <span class="name">Iterative</span>
+        
+        
+        <span class="result"> extends Common with Compatibles</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Mixin">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Mixin">
+      <a id="Mixin:Mixin"></a>
       <h4 class="signature"><a href="Mixin$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Mixin</span><span class="result"> extends AnyRef</span>
+        <span class="name">Mixin</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       <p class="comment cmt">Contains concrete mixins.</p>
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Randoms">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Randoms">
+      <a id="Randoms:Randoms"></a>
       <h4 class="signature"><a href="Randoms$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Randoms</span><span class="result"> extends AnyRef</span>
+        <span class="name">Randoms</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Sequence">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Sequence">
+      <a id="Sequence:Sequence"></a>
       <h4 class="signature"><a href="Sequence$.html">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Sequence</span><span class="result"> extends AnyRef</span>
+        <span class="name">Sequence</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#apply">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#apply">
+      <a id="apply[A](A*):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: A*</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">apply</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="from">from: A*</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -220,49 +310,59 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#bind">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#bind">
+      <a id="bind[A](Iterator[A]):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">bind</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="it">it: <a href="../iterator/Iterator.html" class="extype" name="com.github.okomok.mada.sequence.iterator.Iterator">Iterator</a>[A]</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">bind</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="it">it: Iterator[A]</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">Creates a sequence starting from <code>it<code>.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Creates a sequence starting from <code>it<code>.
+            <p class="shortcomment cmt">Creates a sequence starting from &lt;code&gt;it&lt;code&gt;.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates a sequence starting from &lt;code&gt;it&lt;code&gt;.
 </p></div><div class="block">
           definition classes: Common
         </div>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#bindName">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#bindName">
+      <a id="bindName[A](⇒ Iterator[A]):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">bindName</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="it">it: ⇒ <a href="../iterator/Iterator.html" class="extype" name="com.github.okomok.mada.sequence.iterator.Iterator">Iterator</a>[A]</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">bindName</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="it">it: ⇒ Iterator[A]</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">Creates a sequence starting from <code>it<code>, which is evaluated by-name.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Creates a sequence starting from <code>it<code>, which is evaluated by-name.
+            <p class="shortcomment cmt">Creates a sequence starting from &lt;code&gt;it&lt;code&gt;, which is evaluated by-name.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Creates a sequence starting from &lt;code&gt;it&lt;code&gt;, which is evaluated by-name.
 </p></div><div class="block">
           definition classes: Common
         </div>
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#block">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#block">
+      <a id="block[A](((A) ⇒ Unit @scala.util.continuations.cpsParam[Unit,Unit]) ⇒ Unit @scala.util.continuations.cpsParam[Unit,Unit]):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">block</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="op">op: ((A) ⇒ Unit @scala.util.continuations.cpsParam[Unit,Unit]) ⇒ Unit @scala.util.continuations.cpsParam[Unit,Unit]</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">block</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="op">op: ((A) ⇒ Unit @scala.util.continuations.cpsParam[Unit,Unit]) ⇒ Unit @scala.util.continuations.cpsParam[Unit,Unit]</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -274,14 +374,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#byLazy">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#byLazy">
+      <a id="byLazy[A](⇒ Iterative[A]):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">byLazy</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="it">it: ⇒ <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">byLazy</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="it">it: ⇒ <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -293,14 +396,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#byName">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#byName">
+      <a id="byName[A](⇒ Iterative[A]):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">byName</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="it">it: ⇒ <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">byName</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="it">it: ⇒ <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -312,14 +418,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#empty">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#empty">
+      <a id="empty:Iterative[Nothing]"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
-        <span class="name">empty</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+        <span class="name">empty</span>
+        
+        
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
       </span>
       </h4>
       
@@ -332,14 +441,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#from">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#from">
+      <a id="from[A](Iterative[A]):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">from</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="to">to: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">from</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="to">to: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -348,11 +460,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#generator">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#generator">
+      <a id="generator[A]((Yield[A]) ⇒ Unit):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">generator</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="op">op: (<a href="Yield.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Yield">Yield</a>[A]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">generator</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="op">op: (<a href="Yield.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Yield">Yield</a>[A]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -364,14 +480,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#iterate">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#iterate">
+      <a id="iterate[A](A)((A) ⇒ A):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">iterate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="z">z: A</span>)</span><span class="params">(<span name="op">op: (A) ⇒ A</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">iterate</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="z">z: A</span>)</span><span class="params">(<span name="op">op: (A) ⇒ A</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -383,14 +502,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#repeat">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#repeat">
+      <a id="repeat[A](A):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">repeat</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="e">e: A</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">repeat</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="e">e: A</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -402,14 +524,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#single">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#single">
+      <a id="single[A](A):Iterative[A]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">single</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="e">e: A</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+        <span class="name">single</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="e">e: A</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
       </span>
       </h4>
       
@@ -421,14 +546,17 @@
             
             
             
-            
           </div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#unapplySeq">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#unapplySeq">
+      <a id="unapplySeq[A](Iterative[A]):Option[Seq[A]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unapplySeq</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="from">from: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.collection.Seq">Seq</span>[A]]</span>
+        <span class="name">unapplySeq</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="from">from: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[Seq[A]]</span>
       </span>
       </h4>
       
@@ -437,11 +565,15 @@
           definition classes: Common
         </div></div>
           
-    </li><li visbl="pub" name="com.github.okomok.mada.sequence.iterative.Common#unfoldRight">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Common#unfoldRight">
+      <a id="unfoldRight[A, B](A)((A) ⇒ Option[(B, A)]):Iterative[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">unfoldRight</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="params">(<span name="z">z: A</span>)</span><span class="params">(<span name="op">op: (A) ⇒ <span class="extype" name="scala.Option">Option</span>[(B, A)]</span>)</span><span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[B]</span>
+        <span class="name">unfoldRight</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span name="z">z: A</span>)</span><span class="params">(<span name="op">op: (A) ⇒ <span class="extype" name="scala.Option">Option</span>[(B, A)]</span>)</span>
+        <span class="result">: <a href="Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[B]</span>
       </span>
       </h4>
       
@@ -453,12 +585,13 @@
             
             
             
-            
           </div>
           
     </li></ol>
             </div>
-                
+
+        
+
       </div>
       
       <div id="tooltip"></div>
