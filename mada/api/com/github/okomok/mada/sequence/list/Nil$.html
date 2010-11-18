@@ -238,13 +238,13 @@
       </h4>
       
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#:\">
-      <a id=":\[B](B)((Nothing, ByLazy[B]) ⇒ B):B"></a>
+      <a id=":\[B](B)((Nothing, Lazy[B]) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">:\</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../util/ByLazy.html" class="extype" name="com.github.okomok.mada.util.ByLazy">ByLazy</a>[B]) ⇒ B</span>)</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../eval/Lazy.html" class="extype" name="com.github.okomok.mada.eval.Lazy">Lazy</a>[B]) ⇒ B</span>)</span>
         <span class="result">: B</span>
       </span>
       </h4>
@@ -832,63 +832,19 @@ there are no more references to the object.</p><p>The details of when and if the
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#foldRight">
-      <a id="foldRight[B](B)((Nothing, ByLazy[B]) ⇒ B):B"></a>
+      <a id="foldRight[B](B)((Nothing, Lazy[B]) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">foldRight</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../util/ByLazy.html" class="extype" name="com.github.okomok.mada.util.ByLazy">ByLazy</a>[B]) ⇒ B</span>)</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../eval/Lazy.html" class="extype" name="com.github.okomok.mada.eval.Lazy">Lazy</a>[B]) ⇒ B</span>)</span>
         <span class="result">: B</span>
       </span>
       </h4>
       
             <p class="shortcomment cmt">Folds right-associative.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Folds right-associative. (a.k.a. foldr)
-</p></div><div class="block">
-          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
-        </div>
-            
-            
-            
-          </div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#folderLeft">
-      <a id="folderLeft[B](⇒ B)((B, Nothing) ⇒ B):List[B]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">folderLeft</span>
-        <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="q">q: ⇒ B</span>)</span><span class="params">(<span name="f">f: (B, <span class="extype" name="scala.Nothing">Nothing</span>) ⇒ B</span>)</span>
-        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Prefix sum folding left-associative.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Prefix sum folding left-associative. (a.k.a. scanl)
-</p></div><div class="block">
-          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
-        </div>
-            
-            
-            
-          </div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#folderRight">
-      <a id="folderRight[B](B)((Nothing, ByLazy[B]) ⇒ B):List[B]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">folderRight</span>
-        <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="q0">q0: B</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../util/ByLazy.html" class="extype" name="com.github.okomok.mada.util.ByLazy">ByLazy</a>[B]) ⇒ B</span>)</span>
-        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Prefix sum folding right-associative.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Prefix sum folding right-associative. (a.k.a. scanr)
 </p></div><div class="block">
           definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
         </div>
@@ -1038,28 +994,6 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#headOption">
-      <a id="headOption:Option[Nothing]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">headOption</span>
-        
-        
-        <span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Optionally returns the first element.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Optionally returns the first element.
-</p></div><div class="block">
-          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
-        </div>
-            
-            
-            
-          </div>
-          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#init">
       <a id="init:List[Nothing]"></a>
       <h4 class="signature">
@@ -1164,30 +1098,6 @@ possible to check whether the contents of the list are of the requested typed.
       
             <p class="shortcomment cmt">Returns the last element.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Returns the last element.
-</p></div><div class="block">
-          attributes: final 
-        </div><div class="block">
-          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
-        </div>
-            
-            
-            
-          </div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#lastOption">
-      <a id="lastOption:Option[Nothing]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">lastOption</span>
-        
-        
-        <span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Optionally returns the last element.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Optionally returns the last element.
 </p></div><div class="block">
           attributes: final 
         </div><div class="block">
@@ -1516,63 +1426,19 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#reduceRight">
-      <a id="reduceRight[B&gt;:A]((Nothing, ByLazy[B]) ⇒ B):B"></a>
+      <a id="reduceRight[B&gt;:A]((Nothing, Lazy[B]) ⇒ B):B"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">reduceRight</span>
         <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
-        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../util/ByLazy.html" class="extype" name="com.github.okomok.mada.util.ByLazy">ByLazy</a>[B]) ⇒ B</span>)</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../eval/Lazy.html" class="extype" name="com.github.okomok.mada.eval.Lazy">Lazy</a>[B]) ⇒ B</span>)</span>
         <span class="result">: B</span>
       </span>
       </h4>
       
             <p class="shortcomment cmt">Reduces right-associative.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Reduces right-associative. (a.k.a. foldr1)
-</p></div><div class="block">
-          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
-        </div>
-            
-            
-            
-          </div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#reducerLeft">
-      <a id="reducerLeft[B&gt;:A]((B, Nothing) ⇒ B):List[B]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">reducerLeft</span>
-        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
-        <span class="params">(<span name="f">f: (B, <span class="extype" name="scala.Nothing">Nothing</span>) ⇒ B</span>)</span>
-        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Prefix sum reducing left-associative.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Prefix sum reducing left-associative. (a.k.a. scanl1)
-</p></div><div class="block">
-          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
-        </div>
-            
-            
-            
-          </div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#reducerRight">
-      <a id="reducerRight[B&gt;:A]((Nothing, ByLazy[B]) ⇒ B):List[B]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">reducerRight</span>
-        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
-        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../util/ByLazy.html" class="extype" name="com.github.okomok.mada.util.ByLazy">ByLazy</a>[B]) ⇒ B</span>)</span>
-        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Reduces right-associative.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Reduces right-associative. (a.k.a. scanr1)
 </p></div><div class="block">
           definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
         </div>
@@ -1642,6 +1508,94 @@ possible to check whether the contents of the list are of the requested typed.
 </p></dd></dl><div class="block">
           attributes: final 
         </div><div class="block">
+          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#scanLeft">
+      <a id="scanLeft[B](⇒ B)((B, Nothing) ⇒ B):List[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scanLeft</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="q">q: ⇒ B</span>)</span><span class="params">(<span name="f">f: (B, <span class="extype" name="scala.Nothing">Nothing</span>) ⇒ B</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Prefix sum folding left-associative.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Prefix sum folding left-associative. (a.k.a. scanl)
+</p></div><div class="block">
+          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#scanLeft1">
+      <a id="scanLeft1[B&gt;:A]((B, Nothing) ⇒ B):List[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scanLeft1</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="f">f: (B, <span class="extype" name="scala.Nothing">Nothing</span>) ⇒ B</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Prefix sum reducing left-associative.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Prefix sum reducing left-associative. (a.k.a. scanl1)
+</p></div><div class="block">
+          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#scanRight">
+      <a id="scanRight[B](B)((Nothing, Lazy[B]) ⇒ B):List[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scanRight</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
+        <span class="params">(<span name="q0">q0: B</span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../eval/Lazy.html" class="extype" name="com.github.okomok.mada.eval.Lazy">Lazy</a>[B]) ⇒ B</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Prefix sum folding right-associative.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Prefix sum folding right-associative. (a.k.a. scanr)
+</p></div><div class="block">
+          definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.list.List#scanRight1">
+      <a id="scanRight1[B&gt;:A]((Nothing, Lazy[B]) ⇒ B):List[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scanRight1</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Nothing">Nothing</span>, <a href="../../eval/Lazy.html" class="extype" name="com.github.okomok.mada.eval.Lazy">Lazy</a>[B]) ⇒ B</span>)</span>
+        <span class="result">: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Reduces right-associative.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Reduces right-associative. (a.k.a. scanr1)
+</p></div><div class="block">
           definition classes: <a href="List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>
         </div>
             
@@ -1850,6 +1804,25 @@ possible to check whether the contents of the list are of the requested typed.
             
             
           </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Sequence#toIterative">
+      <a id="toIterative:Iterative[Nothing]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIterative</span>
+        
+        
+        <span class="result">: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[<span class="extype" name="scala.Nothing">Nothing</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a>
+        </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Sequence#toString">
       <a id="toString():String"></a>

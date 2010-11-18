@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>com.github.okomok.mada.util.Parallel</title>
+          <title>com.github.okomok.mada.eval.RejectedException</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
@@ -14,26 +14,26 @@
         </head>
         <body class="type" onload="windowTitle();">
 
-      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.util">util</a></p>
+      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.eval">eval</a></p>
 
       <div id="definition">
         <img src="../../../../../lib/class_big.png" />
-        <h1>Parallel</h1>
+        <h1>RejectedException</h1>
       </div>
 
       <h4 class="signature" id="signature">
       <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Parallel</span>
-        <span class="tparams">[<span name="R">R</span>]</span>
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
-        <span class="result"> extends () ⇒ R with <span class="extype" name="scala.Product">Product</span></span>
+        <span class="name">RejectedException</span>
+        
+        <span class="params">(<span name="_1">_1: String</span>)</span>
+        <span class="result"> extends <span class="extype" name="java.lang.RuntimeException">RuntimeException</span> with <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="block">
-            go to: <a href="Parallel$.html">companion</a>
+            go to: <a href="RejectedException$.html">companion</a>
           </div><div class="block">
-            linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, () ⇒ R, AnyRef, <span class="extype" name="scala.Any">Any</span>
+            linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="java.lang.RuntimeException">RuntimeException</span>, <span class="extype" name="java.lang.Exception">Exception</span>, <span class="extype" name="java.lang.Throwable">Throwable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, AnyRef, <span class="extype" name="scala.Any">Any</span>
           </div></div>
 
       <div id="template">
@@ -47,7 +47,7 @@
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.util.Parallel">Parallel</li><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.Function0">Function0</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.eval.RejectedException">RejectedException</li><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="java.lang.RuntimeException">RuntimeException</li><li class="in" name="java.lang.Exception">Exception</li><li class="in" name="java.lang.Throwable">Throwable</li><li class="in" name="java.io.Serializable">Serializable</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -61,14 +61,14 @@
 
         <div class="members" id="constructors">
               <h3>Instance constructors</h3>
-              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#this">
-      <a id="this:Parallel[R]"></a>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#this">
+      <a id="this:RejectedException"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol">
-        <span class="name">Parallel</span>
+        <span class="name">RejectedException</span>
         
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
+        <span class="params">(<span name="_1">_1: String</span>)</span>
         
       </span>
       </h4>
@@ -228,35 +228,18 @@
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#_1">
-      <a id="_1:() ⇒ R"></a>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#_1">
+      <a id="_1:String"></a>
       <h4 class="signature">
       <span class="kind">val</span>
       <span class="symbol">
         <span class="name">_1</span>
         
         
-        <span class="result">: () ⇒ R</span>
+        <span class="result">: String</span>
       </span>
       </h4>
       
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#apply">
-      <a id="apply():R"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">apply</span>
-        
-        <span class="params">()</span>
-        <span class="result">: R</span>
-      </span>
-      </h4>
-      
-            
-            <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Parallel">Parallel</a> → Function0
-        </div></div>
-          
     </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -282,7 +265,7 @@ part of compilation it is not possible to check whether the contents of the list
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#canEqual">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#canEqual">
       <a id="canEqual(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -296,7 +279,7 @@ part of compilation it is not possible to check whether the contents of the list
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Parallel">Parallel</a> → Equals
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.eval.RejectedException">RejectedException</a> → Equals
         </div></div>
           
     </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
@@ -360,7 +343,7 @@ should be equal to each other (<code>o1 == o2</code>) and they should hash to th
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#equals">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#equals">
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -385,12 +368,29 @@ that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>
 scala.Int
 (<code>o1.hashCode.equals(o2.hashCode)</code>).
 </p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Parallel">Parallel</a> → Equals → AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.eval.RejectedException">RejectedException</a> → Equals → AnyRef → Any
         </div>
             
             
             
           </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#fillInStackTrace">
+      <a id="fillInStackTrace():Throwable"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fillInStackTrace</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.Throwable">Throwable</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
           
     </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#finalize">
       <a id="finalize():Unit"></a>
@@ -417,6 +417,23 @@ there are no more references to the object.</p><p>The details of when and if the
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#getCause">
+      <a id="getCause():Throwable"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getCause</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.Throwable">Throwable</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#getClass">
       <a id="getClass():java.lang.Class[_]"></a>
       <h4 class="signature">
@@ -441,7 +458,58 @@ there are no more references to the object.</p><p>The details of when and if the
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#hashCode">
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#getLocalizedMessage">
+      <a id="getLocalizedMessage():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getLocalizedMessage</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#getMessage">
+      <a id="getMessage():String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getMessage</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#getStackTrace">
+      <a id="getStackTrace():Array[StackTraceElement]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">getStackTrace</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="java.lang.StackTraceElement">StackTraceElement</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#hashCode">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -460,12 +528,29 @@ However, it is required that if two objects are equal (<code>o1.equals(o2)</code
 identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
 to verify that the behavior is consistent with the <code>equals</code> method.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Parallel">Parallel</a> → AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.eval.RejectedException">RejectedException</a> → AnyRef → Any
         </div>
             
             
             
           </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#initCause">
+      <a id="initCause(Throwable):Throwable"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">initCause</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="java.lang.Throwable">Throwable</span></span>)</span>
+        <span class="result">: <span class="extype" name="java.lang.Throwable">Throwable</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="scala.Any#isInstanceOf">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -563,7 +648,58 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#productArity">
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#printStackTrace">
+      <a id="printStackTrace(PrintWriter):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">printStackTrace</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="java.io.PrintWriter">PrintWriter</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#printStackTrace">
+      <a id="printStackTrace(PrintStream):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">printStackTrace</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="java.io.PrintStream">PrintStream</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#printStackTrace">
+      <a id="printStackTrace():Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">printStackTrace</span>
+        
+        <span class="params">()</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#productArity">
       <a id="productArity:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -577,10 +713,10 @@ possible to check whether the contents of the list are of the requested typed.
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Parallel">Parallel</a> → Product
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.eval.RejectedException">RejectedException</a> → Product
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#productElement">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#productElement">
       <a id="productElement(Int):Any"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -594,7 +730,7 @@ possible to check whether the contents of the list are of the requested typed.
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Parallel">Parallel</a> → Product
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.eval.RejectedException">RejectedException</a> → Product
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="scala.Product#productElements">
@@ -633,7 +769,7 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: Product
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel#productPrefix">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException#productPrefix">
       <a id="productPrefix:String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -647,7 +783,24 @@ possible to check whether the contents of the list are of the requested typed.
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Parallel">Parallel</a> → Product
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.eval.RejectedException">RejectedException</a> → Product
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#setStackTrace">
+      <a id="setStackTrace(Array[StackTraceElement]):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">setStackTrace</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="java.lang.StackTraceElement">StackTraceElement</span>]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Throwable
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
@@ -669,7 +822,7 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="scala.Function0#toString">
+    </li><li visbl="pub" data-isabs="false" name="java.lang.Throwable#toString">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -684,7 +837,7 @@ possible to check whether the contents of the list are of the requested typed.
             <p class="shortcomment cmt">Returns a string representation of the object.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
-          definition classes: Function0 → AnyRef → Any
+          definition classes: Throwable → AnyRef → Any
         </div>
             
             
@@ -755,8 +908,14 @@ possible to check whether the contents of the list are of the requested typed.
               <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
-            </div><div class="parent" name="scala.Function0">
-              <h3>Inherited from () ⇒ R</h3>
+            </div><div class="parent" name="java.lang.RuntimeException">
+              <h3>Inherited from <span class="extype" name="java.lang.RuntimeException">RuntimeException</span></h3>
+            </div><div class="parent" name="java.lang.Exception">
+              <h3>Inherited from <span class="extype" name="java.lang.Exception">Exception</span></h3>
+            </div><div class="parent" name="java.lang.Throwable">
+              <h3>Inherited from <span class="extype" name="java.lang.Throwable">Throwable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">

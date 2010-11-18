@@ -2,38 +2,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>com.github.okomok.mada.util.Future</title>
+          <title>com.github.okomok.mada.sequence.reactive.Swing.InputMethod</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
-      <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
-      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
-      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
-      <script type="text/javascript" src="../../../../../lib/template.js"></script>
-      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
         <body class="type" onload="windowTitle();">
 
-      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.util">util</a></p>
+      <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.sequence.reactive">reactive</a>.<a href="Swing$.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing">Swing</a></p>
 
       <div id="definition">
-        <img src="../../../../../lib/class_big.png" />
-        <h1>Future</h1>
+        <img src="../../../../../../lib/class_big.png" />
+        <h1>InputMethod</h1>
       </div>
 
       <h4 class="signature" id="signature">
       <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Future</span>
-        <span class="tparams">[<span name="R">+R</span>]</span>
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
-        <span class="result"> extends () ⇒ R with <span class="extype" name="scala.Product">Product</span></span>
+        <span class="name">InputMethod</span>
+        
+        <span class="params">(<span name="source">source: <span class="extype" name="java.awt.Component">Component</span></span>)</span>
+        <span class="result"> extends <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="block">
-            go to: <a href="Future$.html">companion</a>
+            go to: <a href="Swing$$InputMethod$.html">companion</a>
           </div><div class="block">
-            linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, () ⇒ R, AnyRef, <span class="extype" name="scala.Any">Any</span>
+            linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, AnyRef, <span class="extype" name="scala.Any">Any</span>
           </div></div>
 
       <div id="template">
@@ -47,7 +47,7 @@
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.util.Future">Future</li><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.Function0">Function0</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</li><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -61,14 +61,14 @@
 
         <div class="members" id="constructors">
               <h3>Instance constructors</h3>
-              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#this">
-      <a id="this:Future[R]"></a>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#this">
+      <a id="this:InputMethod"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol">
-        <span class="name">Future</span>
+        <span class="name">InputMethod</span>
         
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
+        <span class="params">(<span name="source">source: <span class="extype" name="java.awt.Component">Component</span></span>)</span>
         
       </span>
       </h4>
@@ -228,35 +228,42 @@
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#_1">
-      <a id="_1:() ⇒ R"></a>
-      <h4 class="signature">
-      <span class="kind">val</span>
-      <span class="symbol">
-        <span class="name">_1</span>
-        
-        
-        <span class="result">: () ⇒ R</span>
-      </span>
-      </h4>
-      
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#apply">
-      <a id="apply():R"></a>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#CaretPositionChanged">
+      <a id="CaretPositionChanged:Reactive[InputMethodEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">apply</span>
+        <span class="name">CaretPositionChanged</span>
         
-        <span class="params">()</span>
-        <span class="result">: R</span>
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.InputMethodEvent">InputMethodEvent</span>]</span>
       </span>
       </h4>
       
-            
-            <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Future">Future</a> → Function0
-        </div></div>
-          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#Event">
+      <a id="Event:Reactive[InputMethodEvent]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">Event</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.InputMethodEvent">InputMethodEvent</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#TextChanged">
+      <a id="TextChanged:Reactive[InputMethodEvent]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">TextChanged</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.InputMethodEvent">InputMethodEvent</span>]</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -282,7 +289,7 @@ part of compilation it is not possible to check whether the contents of the list
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#canEqual">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#canEqual">
       <a id="canEqual(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -296,7 +303,7 @@ part of compilation it is not possible to check whether the contents of the list
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Future">Future</a> → Equals
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</a> → Equals
         </div></div>
           
     </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
@@ -360,7 +367,7 @@ should be equal to each other (<code>o1 == o2</code>) and they should hash to th
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#equals">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#equals">
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -385,7 +392,7 @@ that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>
 scala.Int
 (<code>o1.hashCode.equals(o2.hashCode)</code>).
 </p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Future">Future</a> → Equals → AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</a> → Equals → AnyRef → Any
         </div>
             
             
@@ -441,7 +448,7 @@ there are no more references to the object.</p><p>The details of when and if the
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#hashCode">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#hashCode">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -460,7 +467,7 @@ However, it is required that if two objects are equal (<code>o1.equals(o2)</code
 identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
 to verify that the behavior is consistent with the <code>equals</code> method.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Future">Future</a> → AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</a> → AnyRef → Any
         </div>
             
             
@@ -563,7 +570,7 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#productArity">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#productArity">
       <a id="productArity:Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -577,10 +584,10 @@ possible to check whether the contents of the list are of the requested typed.
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Future">Future</a> → Product
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</a> → Product
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#productElement">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#productElement">
       <a id="productElement(Int):Any"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -594,7 +601,7 @@ possible to check whether the contents of the list are of the requested typed.
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Future">Future</a> → Product
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</a> → Product
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="scala.Product#productElements">
@@ -633,7 +640,7 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: Product
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future#productPrefix">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#productPrefix">
       <a id="productPrefix:String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -647,9 +654,21 @@ possible to check whether the contents of the list are of the requested typed.
       
             
             <div class="fullcomment"><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.util.Future">Future</a> → Product
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</a> → Product
         </div></div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#source">
+      <a id="source:Component"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">source</span>
+        
+        
+        <span class="result">: <span class="extype" name="java.awt.Component">Component</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#synchronized">
       <a id="synchronized[T0](T0):T0"></a>
       <h4 class="signature">
@@ -669,7 +688,7 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="scala.Function0#toString">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod#toString">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -677,14 +696,14 @@ possible to check whether the contents of the list are of the requested typed.
         <span class="name">toString</span>
         
         <span class="params">()</span>
-        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="result">: String</span>
       </span>
       </h4>
       
             <p class="shortcomment cmt">Returns a string representation of the object.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
-          definition classes: Function0 → AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.InputMethod">InputMethod</a> → AnyRef → Any
         </div>
             
             
@@ -755,8 +774,6 @@ possible to check whether the contents of the list are of the requested typed.
               <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
             </div><div class="parent" name="scala.Equals">
               <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
-            </div><div class="parent" name="scala.Function0">
-              <h3>Inherited from () ⇒ R</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">

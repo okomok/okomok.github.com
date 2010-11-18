@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>com.github.okomok.mada.util.ByEdt</title>
+          <title>com.github.okomok.mada.eval.Strict</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
@@ -14,26 +14,26 @@
         </head>
         <body class="value" onload="windowTitle();">
 
-      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.util">util</a></p>
+      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.eval">eval</a></p>
 
       <div id="definition">
         <img src="../../../../../lib/object_big.png" />
-        <h1>ByEdt</h1>
+        <h1>Strict</h1>
       </div>
 
       <h4 class="signature" id="signature">
       <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">ByEdt</span>
+        <span class="name">Strict</span>
         
         
-        <span class="result"> extends AnyRef</span>
+        <span class="result"> extends <a href="Strategy.html" class="extype" name="com.github.okomok.mada.eval.Strategy">Strategy</a></span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="block">
-            go to: <a href="ByEdt.html">companion</a>
+            go to: <a href="Strict.html">companion</a>
           </div><div class="block">
-            linear super types: AnyRef, <span class="extype" name="scala.Any">Any</span>
+            linear super types: <a href="Strategy.html" class="extype" name="com.github.okomok.mada.eval.Strategy">Strategy</a>, AnyRef, <span class="extype" name="scala.Any">Any</span>
           </div></div>
 
       <div id="template">
@@ -47,7 +47,7 @@
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.util.ByEdt">ByEdt</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.eval.Strict">Strict</li><li class="in" name="com.github.okomok.mada.eval.Strategy">Strategy</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -213,18 +213,23 @@
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByEdt#apply">
-      <a id="apply[R](⇒ R,Overload):ByEdt[R]"></a>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Strict#apply">
+      <a id="apply[R](⇒ R):Strict[R]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">apply</span>
         <span class="tparams">[<span name="R">R</span>]</span>
-        <span class="params">(<span name="body">body: ⇒ R</span>, <span name="o">o: <a href="Overload.html" class="extype" name="com.github.okomok.mada.util.Overload">Overload</a></span>)</span>
-        <span class="result">: <a href="ByEdt.html" class="extype" name="com.github.okomok.mada.util.ByEdt">ByEdt</a>[R]</span>
+        <span class="params">(<span name="f">f: ⇒ R</span>)</span>
+        <span class="result">: <a href="Strict.html" class="extype" name="com.github.okomok.mada.eval.Strict">Strict</a>[R]</span>
       </span>
       </h4>
       
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.eval.Strict">Strict</a> → <a href="Strategy.html" class="extype" name="com.github.okomok.mada.eval.Strategy">Strategy</a>
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -514,7 +519,7 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
-    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.util.ByEdt#readResolve">
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.eval.Strict#readResolve">
       <a id="readResolve():AnyRef"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -632,7 +637,9 @@ possible to check whether the contents of the list are of the requested typed.
     </li></ol>
             </div>
 
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="com.github.okomok.mada.eval.Strategy">
+              <h3>Inherited from <a href="Strategy.html" class="extype" name="com.github.okomok.mada.eval.Strategy">Strategy</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

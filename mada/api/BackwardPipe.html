@@ -25,7 +25,7 @@
       <span class="kind">class</span>
       <span class="symbol">
         <span class="name">BackwardPipe</span>
-        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
         
         <span class="result"> extends AnyRef</span>
       </span>
@@ -62,13 +62,13 @@
         <div class="members" id="constructors">
               <h3>Instance constructors</h3>
               <ol><li visbl="pub" data-isabs="false" name="BackwardPipe#this">
-      <a id="this:BackwardPipe[A]"></a>
+      <a id="this:BackwardPipe[A, B]"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol">
         <span class="name">BackwardPipe</span>
         
-        <span class="params">(<span name="x">x: A</span>)</span>
+        <span class="params">(<span name="f">f: (A) ⇒ B</span>)</span>
         
       </span>
       </h4>
@@ -180,6 +180,18 @@
           definition classes: AnyRef
         </div></div>
           
+    </li><li visbl="pub" data-isabs="false" name="BackwardPipe#&lt;|">
+      <a id="&lt;|(A):B"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">&lt;|</span>
+        
+        <span class="params">(<span name="x">x: A</span>)</span>
+        <span class="result">: B</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#==">
       <a id="==(AnyRef):Boolean"></a>
       <h4 class="signature">
@@ -615,18 +627,6 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: AnyRef
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="BackwardPipe#|&lt;">
-      <a id="|&lt;((A) ⇒ Any):A"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">|&lt;</span>
-        
-        <span class="params">(<span name="f">f: (A) ⇒ <span class="extype" name="scala.Any">Any</span></span>)</span>
-        <span class="result">: A</span>
-      </span>
-      </h4>
-      
     </li></ol>
             </div>
 

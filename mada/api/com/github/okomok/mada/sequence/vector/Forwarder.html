@@ -1056,28 +1056,6 @@ there are no more references to the object.</p><p>The details of when and if the
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#folder">
-      <a id="folder[B&gt;:A](B)((B, B) ⇒ B):Vector[B]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">folder</span>
-        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
-        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
-        <span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt"></p>
-            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>asIterative.folderLeft(z)(op).toVector</code>.
-</p></dd></dl><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
-        </div>
-            
-            
-            
-          </div>
-          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#forall">
       <a id="forall((A) ⇒ Boolean):Boolean"></a>
       <h4 class="signature">
@@ -1238,28 +1216,6 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#headOption">
-      <a id="headOption:Option[A]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">headOption</span>
-        
-        
-        <span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Optionally returns the first element.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Optionally returns the first element.
-</p></div><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
-        </div>
-            
-            
-            
-          </div>
-          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#indices">
       <a id="indices:Vector[Int]"></a>
       <h4 class="signature">
@@ -1366,6 +1322,29 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#isSorted">
+      <a id="isSorted[B&gt;:A](Ordering[B]):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">isSorted</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="c">c: Ordering[B]</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Is this vector sorted?
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Is this vector sorted?
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
+        </div>
+            
+            
+            
+          </div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#join">
       <a id="join:Vector[A]"></a>
       <h4 class="signature">
@@ -1404,28 +1383,6 @@ possible to check whether the contents of the list are of the requested typed.
       
             <p class="shortcomment cmt">Returns the last element.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Returns the last element.
-</p></div><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
-        </div>
-            
-            
-            
-          </div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#lastOption">
-      <a id="lastOption:Option[A]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">lastOption</span>
-        
-        
-        <span class="result">: <span class="extype" name="scala.Option">Option</span>[A]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Optionally returns the last element.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Optionally returns the last element.
 </p></div><div class="block">
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
         </div>
@@ -1929,28 +1886,6 @@ there is no guarantee <code>f</code> calls are single-threaded.
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#reducer">
-      <a id="reducer[B&gt;:A]((B, B) ⇒ B):Vector[B]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">reducer</span>
-        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
-        <span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
-        <span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt"></p>
-            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>asIterative.reducerLeft(op).toVector</code>.
-</p></dd></dl><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
-        </div>
-            
-            
-            
-          </div>
-          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#region">
       <a id="region(Int,Int):Vector[A]"></a>
       <h4 class="signature">
@@ -2030,6 +1965,50 @@ Note that a larger vector than <code>this</code> is ALLOWED as far as <code>isDe
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
         </div></div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#scan">
+      <a id="scan[B&gt;:A](B)((B, B) ⇒ B):Vector[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scan</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
+        <span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"></p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>asIterative.scanLeft(z)(op).toVector</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#scan1">
+      <a id="scan1[B&gt;:A]((B, B) ⇒ B):Vector[B]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">scan1</span>
+        <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
+        <span class="params">(<span name="op">op: (B, B) ⇒ B</span>)</span>
+        <span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[B]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt"></p>
+            <div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>asIterative.scanLeft1(op).toVector</code>.
+</p></dd></dl><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
+        </div>
+            
+            
+            
+          </div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#seal">
       <a id="seal:Vector[A]"></a>
       <h4 class="signature">
@@ -2096,6 +2075,50 @@ predicate, if any. No guarantee the element is the first one.
             <div class="fullcomment"><div class="block">
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
         </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#shuffle">
+      <a id="shuffle:Vector[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shuffle</span>
+        
+        
+        <span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Randomly shuffles elements.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Randomly shuffles elements.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#shuffleBy">
+      <a id="shuffleBy((Int) ⇒ Int):Vector[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">shuffleBy</span>
+        
+        <span class="params">(<span name="g">g: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Randomly shuffles elements by a random number generator.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Randomly shuffles elements by a random number generator.
+</p></div><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
+        </div>
+            
+            
+            
+          </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#sideEffect">
       <a id="sideEffect((Vector[A]) ⇒ Unit):Vector[A]"></a>
@@ -2168,7 +2191,7 @@ predicate, if any. No guarantee the element is the first one.
       </h4>
       
             <p class="shortcomment cmt">Sort this vector.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Sort this vector. Note this vector is mutated.
+            <div class="fullcomment"><div class="comment cmt"><p>Sort this vector.
 </p></div><div class="block">
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
         </div>
@@ -2223,8 +2246,8 @@ predicate, if any. No guarantee the element is the first one.
       </span>
       </h4>
       
-            <p class="shortcomment cmt">Stable sort this vector.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Stable sort this vector. Note this vector is mutated.
+            <p class="shortcomment cmt">Stable-sort this vector.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Stable-sort this vector.
 </p></div><div class="block">
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
         </div>
@@ -2419,6 +2442,25 @@ predicate, if any. No guarantee the element is the first one.
           definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a> → <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
         </div></div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.iterative.Sequence#toIterative">
+      <a id="toIterative:Iterative[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toIterative</span>
+        
+        
+        <span class="result">: <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a>
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#toJCharSequence">
       <a id="toJCharSequence(&lt;:&lt;[Vector[A], Vector[Char]]):CharSequence"></a>
       <h4 class="signature">
@@ -2508,6 +2550,25 @@ predicate, if any. No guarantee the element is the first one.
             
             
           </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Sequence#toVector">
+      <a id="toVector:Vector[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">toVector</span>
+        
+        
+        <span class="result">: <a href="Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a>
+        </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Forwarder#underlying">
       <a id="underlying:Vector[A]"></a>

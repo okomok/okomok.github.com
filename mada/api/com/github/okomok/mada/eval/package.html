@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.github.okomok.mada.eval</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value" onload="windowTitle();">
+
+      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada">mada</a></p>
+
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <h1>eval</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">eval</span>
+        
+        
+        
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Async">
+      <a id="Async:Async[R]"></a>
+      <h4 class="signature"><a href="Async.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Async</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Runs (possibly) in the thread-pool.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.ByName">
+      <a id="ByName:ByName[R]"></a>
+      <h4 class="signature"><a href="ByName.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">ByName</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        
+        <span class="result"> extends () ⇒ R</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Future">
+      <a id="Future:Future[R]"></a>
+      <h4 class="signature"><a href="Future.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Future</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Runs (possibly) in the thread-pool.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.InEdt">
+      <a id="InEdt:InEdt[R]"></a>
+      <h4 class="signature"><a href="InEdt.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">InEdt</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Runs in the event-dispatch-thread.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Lazy">
+      <a id="Lazy:Lazy[R]"></a>
+      <h4 class="signature"><a href="Lazy.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Lazy</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Runs in the result-retrieving-site.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Parallel">
+      <a id="Parallel:Parallel[R]"></a>
+      <h4 class="signature"><a href="Parallel.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Parallel</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>, <span name="_2">_2: Strategy</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Runs (possibly) in the thread-pool.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Reject">
+      <a id="Reject:Reject[R]"></a>
+      <h4 class="signature"><a href="Reject.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Reject</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.RejectedException">
+      <a id="RejectedException:RejectedException"></a>
+      <h4 class="signature"><a href="RejectedException.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">RejectedException</span>
+        
+        <span class="params">(<span name="_1">_1: String</span>)</span>
+        <span class="result"> extends RuntimeException with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.eval.Strategy">
+      <a id="Strategy:Strategy"></a>
+      <h4 class="signature"><a href="Strategy.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Strategy</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Strict">
+      <a id="Strict:Strict[R]"></a>
+      <h4 class="signature"><a href="Strict.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Strict</span>
+        <span class="tparams">[<span name="R">+R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Runs in constructor-call-site.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Threaded">
+      <a id="Threaded:Threaded[R]"></a>
+      <h4 class="signature"><a href="Threaded.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Threaded</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="_1">_1: ByName[R]</span>)</span>
+        <span class="result"> extends () ⇒ R with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Runs in a newly created thread.</p>
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Async">
+      <a id="Async:Async"></a>
+      <h4 class="signature"><a href="Async$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Async</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.ByName">
+      <a id="ByName:ByName"></a>
+      <h4 class="signature"><a href="ByName$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">ByName</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Future">
+      <a id="Future:Future"></a>
+      <h4 class="signature"><a href="Future$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Future</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.InEdt">
+      <a id="InEdt:InEdt"></a>
+      <h4 class="signature"><a href="InEdt$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">InEdt</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Lazy">
+      <a id="Lazy:Lazy"></a>
+      <h4 class="signature"><a href="Lazy$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Lazy</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Parallel">
+      <a id="Parallel:Parallel"></a>
+      <h4 class="signature"><a href="Parallel$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Parallel</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Reject">
+      <a id="Reject:Reject"></a>
+      <h4 class="signature"><a href="Reject$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Reject</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Strategy">
+      <a id="Strategy:Strategy"></a>
+      <h4 class="signature"><a href="Strategy$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Strategy</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Strict">
+      <a id="Strict:Strict"></a>
+      <h4 class="signature"><a href="Strict$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Strict</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.eval.Threaded">
+      <a id="Threaded:Threaded"></a>
+      <h4 class="signature"><a href="Threaded$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Threaded</span>
+        
+        
+        <span class="result"> extends Strategy</span>
+      </span>
+      </a></h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

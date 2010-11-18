@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>com.github.okomok.mada.sequence.reactive.Swing.Mouse.Pressed</title>
+          <title>com.github.okomok.mada.sequence.reactive.Beans.PropertyChange</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
@@ -14,24 +14,26 @@
         </head>
         <body class="type" onload="windowTitle();">
 
-      <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.sequence.reactive">reactive</a>.<a href="Swing$.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing">Swing</a>.<a href="Swing$$Mouse.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.Mouse">Mouse</a></p>
+      <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.sequence.reactive">reactive</a>.<a href="Beans$.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans">Beans</a></p>
 
       <div id="definition">
         <img src="../../../../../../lib/class_big.png" />
-        <h1>Pressed</h1>
+        <h1>PropertyChange</h1>
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">class</span>
+      <span class="kind">case class</span>
       <span class="symbol">
-        <span class="name">Pressed</span>
+        <span class="name">PropertyChange</span>
         
-        
-        <span class="result"> extends <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="source">source: PropertyChangeEventSource</span>)</span>
+        <span class="result"> extends <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>] with <span class="extype" name="scala.Product">Product</span></span>
       </span>
       </h4>
       <div class="fullcomment" id="comment"><div class="block">
-            linear super types: <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <span class="extype" name="java.io.Closeable">Closeable</span>, <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], AnyRef, <span class="extype" name="scala.Any">Any</span>
+            go to: <a href="Beans$$PropertyChange$.html">companion</a>
+          </div><div class="block">
+            linear super types: <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <span class="extype" name="java.io.Closeable">Closeable</span>, <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], AnyRef, <span class="extype" name="scala.Any">Any</span>
           </div></div>
 
       <div id="template">
@@ -45,7 +47,7 @@
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.reactive.Swing.Mouse.Pressed">Pressed</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</li><li class="in" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</li><li class="in" name="java.io.Closeable">Closeable</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</li><li class="in" name="scala.Product">Product</li><li class="in" name="scala.Equals">Equals</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</li><li class="in" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</li><li class="in" name="java.io.Closeable">Closeable</li><li class="in" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -59,14 +61,14 @@
 
         <div class="members" id="constructors">
               <h3>Instance constructors</h3>
-              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.Mouse.Pressed#this">
-      <a id="this:Pressed"></a>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#this">
+      <a id="this:PropertyChange"></a>
       <h4 class="signature">
       <span class="kind">new</span>
       <span class="symbol">
-        <span class="name">Pressed</span>
+        <span class="name">PropertyChange</span>
         
-        <span class="params">()</span>
+        <span class="params">(<span name="source">source: PropertyChangeEventSource</span>)</span>
         
       </span>
       </h4>
@@ -74,7 +76,27 @@
     </li></ol>
             </div>
 
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive._ScanlBy">
+      <a id="_ScanlBy:_ScanlBy[B]"></a>
+      <h4 class="signature"><a href="Reactive$_ScanlBy.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">_ScanlBy</span>
+        <span class="tparams">[<span name="B">B</span>]</span>
         
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed 
+        </div></div>
+          
+    </li></ol>
+            </div>
 
         <div class="values members" id="values">
               <h3>Value Members</h3>
@@ -244,14 +266,14 @@
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#adjacent">
-      <a id="adjacent(Int):Reactive[Vector[MouseEvent]]"></a>
+      <a id="adjacent(Int):Reactive[Vector[PropertyChangeEvent]]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">adjacent</span>
         
         <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[Vector[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[Vector[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]]</span>
       </span>
       </h4>
       
@@ -291,14 +313,14 @@ part of compilation it is not possible to check whether the contents of the list
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#asReactive">
-      <a id="asReactive:Reactive[MouseEvent]"></a>
+      <a id="asReactive:Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">asReactive</span>
         
         
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -308,14 +330,14 @@ part of compilation it is not possible to check whether the contents of the list
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#break">
-      <a id="break:Reactive[MouseEvent]"></a>
+      <a id="break:Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">break</span>
         
         
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -329,15 +351,54 @@ part of compilation it is not possible to check whether the contents of the list
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#breakable">
+      <a id="breakable:Reactive[(PropertyChangeEvent, () ⇒ Unit)]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">breakable</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>, () ⇒ <span class="extype" name="scala.Unit">Unit</span>)]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Elements with a break function.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Elements with a break function.
+</p></div><div class="block">
+          definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#canEqual">
+      <a id="canEqual(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">canEqual</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → Equals
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#catching">
-      <a id="catching(PartialFunction[Throwable, Unit]):Reactive[MouseEvent]"></a>
+      <a id="catching(PartialFunction[Throwable, Unit]):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">catching</span>
         
         <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[Throwable, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -377,32 +438,37 @@ part of compilation it is not possible to check whether the contents of the list
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Resource#close">
-      <a id="close:Unit"></a>
+      <a id="close():Unit"></a>
       <h4 class="signature">
-      <span class="kind">lazy val</span>
+      <span class="kind">def</span>
       <span class="symbol">
         <span class="name">close</span>
         
-        
+        <span class="params">()</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
       
-            
-            <div class="fullcomment"><div class="block">
+            <p class="shortcomment cmt">Should be thread-safe.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Should be thread-safe.
+</p></div><div class="block">
           attributes: final 
         </div><div class="block">
           definition classes: <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a> → <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a> → Closeable
-        </div></div>
+        </div>
+            
+            
+            
+          </div>
           
-    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.Mouse.Pressed#closeResource">
-      <a id="closeResource:Unit"></a>
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#closeResource">
+      <a id="closeResource():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">closeResource</span>
         
-        
+        <span class="params">()</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
@@ -411,17 +477,17 @@ part of compilation it is not possible to check whether the contents of the list
             <div class="fullcomment"><div class="block">
           attributes: protected 
         </div><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.Mouse.Pressed">Pressed</a> → <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#collect">
-      <a id="collect[B](PartialFunction[MouseEvent, B]):Reactive[B]"></a>
+      <a id="collect[B](PartialFunction[PropertyChangeEvent, B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">collect</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>, B]</span>)</span>
+        <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>, B]</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
@@ -432,14 +498,14 @@ part of compilation it is not possible to check whether the contents of the list
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#doing">
-      <a id="doing(⇒ Unit):Reactive[MouseEvent]"></a>
+      <a id="doing(⇒ Unit):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">doing</span>
         
         <span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -451,14 +517,14 @@ part of compilation it is not possible to check whether the contents of the list
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#drop">
-      <a id="drop(Int):Reactive[MouseEvent]"></a>
+      <a id="drop(Int):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">drop</span>
         
         <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -468,14 +534,14 @@ part of compilation it is not possible to check whether the contents of the list
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#dropUntil">
-      <a id="dropUntil(com.github.okomok.mada.sequence.reactive.Reactive[_]):Reactive[MouseEvent]"></a>
+      <a id="dropUntil(com.github.okomok.mada.sequence.reactive.Reactive[_]):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">dropUntil</span>
         
         <span class="params">(<span name="that">that: com.github.okomok.mada.sequence.reactive.Reactive[_]</span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -490,14 +556,14 @@ part of compilation it is not possible to check whether the contents of the list
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#dropWhile">
-      <a id="dropWhile((MouseEvent) ⇒ Boolean):Reactive[MouseEvent]"></a>
+      <a id="dropWhile((PropertyChangeEvent) ⇒ Boolean):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">dropWhile</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -507,14 +573,14 @@ part of compilation it is not possible to check whether the contents of the list
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#duplicate">
-      <a id="duplicate:(Reactive[MouseEvent], Reactive[MouseEvent])"></a>
+      <a id="duplicate:(Reactive[PropertyChangeEvent], Reactive[PropertyChangeEvent])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">duplicate</span>
         
         
-        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>])</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>])</span>
       </span>
       </h4>
       
@@ -529,14 +595,14 @@ part of compilation it is not possible to check whether the contents of the list
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#each">
-      <a id="each:java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
+      <a id="each:java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">each</span>
         
         
-        <span class="result">: java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="result">: java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -589,7 +655,7 @@ should be equal to each other (<code>o1 == o2</code>) and they should hash to th
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#equals">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#equals">
       <a id="equals(Any):Boolean"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -614,7 +680,7 @@ that are &quot;equal&quot; (<code>o1.equals(o2)</code> returns <code>true</code>
 scala.Int
 (<code>o1.hashCode.equals(o2.hashCode)</code>).
 </p></div><dl class="paramcmts block"><dt class="param">arg0</dt><dd class="cmt"><p>the object to compare against this object for equality.</p></dd><dt>returns</dt><dd class="cmt"><p><code>true</code> if the receiver object is equivalent to the argument; <code>false</code> otherwise.</p></dd></dl><div class="block">
-          definition classes: AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → Equals → AnyRef → Any
         </div>
             
             
@@ -622,14 +688,14 @@ scala.Int
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#filter">
-      <a id="filter((MouseEvent) ⇒ Boolean):Reactive[MouseEvent]"></a>
+      <a id="filter((PropertyChangeEvent) ⇒ Boolean):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">filter</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -664,14 +730,14 @@ there are no more references to the object.</p><p>The details of when and if the
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#find">
-      <a id="find((MouseEvent) ⇒ Boolean):java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
+      <a id="find((PropertyChangeEvent) ⇒ Boolean):java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">find</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -683,13 +749,13 @@ there are no more references to the object.</p><p>The details of when and if the
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#flatMap">
-      <a id="flatMap[B]((MouseEvent) ⇒ Reactive[B]):Reactive[B]"></a>
+      <a id="flatMap[B]((PropertyChangeEvent) ⇒ Reactive[B]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">flatMap</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
@@ -700,13 +766,13 @@ there are no more references to the object.</p><p>The details of when and if the
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#flatten">
-      <a id="flatten[B](&lt;:&lt;[Reactive[MouseEvent], Reactive[Sequence[B]]]):Reactive[B]"></a>
+      <a id="flatten[B](&lt;:&lt;[Reactive[PropertyChangeEvent], Reactive[Sequence[B]]]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">flatten</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
@@ -717,13 +783,13 @@ there are no more references to the object.</p><p>The details of when and if the
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce#foreach">
-      <a id="foreach((MouseEvent) ⇒ Unit):Unit"></a>
+      <a id="foreach((PropertyChangeEvent) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">foreach</span>
         
-        <span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
@@ -741,13 +807,13 @@ there are no more references to the object.</p><p>The details of when and if the
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Resource#foreachOnce">
-      <a id="foreachOnce((MouseEvent) ⇒ Unit):Unit"></a>
+      <a id="foreachOnce((PropertyChangeEvent) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">foreachOnce</span>
         
-        <span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
@@ -760,14 +826,14 @@ there are no more references to the object.</p><p>The details of when and if the
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#fork">
-      <a id="fork((Reactive[MouseEvent]) ⇒ Unit):Reactive[MouseEvent]"></a>
+      <a id="fork((Reactive[PropertyChangeEvent]) ⇒ com.github.okomok.mada.sequence.reactive.Reactive[_]):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">fork</span>
         
-        <span class="params">(<span name="f">f: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="f">f: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]) ⇒ com.github.okomok.mada.sequence.reactive.Reactive[_]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -827,7 +893,7 @@ there are no more references to the object.</p><p>The details of when and if the
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#hashCode">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#hashCode">
       <a id="hashCode():Int"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -846,7 +912,7 @@ However, it is required that if two objects are equal (<code>o1.equals(o2)</code
 identical hash codes (<code>o1.hashCode.equals(o2.hashCode)</code>).  Therefore, when overriding this method, be sure
 to verify that the behavior is consistent with the <code>equals</code> method.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the hash code value for the object.</p></dd></dl><div class="block">
-          definition classes: AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → AnyRef → Any
         </div>
             
             
@@ -854,14 +920,14 @@ to verify that the behavior is consistent with the <code>equals</code> method.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#head">
-      <a id="head:java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
+      <a id="head:java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">head</span>
         
         
-        <span class="result">: java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="result">: java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -894,15 +960,32 @@ to verify that the behavior is consistent with the <code>equals</code> method.
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#indices">
+      <a id="indices:Reactive[Int]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">indices</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="scala.Int">Int</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#init">
-      <a id="init:Reactive[MouseEvent]"></a>
+      <a id="init:Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">init</span>
         
         
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -938,13 +1021,13 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#map">
-      <a id="map[B]((MouseEvent) ⇒ B):Reactive[B]"></a>
+      <a id="map[B]((PropertyChangeEvent) ⇒ B):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">map</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ B</span>)</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ B</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
@@ -1042,14 +1125,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#nth">
-      <a id="nth(Int):java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
+      <a id="nth(Int):java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">nth</span>
         
         <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
-        <span class="result">: java.awt.event.MouseEvent @scala.util.continuations.cpsParam[Any,Any]</span>
+        <span class="result">: java.beans.PropertyChangeEvent @scala.util.continuations.cpsParam[Any,Any]</span>
       </span>
       </h4>
       
@@ -1080,14 +1163,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#onClose">
-      <a id="onClose(⇒ Unit):Reactive[MouseEvent]"></a>
+      <a id="onClose(⇒ Unit):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">onClose</span>
         
         <span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1102,14 +1185,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#onHead">
-      <a id="onHead((MouseEvent) ⇒ Unit):Reactive[MouseEvent]"></a>
+      <a id="onHead((PropertyChangeEvent) ⇒ Unit):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">onHead</span>
         
-        <span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1124,14 +1207,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#onNth">
-      <a id="onNth(Int)((MouseEvent) ⇒ Unit):Reactive[MouseEvent]"></a>
+      <a id="onNth(Int)((PropertyChangeEvent) ⇒ Unit):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">onNth</span>
         
-        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1145,14 +1228,14 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
-    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Swing.Mouse.Pressed#openResource">
-      <a id="openResource((MouseEvent) ⇒ Unit):Unit"></a>
+    </li><li visbl="prt" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#openResource">
+      <a id="openResource((PropertyChangeEvent) ⇒ Unit):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">openResource</span>
         
-        <span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
@@ -1161,18 +1244,18 @@ possible to check whether the contents of the list are of the requested typed.
             <div class="fullcomment"><div class="block">
           attributes: protected 
         </div><div class="block">
-          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.Mouse.Pressed">Pressed</a> → <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#partition">
-      <a id="partition((MouseEvent) ⇒ Boolean):(Reactive[MouseEvent], Reactive[MouseEvent])"></a>
+      <a id="partition((PropertyChangeEvent) ⇒ Boolean):(Reactive[PropertyChangeEvent], Reactive[PropertyChangeEvent])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">partition</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>])</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>])</span>
       </span>
       </h4>
       
@@ -1181,20 +1264,107 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#productArity">
+      <a id="productArity:Int"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productArity</span>
+        
+        
+        <span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → Product
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#productElement">
+      <a id="productElement(Int):Any"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productElement</span>
+        
+        <span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Any">Any</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → Product
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Product#productElements">
+      <a id="productElements:Iterator[Any]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name deprecated">productElements</span>
+        
+        
+        <span class="result">: Iterator[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Product
+        </div><div class="block"><ol>deprecated:
+          <li><p>use productIterator instead</p></li>
+        </ol></div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="scala.Product#productIterator">
+      <a id="productIterator:Iterator[Any]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productIterator</span>
+        
+        
+        <span class="result">: Iterator[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Product
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#productPrefix">
+      <a id="productPrefix:String"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">productPrefix</span>
+        
+        
+        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → Product
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#protect">
-      <a id="protect:Reactive[MouseEvent]"></a>
+      <a id="protect:Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">protect</span>
         
         
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
-            <p class="shortcomment cmt">Ignores <code>close</code> call.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Ignores <code>close</code> call.
+            <p class="shortcomment cmt">Ignores <code>close()</code> call.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Ignores <code>close()</code> call.
 </p></div><div class="block">
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div>
@@ -1204,14 +1374,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#react">
-      <a id="react(PartialFunction[MouseEvent, Unit]):Reactive[MouseEvent]"></a>
+      <a id="react((PropertyChangeEvent) ⇒ Unit):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">react</span>
         
-        <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="f">f: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1225,15 +1395,15 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#reactTotal">
-      <a id="reactTotal((MouseEvent) ⇒ Unit):Reactive[MouseEvent]"></a>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#reactMatch">
+      <a id="reactMatch(PartialFunction[PropertyChangeEvent, Unit]):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">reactTotal</span>
+        <span class="name">reactMatch</span>
         
-        <span class="params">(<span name="f">f: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="f">f: <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1248,14 +1418,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#remove">
-      <a id="remove((MouseEvent) ⇒ Boolean):Reactive[MouseEvent]"></a>
+      <a id="remove((PropertyChangeEvent) ⇒ Boolean):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">remove</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1309,13 +1479,13 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#scanLeft">
-      <a id="scanLeft[B](B)((B, MouseEvent) ⇒ B):Reactive[B]"></a>
+      <a id="scanLeft[B](B)((B, PropertyChangeEvent) ⇒ B):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">scanLeft</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, <span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ B</span>)</span>
+        <span class="params">(<span name="z">z: B</span>)</span><span class="params">(<span name="op">op: (B, <span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ B</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
@@ -1326,13 +1496,13 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#scanLeft1">
-      <a id="scanLeft1[B&gt;:A]((B, MouseEvent) ⇒ B):Reactive[B]"></a>
+      <a id="scanLeft1[B&gt;:A]((B, PropertyChangeEvent) ⇒ B):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">scanLeft1</span>
         <span class="tparams">[<span name="B">B &gt;: A</span>]</span>
-        <span class="params">(<span name="op">op: (B, <span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ B</span>)</span>
+        <span class="params">(<span name="op">op: (B, <span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ B</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
@@ -1343,14 +1513,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#scanl">
-      <a id="scanl[B](B):AnyRef {...}"></a>
+      <a id="scanl[B](B):_ScanlBy[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">scanl</span>
         <span class="tparams">[<span name="B">B</span>]</span>
         <span class="params">(<span name="z">z: B</span>)</span>
-        <span class="result">: AnyRef {...}</span>
+        <span class="result">: <a href="Reactive$_ScanlBy.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive._ScanlBy">_ScanlBy</a>[B]</span>
       </span>
       </h4>
       
@@ -1362,14 +1532,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#shift">
-      <a id="shift((ByName[Unit]) ⇒ Unit):Reactive[MouseEvent]"></a>
+      <a id="shift((⇒ Unit) ⇒ Unit):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">shift</span>
         
-        <span class="params">(<span name="g">g: (<a href="../../util/ByName.html" class="extype" name="com.github.okomok.mada.util.ByName">ByName</a>[<span class="extype" name="scala.Unit">Unit</span>]) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="k">k: (⇒ <span class="extype" name="scala.Unit">Unit</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1406,14 +1576,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#slice">
-      <a id="slice(Int,Int):Reactive[MouseEvent]"></a>
+      <a id="slice(Int,Int):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">slice</span>
         
         <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>, <span name="m">m: <span class="extype" name="scala.Int">Int</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1422,15 +1592,27 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#source">
+      <a id="source:PropertyChangeEventSource"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">source</span>
+        
+        
+        <span class="result">: PropertyChangeEventSource</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#span">
-      <a id="span((MouseEvent) ⇒ Boolean):(Reactive[MouseEvent], Reactive[MouseEvent])"></a>
+      <a id="span((PropertyChangeEvent) ⇒ Boolean):(Reactive[PropertyChangeEvent], Reactive[PropertyChangeEvent])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">span</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>])</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>])</span>
       </span>
       </h4>
       
@@ -1440,14 +1622,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#splitAt">
-      <a id="splitAt(Int):(Reactive[MouseEvent], Reactive[MouseEvent])"></a>
+      <a id="splitAt(Int):(Reactive[PropertyChangeEvent], Reactive[PropertyChangeEvent])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">splitAt</span>
         
         <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
-        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>])</span>
+        <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>])</span>
       </span>
       </h4>
       
@@ -1457,13 +1639,13 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#start">
-      <a id="start:Unit"></a>
+      <a id="start():Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">start</span>
         
-        
+        <span class="params">()</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
@@ -1474,14 +1656,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#step">
-      <a id="step(Int):Reactive[MouseEvent]"></a>
+      <a id="step(Int):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">step</span>
         
         <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1496,14 +1678,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#stepTime">
-      <a id="stepTime(Long):Reactive[MouseEvent]"></a>
+      <a id="stepTime(Long):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">stepTime</span>
         
         <span class="params">(<span name="i">i: <span class="extype" name="scala.Long">Long</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1537,14 +1719,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#tail">
-      <a id="tail:Reactive[MouseEvent]"></a>
+      <a id="tail:Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">tail</span>
         
         
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1554,14 +1736,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#take">
-      <a id="take(Int):Reactive[MouseEvent]"></a>
+      <a id="take(Int):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">take</span>
         
         <span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1571,14 +1753,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#takeUntil">
-      <a id="takeUntil(com.github.okomok.mada.sequence.reactive.Reactive[_]):Reactive[MouseEvent]"></a>
+      <a id="takeUntil(com.github.okomok.mada.sequence.reactive.Reactive[_]):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">takeUntil</span>
         
         <span class="params">(<span name="that">that: com.github.okomok.mada.sequence.reactive.Reactive[_]</span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1593,14 +1775,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#takeWhile">
-      <a id="takeWhile((MouseEvent) ⇒ Boolean):Reactive[MouseEvent]"></a>
+      <a id="takeWhile((PropertyChangeEvent) ⇒ Boolean):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">takeWhile</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1610,14 +1792,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#then">
-      <a id="then(⇒ Unit):Reactive[MouseEvent]"></a>
+      <a id="then(⇒ Unit):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">then</span>
         
         <span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1654,14 +1836,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#toIterative">
-      <a id="toIterative:Iterative[MouseEvent]"></a>
+      <a id="toIterative:Iterative[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">toIterative</span>
         
         
-        <span class="result">: Iterative[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: Iterative[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1671,14 +1853,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#toResponder">
-      <a id="toResponder:Responder[MouseEvent]"></a>
+      <a id="toResponder:Responder[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">toResponder</span>
         
         
-        <span class="result">: <span class="extype" name="scala.Responder">Responder</span>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <span class="extype" name="scala.Responder">Responder</span>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1687,7 +1869,7 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#toString">
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange#toString">
       <a id="toString():String"></a>
       <h4 class="signature">
       <span class="kind">def</span>
@@ -1695,14 +1877,14 @@ possible to check whether the contents of the list are of the requested typed.
         <span class="name">toString</span>
         
         <span class="params">()</span>
-        <span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="result">: String</span>
       </span>
       </h4>
       
             <p class="shortcomment cmt">Returns a string representation of the object.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Returns a string representation of the object.</p><p>The default representation is platform dependent.
 </p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a string representation of the object.</p></dd></dl><div class="block">
-          definition classes: AnyRef → Any
+          definition classes: <a href="" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a> → AnyRef → Any
         </div>
             
             
@@ -1732,14 +1914,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#unique">
-      <a id="unique:Reactive[MouseEvent]"></a>
+      <a id="unique:Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">unique</span>
         
         
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1754,14 +1936,14 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#uniqueBy">
-      <a id="uniqueBy((MouseEvent, MouseEvent) ⇒ Boolean):Reactive[MouseEvent]"></a>
+      <a id="uniqueBy((PropertyChangeEvent, PropertyChangeEvent) ⇒ Boolean):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">uniqueBy</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>, <span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>, <span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1776,13 +1958,13 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#unsplit">
-      <a id="unsplit[B](Reactive[B])(&lt;:&lt;[Reactive[MouseEvent], Reactive[Sequence[B]]]):Reactive[B]"></a>
+      <a id="unsplit[B](Reactive[B])(&lt;:&lt;[Reactive[PropertyChangeEvent], Reactive[Sequence[B]]]):Reactive[B]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">unsplit</span>
         <span class="tparams">[<span name="B">B</span>]</span>
-        <span class="params">(<span name="sep">sep: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span>
+        <span class="params">(<span name="sep">sep: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[B]]]</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>
       </span>
       </h4>
@@ -1798,13 +1980,13 @@ possible to check whether the contents of the list are of the requested typed.
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#unzip">
-      <a id="unzip[B, C](&lt;:&lt;[Reactive[MouseEvent], Reactive[(B, C)]]):(Reactive[B], Reactive[C])"></a>
+      <a id="unzip[B, C](&lt;:&lt;[Reactive[PropertyChangeEvent], Reactive[(B, C)]]):(Reactive[B], Reactive[C])"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">unzip</span>
         <span class="tparams">[<span name="B">B</span>, <span name="C">C</span>]</span>
-        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(B, C)]]</span>)</span>
+        <span class="params">(<span class="implicit">implicit </span><span name="pre">pre: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(B, C)]]</span>)</span>
         <span class="result">: (<a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B], <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[C])</span>
       </span>
       </h4>
@@ -1814,15 +1996,15 @@ possible to check whether the contents of the list are of the requested typed.
           definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Resource#used">
-      <a id="used:Reactive[MouseEvent]"></a>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#used">
+      <a id="used:Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">used</span>
         
         
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1830,18 +2012,18 @@ possible to check whether the contents of the list are of the requested typed.
             <div class="fullcomment"><div class="block">
           attributes: final 
         </div><div class="block">
-          definition classes: <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>
+          definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#using">
-      <a id="using(Closeable):Reactive[MouseEvent]"></a>
+      <a id="using(Closeable):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">using</span>
         
         <span class="params">(<span name="c">c: <span class="extype" name="java.io.Closeable">Closeable</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1913,14 +2095,14 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#withFilter">
-      <a id="withFilter((MouseEvent) ⇒ Boolean):Reactive[MouseEvent]"></a>
+      <a id="withFilter((PropertyChangeEvent) ⇒ Boolean):Reactive[PropertyChangeEvent]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">withFilter</span>
         
-        <span class="params">(<span name="p">p: (<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</span>
+        <span class="params">(<span name="p">p: (<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</span>
       </span>
       </h4>
       
@@ -1932,14 +2114,31 @@ possible to check whether the contents of the list are of the requested typed.
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#zip">
-      <a id="zip[B](Reactive[B]):Reactive[(MouseEvent, B)]"></a>
+      <a id="zip[B](Reactive[B]):Reactive[(PropertyChangeEvent, B)]"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">zip</span>
         <span class="tparams">[<span name="B">B</span>]</span>
         <span class="params">(<span name="that">that: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[B]</span>)</span>
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>, B)]</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>, B)]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Reactive#zipWithIndex">
+      <a id="zipWithIndex:Reactive[(PropertyChangeEvent, Int)]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">zipWithIndex</span>
+        
+        
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[(<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>, <span class="extype" name="scala.Int">Int</span>)]</span>
       </span>
       </h4>
       
@@ -1951,16 +2150,20 @@ possible to check whether the contents of the list are of the requested typed.
     </li></ol>
             </div>
 
-        <div class="parent" name="com.github.okomok.mada.sequence.reactive.Resource">
-              <h3>Inherited from <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</h3>
+        <div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.Resource">
+              <h3>Inherited from <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</h3>
             </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">
-              <h3>Inherited from <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</h3>
+              <h3>Inherited from <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</h3>
             </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.Reactive">
-              <h3>Inherited from <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</h3>
+              <h3>Inherited from <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</h3>
             </div><div class="parent" name="java.io.Closeable">
               <h3>Inherited from <span class="extype" name="java.io.Closeable">Closeable</span></h3>
             </div><div class="parent" name="com.github.okomok.mada.sequence.reactive.Sequence">
-              <h3>Inherited from <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[<span class="extype" name="java.awt.event.MouseEvent">MouseEvent</span>]</h3>
+              <h3>Inherited from <a href="Sequence.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</a>[<span class="extype" name="java.beans.PropertyChangeEvent">PropertyChangeEvent</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from AnyRef</h3>
             </div><div class="parent" name="scala.Any">

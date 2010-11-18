@@ -53,12 +53,12 @@
         <div class="types members" id="types">
               <h3>Type Members</h3>
               <ol><li visbl="pub" data-isabs="false" name="_root_.BackwardPipe">
-      <a id="BackwardPipe:BackwardPipe[A]"></a>
+      <a id="BackwardPipe:BackwardPipe[A, B]"></a>
       <h4 class="signature"><a href="../../../../../BackwardPipe.html">
       <span class="kind">class</span>
       <span class="symbol">
         <span class="name">BackwardPipe</span>
-        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
         
         <span class="result"> extends AnyRef</span>
       </span>
@@ -69,42 +69,6 @@
           attributes: sealed 
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByEdt">
-      <a id="ByEdt:ByEdt[R]"></a>
-      <h4 class="signature"><a href="ByEdt.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ByEdt</span>
-        <span class="tparams">[<span name="R">R</span>]</span>
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
-        <span class="result"> extends () ⇒ R with Product</span>
-      </span>
-      </a></h4>
-      
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByLazy">
-      <a id="ByLazy:ByLazy[R]"></a>
-      <h4 class="signature"><a href="ByLazy.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ByLazy</span>
-        <span class="tparams">[<span name="R">+R</span>]</span>
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
-        <span class="result"> extends () ⇒ R with Product</span>
-      </span>
-      </a></h4>
-      
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByName">
-      <a id="ByName:ByName[R]"></a>
-      <h4 class="signature"><a href="ByName.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">ByName</span>
-        <span class="tparams">[<span name="R">+R</span>]</span>
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
-        <span class="result"> extends () ⇒ R with Product</span>
-      </span>
-      </a></h4>
-      
     </li><li visbl="pub" data-isabs="false" name="_root_.ForwardPipe">
       <a id="ForwardPipe:ForwardPipe[A]"></a>
       <h4 class="signature"><a href="../../../../../ForwardPipe.html">
@@ -134,18 +98,6 @@
       </span>
       </a></h4>
       <p class="comment cmt">Equivalent to <code>scala.Proxy</code> (with slightly different names).</p>
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future">
-      <a id="Future:Future[R]"></a>
-      <h4 class="signature"><a href="Future.html">
-      <span class="kind">case class</span>
-      <span class="symbol">
-        <span class="name">Future</span>
-        <span class="tparams">[<span name="R">+R</span>]</span>
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
-        <span class="result"> extends () ⇒ R with Product</span>
-      </span>
-      </a></h4>
-      
     </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.util.HasImplicit">
       <a id="HasImplicit:HasImplicit[A]"></a>
       <h4 class="signature"><a href="HasImplicit.html">
@@ -180,18 +132,23 @@
           attributes: sealed abstract 
         </div></div>
           
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel">
-      <a id="Parallel:Parallel[R]"></a>
-      <h4 class="signature"><a href="Parallel.html">
-      <span class="kind">case class</span>
+    </li><li visbl="pub" data-isabs="false" name="_root_.SideEffectPipe">
+      <a id="SideEffectPipe:SideEffectPipe[A]"></a>
+      <h4 class="signature"><a href="../../../../../SideEffectPipe.html">
+      <span class="kind">class</span>
       <span class="symbol">
-        <span class="name">Parallel</span>
-        <span class="tparams">[<span name="R">R</span>]</span>
-        <span class="params">(<span name="_1">_1: () ⇒ R</span>)</span>
-        <span class="result"> extends () ⇒ R with Product</span>
+        <span class="name">SideEffectPipe</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        
+        <span class="result"> extends AnyRef</span>
       </span>
       </a></h4>
       
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed 
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.util.||">
       <a id="||:||[T1, T2]"></a>
       <h4 class="signature"><a href="$bar$bar.html">
@@ -214,54 +171,25 @@
 
         <div class="values members" id="values">
               <h3>Value Members</h3>
-              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByEdt">
-      <a id="ByEdt:ByEdt"></a>
-      <h4 class="signature"><a href="ByEdt$.html">
-      <span class="kind">object</span>
+              <ol><li visbl="pub" data-isabs="false" name="_root_#&lt;|">
+      <a id="&lt;|[A, B]((A) ⇒ B):BackwardPipe[A, B]"></a>
+      <h4 class="signature">
+      <span class="kind">implicit def</span>
       <span class="symbol">
-        <span class="name">ByEdt</span>
-        
-        
-        <span class="result"> extends AnyRef</span>
+        <span class="name">&lt;|</span>
+        <span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span>
+        <span class="params">(<span name="f">f: (A) ⇒ B</span>)</span>
+        <span class="result">: <a href="../../../../../BackwardPipe.html" class="extype" name="BackwardPipe">BackwardPipe</a>[A, B]</span>
       </span>
-      </a></h4>
+      </h4>
       
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByLazy">
-      <a id="ByLazy:ByLazy"></a>
-      <h4 class="signature"><a href="ByLazy$.html">
-      <span class="kind">object</span>
-      <span class="symbol">
-        <span class="name">ByLazy</span>
-        
-        
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </a></h4>
-      
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.ByName">
-      <a id="ByName:ByName"></a>
-      <h4 class="signature"><a href="ByName$.html">
-      <span class="kind">object</span>
-      <span class="symbol">
-        <span class="name">ByName</span>
-        
-        
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </a></h4>
-      
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Future">
-      <a id="Future:Future"></a>
-      <h4 class="signature"><a href="Future$.html">
-      <span class="kind">object</span>
-      <span class="symbol">
-        <span class="name">Future</span>
-        
-        
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </a></h4>
-      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: implicit 
+        </div><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.HasImplicit">
       <a id="HasImplicit:HasImplicit"></a>
       <h4 class="signature"><a href="HasImplicit$.html">
@@ -301,18 +229,6 @@
       <span class="kind">object</span>
       <span class="symbol">
         <span class="name">Overload</span>
-        
-        
-        <span class="result"> extends AnyRef</span>
-      </span>
-      </a></h4>
-      
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.util.Parallel">
-      <a id="Parallel:Parallel"></a>
-      <h4 class="signature"><a href="Parallel$.html">
-      <span class="kind">object</span>
-      <span class="symbol">
-        <span class="name">Parallel</span>
         
         
         <span class="result"> extends AnyRef</span>
@@ -483,7 +399,7 @@
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
-        <span class="name">inEdt</span>
+        <span class="name deprecated">inEdt</span>
         <span class="tparams">[<span name="R">R</span>]</span>
         <span class="params">(<span name="body">body: ⇒ R</span>)</span>
         <span class="result">: R</span>
@@ -494,7 +410,9 @@
             <div class="fullcomment"><div class="comment cmt"><p>Evaluates <code>body</code> in the event-dispatch-thread.
 </p></div><div class="block">
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
-        </div>
+        </div><div class="block"><ol>deprecated:
+          <li><p>use eval.InEdt.apply instead</p></li>
+        </ol></div>
             
             
             
@@ -553,6 +471,28 @@
       
             <p class="shortcomment cmt">Returns an Option value instead of exception.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Returns an Option value instead of exception.
+</p></div><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#optionalErr">
+      <a id="optionalErr[R](⇒ R):Option[R]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">optionalErr</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="body">body: ⇒ R</span>)</span>
+        <span class="result">: <span class="extype" name="scala.Option">Option</span>[R]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Returns an Option value instead of exception printing error log.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Returns an Option value instead of exception printing error log.
 </p></div><div class="block">
           definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
         </div>
@@ -645,14 +585,14 @@
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="_root_#|&lt;">
-      <a id="|&lt;[A](A):BackwardPipe[A]"></a>
+      <a id="|&lt;[A](A):SideEffectPipe[A]"></a>
       <h4 class="signature">
       <span class="kind">implicit def</span>
       <span class="symbol">
         <span class="name">|&lt;</span>
         <span class="tparams">[<span name="A">A</span>]</span>
         <span class="params">(<span name="x">x: A</span>)</span>
-        <span class="result">: <a href="../../../../../BackwardPipe.html" class="extype" name="BackwardPipe">BackwardPipe</a>[A]</span>
+        <span class="result">: <a href="../../../../../SideEffectPipe.html" class="extype" name="SideEffectPipe">SideEffectPipe</a>[A]</span>
       </span>
       </h4>
       
