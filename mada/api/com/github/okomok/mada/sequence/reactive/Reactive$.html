@@ -276,13 +276,13 @@ part of compilation it is not possible to check whether the contents of the list
           </div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#block">
-      <a id="block[A](⇒ A @scala.util.continuations.cpsParam[A,Any]):Unit"></a>
+      <a id="block[A]((com.github.okomok.mada.sequence.reactive.BlockEnv.type) ⇒ A @scala.util.continuations.cpsParam[A,Any]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">block</span>
         <span class="tparams">[<span name="A">A</span>]</span>
-        <span class="params">(<span name="ctx">ctx: ⇒ A @scala.util.continuations.cpsParam[A,Any]</span>)</span>
+        <span class="params">(<span name="ctx">ctx: (com.github.okomok.mada.sequence.reactive.BlockEnv.type) ⇒ A @scala.util.continuations.cpsParam[A,Any]</span>)</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
@@ -489,6 +489,23 @@ there are no more references to the object.</p><p>The details of when and if the
           attributes: implicit 
         </div><div class="block">
           definition classes: <a href="Compatibles.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Compatibles">Compatibles</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#fromCps">
+      <a id="fromCps[A](⇒ A @scala.util.continuations.cpsParam[Unit,Unit]):Reactive[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromCps</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="from">from: ⇒ A @scala.util.continuations.cpsParam[Unit,Unit]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
         </div></div>
           
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Compatibles#fromOption">

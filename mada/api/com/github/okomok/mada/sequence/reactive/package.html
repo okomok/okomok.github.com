@@ -64,6 +64,23 @@
       </span>
       </a></h4>
       
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Exit">
+      <a id="Exit:Exit"></a>
+      <h4 class="signature"><a href="Exit.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Exit</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Forwarder">
       <a id="Forwarder:Forwarder[A]"></a>
       <h4 class="signature"><a href="Forwarder.html">
@@ -76,6 +93,18 @@
       </span>
       </a></h4>
       
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.NoEndResource">
+      <a id="NoEndResource:NoEndResource[A]"></a>
+      <h4 class="signature"><a href="NoEndResource.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">NoEndResource</span>
+        <span class="tparams">[<span name="A">+A</span>]</span>
+        
+        <span class="result"> extends ReactiveOnce[A]</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Mixin for a Reactive resource which has no end.</p>
     </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Reactive">
       <a id="Reactive:Reactive[A]"></a>
       <h4 class="signature"><a href="Reactive.html">
@@ -148,7 +177,7 @@
         <span class="result"> extends Reactive[A]</span>
       </span>
       </a></h4>
-      <p class="comment cmt">Reactive list (immutable)
+      <p class="comment cmt">Infinite Reactive list (immutable)
 </p>
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Schedule">
       <a id="Schedule:Schedule"></a>
@@ -158,7 +187,7 @@
         <span class="name">Schedule</span>
         
         <span class="params">(<span name="scheduler">scheduler: (TimerTask) ⇒ Unit</span>)</span>
-        <span class="result"> extends Resource[Unit] with Product</span>
+        <span class="result"> extends NoEndResource[Unit] with Product</span>
       </span>
       </a></h4>
       
@@ -175,6 +204,18 @@
       </a></h4>
       <p class="comment cmt">The bridge between phisical and logical hierarchy
 </p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Thrown">
+      <a id="Thrown:Thrown"></a>
+      <h4 class="signature"><a href="Thrown.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Thrown</span>
+        
+        <span class="params">(<span name="what">what: Throwable</span>)</span>
+        <span class="result"> extends Exit with Product</span>
+      </span>
+      </a></h4>
+      
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Var">
       <a id="Var:Var[A]"></a>
       <h4 class="signature"><a href="Var.html">
@@ -186,7 +227,7 @@
         <span class="result"> extends Reactive[A]</span>
       </span>
       </a></h4>
-      <p class="comment cmt">A sequence of variables, considered as a lightweight <code>Rist</code>.</p>
+      <p class="comment cmt">Infinite sequence of variables, considered as a lightweight <code>Rist</code>.</p>
     </li></ol>
             </div>
 
@@ -198,6 +239,54 @@
       <span class="kind">object</span>
       <span class="symbol">
         <span class="name">Beans</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.BlockEnv">
+      <a id="BlockEnv:BlockEnv"></a>
+      <h4 class="signature"><a href="BlockEnv$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">BlockEnv</span>
+        
+        
+        <span class="result"> extends AnyRef</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Closed">
+      <a id="Closed:Closed"></a>
+      <h4 class="signature"><a href="Closed$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Closed</span>
+        
+        
+        <span class="result"> extends Exit with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.End">
+      <a id="End:End"></a>
+      <h4 class="signature"><a href="End$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">End</span>
+        
+        
+        <span class="result"> extends Exit with Product</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Exit">
+      <a id="Exit:Exit"></a>
+      <h4 class="signature"><a href="Exit$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">Exit</span>
         
         
         <span class="result"> extends AnyRef</span>
@@ -289,13 +378,13 @@
       </a></h4>
       
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#block">
-      <a id="block[A](⇒ A @scala.util.continuations.cpsParam[A,Any]):Unit"></a>
+      <a id="block[A]((com.github.okomok.mada.sequence.reactive.BlockEnv.type) ⇒ A @scala.util.continuations.cpsParam[A,Any]):Unit"></a>
       <h4 class="signature">
       <span class="kind">def</span>
       <span class="symbol">
         <span class="name">block</span>
         <span class="tparams">[<span name="A">A</span>]</span>
-        <span class="params">(<span name="ctx">ctx: ⇒ A @scala.util.continuations.cpsParam[A,Any]</span>)</span>
+        <span class="params">(<span name="ctx">ctx: (com.github.okomok.mada.sequence.reactive.BlockEnv.type) ⇒ A @scala.util.continuations.cpsParam[A,Any]</span>)</span>
         <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
       </span>
       </h4>
@@ -358,6 +447,23 @@
         <span class="name">from</span>
         <span class="tparams">[<span name="A">A</span>]</span>
         <span class="params">(<span name="to">to: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>)</span>
+        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Common#fromCps">
+      <a id="fromCps[A](⇒ A @scala.util.continuations.cpsParam[Unit,Unit]):Reactive[A]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromCps</span>
+        <span class="tparams">[<span name="A">A</span>]</span>
+        <span class="params">(<span name="from">from: ⇒ A @scala.util.continuations.cpsParam[Unit,Unit]</span>)</span>
         <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
       </span>
       </h4>

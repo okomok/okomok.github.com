@@ -809,6 +809,30 @@ Each vector size is <code>n</code> except for the last one.
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#each">
+      <a id="each((Any) ⇒ Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">each</span>
+        
+        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Apply a function <code>f</code> to all elements of this vector.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Apply a function <code>f</code> to all elements of this vector.<code>f</code> may be called in any order, and
+there is no guarantee <code>f</code> calls are single-threaded.
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>a function that is applied to every element.
+</p></dd></dl><div class="block">
+          definition classes: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
+        </div>
+            
+            
+            
+          </div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.stl.OutputVector#end">
       <a id="end:Int"></a>
       <h4 class="signature">
@@ -1733,6 +1757,25 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#par">
+      <a id="par:Vector[Any]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">par</span>
+        
+        
+        <span class="result">: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Any">Any</span>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div><div class="block">
+          definition classes: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
+        </div></div>
+          
     </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#parallel">
       <a id="parallel:Vector[Any]"></a>
       <h4 class="signature">
@@ -1767,49 +1810,6 @@ possible to check whether the contents of the list are of the requested typed.
             <p class="shortcomment cmt">Requests a vector to perform parallel methods.</p>
             <div class="fullcomment"><div class="comment cmt"><p>Requests a vector to perform parallel methods.
 </p></div><div class="block">
-          definition classes: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
-        </div>
-            
-            
-            
-          </div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#parallelize">
-      <a id="parallelize:Vector[Any]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">parallelize</span>
-        
-        
-        <span class="result">: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>[<span class="extype" name="scala.Any">Any</span>]</span>
-      </span>
-      </h4>
-      
-            
-            <div class="fullcomment"><div class="block">
-          attributes: final 
-        </div><div class="block">
-          definition classes: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
-        </div></div>
-          
-    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.vector.Vector#pareach">
-      <a id="pareach((Any) ⇒ Unit):Unit"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">pareach</span>
-        
-        <span class="params">(<span name="f">f: (<span class="extype" name="scala.Any">Any</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
-        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      </h4>
-      
-            <p class="shortcomment cmt">Apply a function <code>f</code> to all elements of this vector.</p>
-            <div class="fullcomment"><div class="comment cmt"><p>Apply a function <code>f</code> to all elements of this vector.<code>f</code> may be called in any order, and
-there is no guarantee <code>f</code> calls are single-threaded.
-</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>a function that is applied to every element.
-</p></dd></dl><div class="block">
           definition classes: <a href="../Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>
         </div>
             

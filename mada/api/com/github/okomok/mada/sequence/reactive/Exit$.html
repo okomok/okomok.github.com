@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>com.github.okomok.mada.sequence.reactive.Sequence</title>
+          <title>com.github.okomok.mada.sequence.reactive.Exit</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
@@ -12,36 +12,29 @@
       <script type="text/javascript" src="../../../../../../lib/tools.tooltip.js"></script>
     
         </head>
-        <body class="type" onload="windowTitle();">
+        <body class="value" onload="windowTitle();">
 
       <p id="owner"><a href="../../../../../package.html" class="extype" name="com">com</a>.<a href="../../../../package.html" class="extype" name="com.github">github</a>.<a href="../../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../../package.html" class="extype" name="com.github.okomok.mada">mada</a>.<a href="../package.html" class="extype" name="com.github.okomok.mada.sequence">sequence</a>.<a href="package.html" class="extype" name="com.github.okomok.mada.sequence.reactive">reactive</a></p>
 
       <div id="definition">
-        <img src="../../../../../../lib/trait_big.png" />
-        <h1>Sequence</h1>
+        <img src="../../../../../../lib/object_big.png" />
+        <h1>Exit</h1>
       </div>
 
       <h4 class="signature" id="signature">
-      <span class="kind">trait</span>
+      <span class="kind">object</span>
       <span class="symbol">
-        <span class="name">Sequence</span>
-        <span class="tparams">[<span name="A">+A</span>]</span>
+        <span class="name">Exit</span>
+        
         
         <span class="result"> extends AnyRef</span>
       </span>
       </h4>
-      <div class="fullcomment" id="comment"><div class="comment cmt"><p>The bridge between phisical and logical hierarchy
-</p></div><div class="block">
-            go to: <a href="Sequence$.html">companion</a>
+      <div class="fullcomment" id="comment"><div class="block">
+            go to: <a href="Exit.html">companion</a>
           </div><div class="block">
             linear super types: AnyRef, <span class="extype" name="scala.Any">Any</span>
-          </div><div class="block">
-            known subclasses: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>, <a href="Var.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Var">Var</a>, <a href="ReactiveOnce.html" class="extype" name="com.github.okomok.mada.sequence.reactive.ReactiveOnce">ReactiveOnce</a>, <a href="NoEndResource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.NoEndResource">NoEndResource</a>, <a href="Swing$$ItemStateChanged.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.ItemStateChanged">ItemStateChanged</a>, <a href="Swing$$StateChanged.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.StateChanged">StateChanged</a>, <a href="Swing$$ActionPerformed.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Swing.ActionPerformed">ActionPerformed</a>, <a href="Sequence$$Forwarder.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Sequence.Forwarder">Forwarder</a>, <a href="Schedule.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Schedule">Schedule</a>, <a href="Rist.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Rist">Rist</a>, <a href="Resource.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Resource">Resource</a>, <a href="Forwarder.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Forwarder">Forwarder</a>, <a href="Nio$$Selection2.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Nio.Selection2">Selection2</a>, <a href="Nio$$Selection1.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Nio.Selection1">Selection1</a>, <a href="Beans$$PropertyChange.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Beans.PropertyChange">PropertyChange</a>, <a href="../iterative/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence">Sequence</a>, <a href="../iterative/Sequence$$Forwarder.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Sequence.Forwarder">Forwarder</a>, <a href="../iterative/Iterative.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Iterative">Iterative</a>, <a href="../iterative/Forwarder.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Forwarder">Forwarder</a>, <a href="../iterative/Slice.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Slice">Slice</a>, <a href="../iterative/RecursiveForwarder.html" class="extype" name="com.github.okomok.mada.sequence.iterative.RecursiveForwarder">RecursiveForwarder</a>, <a href="../iterative/Recursive.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Recursive">Recursive</a>, <a href="../iterative/Randoms$$OfBytes.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Randoms.OfBytes">OfBytes</a>, <a href="../iterative/Randoms$$OfLong.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Randoms.OfLong">OfLong</a>, <a href="../iterative/Randoms$$OfInt.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Randoms.OfInt">OfInt</a>, <a href="../iterative/Randoms$$OfGaussian.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Randoms.OfGaussian">OfGaussian</a>, <a href="../iterative/Randoms$$OfFloat.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Randoms.OfFloat">OfFloat</a>, <a href="../iterative/Randoms$$OfDouble.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Randoms.OfDouble">OfDouble</a>, <a href="../iterative/Randoms$$OfBoolean.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Randoms.OfBoolean">OfBoolean</a>, <a href="../iterative/Mix.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Mix">Mix</a>, <a href="../iterative/Map.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Map">Map</a>, <a href="../iterative/Infinite.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Infinite">Infinite</a>, <a href="../iterative/Force.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Force">Force</a>, <a href="../iterative/Expr.html" class="extype" name="com.github.okomok.mada.sequence.iterative.Expr">Expr</a>, <a href="../vector/Sequence.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence">Sequence</a>, <a href="../vector/Vector.html" class="extype" name="com.github.okomok.mada.sequence.vector.Vector">Vector</a>, <a href="../vector/stl/OutputVector.html" class="extype" name="com.github.okomok.mada.sequence.vector.stl.OutputVector">OutputVector</a>, <a href="../vector/stl/OutputCounter.html" class="extype" name="com.github.okomok.mada.sequence.vector.stl.OutputCounter">OutputCounter</a>, <a href="../vector/Sequence$$Forwarder.html" class="extype" name="com.github.okomok.mada.sequence.vector.Sequence.Forwarder">Forwarder</a>, <a href="../vector/Adapter.html" class="extype" name="com.github.okomok.mada.sequence.vector.Adapter">Adapter</a>, <a href="../vector/Region.html" class="extype" name="com.github.okomok.mada.sequence.vector.Region">Region</a>, <a href="../vector/NotWritable.html" class="extype" name="com.github.okomok.mada.sequence.vector.NotWritable">NotWritable</a>, <a href="../vector/FromJCharBuffer.html" class="extype" name="com.github.okomok.mada.sequence.vector.FromJCharBuffer">FromJCharBuffer</a>, <a href="../vector/Forwarder.html" class="extype" name="com.github.okomok.mada.sequence.vector.Forwarder">Forwarder</a>, <a href="../list/List.html" class="extype" name="com.github.okomok.mada.sequence.list.List">List</a>, <a href="../list/Nil$.html" class="extype" name="com.github.okomok.mada.sequence.list.Nil">Nil</a>, <a href="../list/Cons.html" class="extype" name="com.github.okomok.mada.sequence.list.Cons">Cons</a>, <a href="../../arm/Arm.html" class="extype" name="com.github.okomok.mada.arm.Arm">Arm</a>, <a href="../../arm/Bench.html" class="extype" name="com.github.okomok.mada.arm.Bench">Bench</a>
-          </div>
-            
-            
-            
-          </div>
+          </div></div>
 
       <div id="template">
 
@@ -54,7 +47,7 @@
           <div id="ancestors">
                 <span class="filtertype">Inherited</span>
                 <ol><li class="hideall">Hide All</li><li class="showall">Show all</li></ol>
-                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.reactive.Sequence">Sequence</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
+                <ol id="linearization"><li class="in" name="com.github.okomok.mada.sequence.reactive.Exit">Exit</li><li class="in" name="scala.AnyRef">AnyRef</li><li class="in" name="scala.Any">Any</li></ol>
               </div>
           <div id="visbl">
               <span class="filtertype">Visibility</span>
@@ -68,7 +61,22 @@
 
         
 
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Exit#Thrown">
+      <a id="Thrown:Thrown"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">Thrown</span>
         
+        
+        <span class="result"> = <a href="Thrown.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Thrown">Thrown</a></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
 
         <div class="values members" id="values">
               <h3>Value Members</h3>
@@ -220,6 +228,42 @@
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Exit#Closed">
+      <a id="Closed:com.github.okomok.mada.sequence.reactive.Closed.type"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">Closed</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.reactive.Closed.type</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Exit#End">
+      <a id="End:com.github.okomok.mada.sequence.reactive.End.type"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">End</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.reactive.End.type</span>
+      </span>
+      </h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Exit#Thrown">
+      <a id="Thrown:com.github.okomok.mada.sequence.reactive.Thrown.type"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">Thrown</span>
+        
+        
+        <span class="result">: com.github.okomok.mada.sequence.reactive.Thrown.type</span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" data-isabs="false" name="scala.Any#asInstanceOf">
       <a id="asInstanceOf[T0]:T0"></a>
       <h4 class="signature">
@@ -244,23 +288,6 @@ part of compilation it is not possible to check whether the contents of the list
             
             
           </div>
-          
-    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.mada.sequence.reactive.Sequence#asReactive">
-      <a id="asReactive:Reactive[A]"></a>
-      <h4 class="signature">
-      <span class="kind">def</span>
-      <span class="symbol">
-        <span class="name">asReactive</span>
-        
-        
-        <span class="result">: <a href="Reactive.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Reactive">Reactive</a>[A]</span>
-      </span>
-      </h4>
-      
-            
-            <div class="fullcomment"><div class="block">
-          attributes: abstract 
-        </div></div>
           
     </li><li visbl="prt" data-isabs="false" name="scala.AnyRef#clone">
       <a id="clone():AnyRef"></a>
@@ -567,6 +594,18 @@ possible to check whether the contents of the list are of the requested typed.
             
           </div>
           
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.mada.sequence.reactive.Exit#tryCatch">
+      <a id="tryCatch((Exit) ⇒ Unit)(⇒ Unit):Unit"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">tryCatch</span>
+        
+        <span class="params">(<span name="k">k: (<a href="Exit.html" class="extype" name="com.github.okomok.mada.sequence.reactive.Exit">Exit</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="params">(<span name="body">body: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span>
+        <span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      
     </li><li visbl="pub" data-isabs="false" name="scala.AnyRef#wait">
       <a id="wait():Unit"></a>
       <h4 class="signature">
