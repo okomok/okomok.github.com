@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.github.okomok.sing.function</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value" onload="windowTitle();">
+
+      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.sing">sing</a></p>
+
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <h1>function</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">function</span>
+        
+        
+        
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.function.Lift0">
+      <a id="Lift0:Lift0[R]"></a>
+      <h4 class="signature"><a href="Lift0.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Lift0</span>
+        <span class="tparams">[<span name="R">R</span>]</span>
+        <span class="params">(<span name="unsing">unsing: () ⇒ R</span>)</span>
+        <span class="result"> extends Function0 with Product</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Turns a function into sing one.</p>
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.function.Lift1">
+      <a id="Lift1:Lift1[T1, R]"></a>
+      <h4 class="signature"><a href="Lift1.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Lift1</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="unsing">unsing: (T1) ⇒ R</span>)</span>
+        <span class="result"> extends Function1 with ValueEquality with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.function.Lift2">
+      <a id="Lift2:Lift2[T1, T2, R]"></a>
+      <h4 class="signature"><a href="Lift2.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Lift2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="unsing">unsing: (T1, T2) ⇒ R</span>)</span>
+        <span class="result"> extends Function2 with ValueEquality with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.function.Lift3">
+      <a id="Lift3:Lift3[T1, T2, T3, R]"></a>
+      <h4 class="signature"><a href="Lift3.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Lift3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="R">R</span>]</span>
+        <span class="params">(<span name="unsing">unsing: (T1, T2, T3) ⇒ R</span>)</span>
+        <span class="result"> extends Function3 with ValueEquality with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#const0">
+      <a id="const0:const0[v]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">const0</span>
+        <span class="tparams">[<span name="v">v &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.function.Const0">Const0</span>[v]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity">
+      <a id="identity:identity"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">identity</span>
+        
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.function.Identity">Identity</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#throw0">
+      <a id="throw0:throw0[_]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">throw0</span>
+        <span class="tparams">[<span name="_">_</span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.function.Throw0">Throw0</span></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div></div>
+          
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="_root_#const0">
+      <a id="const0[v&lt;:Any](⇒ v):const0[v]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">const0</span>
+        <span class="tparams">[<span name="v">v &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>]</span>
+        <span class="params">(<span name="v">v: ⇒ v</span>)</span>
+        <span class="result">: const0[v]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The unary constant function
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The unary constant function
+</p></div><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#identity">
+      <a id="identity:identity"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">identity</span>
+        
+        
+        <span class="result">: identity</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">The identity function
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>The identity function
+</p></div><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="_root_#throw0">
+      <a id="throw0(Throwable):Throw0"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">throw0</span>
+        
+        <span class="params">(<span name="x">x: Throwable</span>)</span>
+        <span class="result">: <span class="extype" name="com.github.okomok.sing.function.Throw0">Throw0</span></span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">An unary function to throw an exception
+</p>
+            <div class="fullcomment"><div class="comment cmt"><p>An unary function to throw an exception
+</p></div><div class="block">
+          definition classes: <a href="../../../../../package.html" class="extype" name="_root_">root</a>
+        </div>
+            
+            
+            
+          </div>
+          
+    </li></ol>
+            </div>
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>

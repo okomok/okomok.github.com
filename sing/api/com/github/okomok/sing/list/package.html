@@ -1,0 +1,770 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>com.github.okomok.sing.list</title>
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" rel="stylesheet" type="text/css" media="screen" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+    
+        </head>
+        <body class="value" onload="windowTitle();">
+
+      <p id="owner"><a href="../../../../package.html" class="extype" name="com">com</a>.<a href="../../../package.html" class="extype" name="com.github">github</a>.<a href="../../package.html" class="extype" name="com.github.okomok">okomok</a>.<a href="../package.html" class="extype" name="com.github.okomok.sing">sing</a></p>
+
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <h1>list</h1>
+      </div>
+
+      <h4 class="signature" id="signature">
+      <span class="kind">package</span>
+      <span class="symbol">
+        <span class="name">list</span>
+        
+        
+        
+      </span>
+      </h4>
+      <div class="fullcomment" id="comment"></div>
+
+      <div id="template">
+
+        <div id="mbrsel">
+          <div id="textfilter"><span class="pre"></span><span class="input"><input accesskey="/" type="text" /></span><span class="post"></span></div>
+          
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in">Public</li><li class="all out">All</li></ol>
+            </div>
+          <div id="impl">
+              <span class="filtertype">Impl.</span>
+              <ol><li class="concrete in">Concrete</li><li class="abstract in">Abstract</li></ol>
+            </div>
+        </div>
+
+        
+
+        <div class="types members" id="types">
+              <h3>Type Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#::">
+      <a id=":::$colon$colon[x, xs]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">::</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>, <span name="xs">xs &lt;: <a href="List.html" class="extype" name="com.github.okomok.sing.list.List">List</a></span>]</span>
+        
+        <span class="result"> = $colon$colon[x]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.sing.list.AbstractList">
+      <a id="AbstractList:AbstractList"></a>
+      <h4 class="signature"><a href="AbstractList.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">AbstractList</span>
+        
+        
+        <span class="result"> extends List</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Cons">
+      <a id="Cons:Cons[x, xs]"></a>
+      <h4 class="signature"><a href="Cons.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Cons</span>
+        <span class="tparams">[<span name="x">x &lt;: Any</span>, <span name="xs">xs &lt;: List</span>]</span>
+        <span class="params">(<span name="head">head: x</span>, <span name="tail">tail: xs</span>)</span>
+        <span class="result"> extends AbstractList with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.sing.list.Forwarder">
+      <a id="Forwarder:Forwarder"></a>
+      <h4 class="signature"><a href="Forwarder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">Forwarder</span>
+        
+        
+        <span class="result"> extends List with Forwarder</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.sing.list.List">
+      <a id="List:List"></a>
+      <h4 class="signature"><a href="List.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">List</span>
+        
+        
+        <span class="result"> extends Any</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">The sing List</p>
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.sing.list.Nil">
+      <a id="Nil:Nil"></a>
+      <h4 class="signature"><a href="Nil.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Nil</span>
+        
+        
+        <span class="result"> extends AbstractList</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: sealed abstract 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.sing.list.RandomAccess">
+      <a id="RandomAccess:RandomAccess"></a>
+      <h4 class="signature"><a href="RandomAccess.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">RandomAccess</span>
+        
+        
+        <span class="result"> extends List</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Marker trait for random-access list
+</p>
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.sing.list.Strong">
+      <a id="Strong:Strong[xs]"></a>
+      <h4 class="signature"><a href="Strong.html">
+      <span class="kind">class</span>
+      <span class="symbol">
+        <span class="name">Strong</span>
+        <span class="tparams">[<span name="xs">xs &lt;: List</span>]</span>
+        
+        <span class="result"> extends AbstractList</span>
+      </span>
+      </a></h4>
+      <p class="comment cmt">Sequence-derivation helper to work around suboptimal <code>nsc.symtab.Types.Type.isGround</code>.</p>
+    </li><li visbl="pub" data-isabs="true" name="com.github.okomok.sing.list.TrivialForwarder">
+      <a id="TrivialForwarder:TrivialForwarder"></a>
+      <h4 class="signature"><a href="TrivialForwarder.html">
+      <span class="kind">trait</span>
+      <span class="symbol">
+        <span class="name">TrivialForwarder</span>
+        
+        
+        <span class="result"> extends Forwarder</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Unzip1">
+      <a id="Unzip1:Unzip1[xs]"></a>
+      <h4 class="signature"><a href="Unzip1.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Unzip1</span>
+        <span class="tparams">[<span name="xs">xs &lt;: List</span>]</span>
+        <span class="params">(<span name="xs">xs: xs</span>)</span>
+        <span class="result"> extends AbstractList with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Unzip2">
+      <a id="Unzip2:Unzip2[xs]"></a>
+      <h4 class="signature"><a href="Unzip2.html">
+      <span class="kind">case class</span>
+      <span class="symbol">
+        <span class="name">Unzip2</span>
+        <span class="tparams">[<span name="xs">xs &lt;: List</span>]</span>
+        <span class="params">(<span name="xs">xs: xs</span>)</span>
+        <span class="result"> extends AbstractList with Product</span>
+      </span>
+      </a></h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          attributes: final 
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#empty">
+      <a id="empty:empty"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">empty</span>
+        
+        
+        <span class="result"> = <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#force2">
+      <a id="force2:force2[t]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">force2</span>
+        <span class="tparams">[<span name="t">t &lt;: <a href="../Product2.html" class="extype" name="com.github.okomok.sing.Product2">Product2</a></span>]</span>
+        
+        <span class="result"> = <a href="../Tuple2.html" class="extype" name="com.github.okomok.sing.Tuple2">Tuple2</a>[force, force]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#iterate">
+      <a id="iterate:iterate[z, f]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">iterate</span>
+        <span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>, <span name="f">f &lt;: <a href="../Function1.html" class="extype" name="com.github.okomok.sing.Function1">Function1</a></span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.list.UnfoldRight.Impl">Impl</span>[z, <span class="extype" name="com.github.okomok.sing.list.Iterate.Iter">Iter</span>[f]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#lexicographicalOrdering">
+      <a id="lexicographicalOrdering:lexicographicalOrdering[eo]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">lexicographicalOrdering</span>
+        <span class="tparams">[<span name="eo">eo &lt;: Ordering</span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.list.LexicographicalOrdering.Impl">Impl</span>[<a href="../Some.html" class="extype" name="com.github.okomok.sing.Some">Some</a>[eo]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#naturalOrdering">
+      <a id="naturalOrdering:naturalOrdering"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">naturalOrdering</span>
+        
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.list.LexicographicalOrdering.Impl">Impl</span>[<a href="../None.html" class="extype" name="com.github.okomok.sing.None">None</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#range">
+      <a id="range:range[n, m]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">range</span>
+        <span class="tparams">[<span name="n">n &lt;: Nat</span>, <span name="m">m &lt;: Nat</span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.list.Range.Impl">Impl</span>[n, m]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#repeat">
+      <a id="repeat:repeat[z]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">repeat</span>
+        <span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.list.UnfoldRight.Impl">Impl</span>[z, <span class="extype" name="com.github.okomok.sing.list.Iterate.Iter">Iter</span>[identity]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#single">
+      <a id="single:single[x]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">single</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>]</span>
+        
+        <span class="result"> = <a href="Cons.html" class="extype" name="com.github.okomok.sing.list.Cons">Cons</a>[x, <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#unfoldRight">
+      <a id="unfoldRight:unfoldRight[z, f]"></a>
+      <h4 class="signature">
+      <span class="kind">type</span>
+      <span class="symbol">
+        <span class="name">unfoldRight</span>
+        <span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>, <span name="f">f &lt;: <a href="../Function1.html" class="extype" name="com.github.okomok.sing.Function1">Function1</a></span>]</span>
+        
+        <span class="result"> = <span class="extype" name="com.github.okomok.sing.list.UnfoldRight.Impl">Impl</span>[z, f]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li></ol>
+            </div>
+
+        <div class="values members" id="values">
+              <h3>Value Members</h3>
+              <ol><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#::">
+      <a id=":::com.github.okomok.sing.list.Cons.type"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">::</span>
+        
+        
+        <span class="result">: com.github.okomok.sing.list.Cons.type</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.List">
+      <a id="List:List"></a>
+      <h4 class="signature"><a href="List$.html">
+      <span class="kind">object</span>
+      <span class="symbol">
+        <span class="name">List</span>
+        
+        
+        <span class="result"> extends Common with ToSTuple</span>
+      </span>
+      </a></h4>
+      
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#Nil">
+      <a id="Nil:Nil"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">Nil</span>
+        
+        
+        <span class="result">: <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a></span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#empty">
+      <a id="empty:empty"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">empty</span>
+        
+        
+        <span class="result">: empty</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#force2">
+      <a id="force2[t&lt;:Product2](t):force2[t]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">force2</span>
+        <span class="tparams">[<span name="t">t &lt;: <a href="../Product2.html" class="extype" name="com.github.okomok.sing.Product2">Product2</a></span>]</span>
+        <span class="params">(<span name="t">t: t</span>)</span>
+        <span class="result">: force2[t]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Forces tuple elements.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Forces tuple elements.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple">
+      <a id="fromSTuple[T1, T2, T3, T4, T5]((T1, T2, T3, T4, T5)):$colon$colon[Box[T1], $colon$colon[Box[T2], $colon$colon[Box[T3], $colon$colon[Box[T4], $colon$colon[Box[T5], Nil]]]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2, T3, T4, T5)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T3], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T4], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T5], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple">
+      <a id="fromSTuple[T1, T2, T3, T4]((T1, T2, T3, T4)):$colon$colon[Box[T1], $colon$colon[Box[T2], $colon$colon[Box[T3], $colon$colon[Box[T4], Nil]]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2, T3, T4)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T3], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T4], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple">
+      <a id="fromSTuple[T1, T2, T3]((T1, T2, T3)):$colon$colon[Box[T1], $colon$colon[Box[T2], $colon$colon[Box[T3], Nil]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2, T3)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T3], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple">
+      <a id="fromSTuple[T1, T2]((T1, T2)):$colon$colon[Box[T1], $colon$colon[Box[T2], Nil]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple">
+      <a id="fromSTuple[T1]((T1)):$colon$colon[Box[T1], Nil]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple</span>
+        <span class="tparams">[<span name="T1">T1</span>]</span>
+        <span class="params">(<span name="from">from: (T1)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Lifts <code>scala.TupleN</code> to sing one.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Lifts <code>scala.TupleN</code> to sing one.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple1">
+      <a id="fromSTuple1[T1]((T1)):$colon$colon[Box[T1], Nil]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple1</span>
+        <span class="tparams">[<span name="T1">T1</span>]</span>
+        <span class="params">(<span name="from">from: (T1)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple2">
+      <a id="fromSTuple2[T1, T2]((T1, T2)):$colon$colon[Box[T1], $colon$colon[Box[T2], Nil]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple2</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple3">
+      <a id="fromSTuple3[T1, T2, T3]((T1, T2, T3)):$colon$colon[Box[T1], $colon$colon[Box[T2], $colon$colon[Box[T3], Nil]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple3</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2, T3)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T3], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple4">
+      <a id="fromSTuple4[T1, T2, T3, T4]((T1, T2, T3, T4)):$colon$colon[Box[T1], $colon$colon[Box[T2], $colon$colon[Box[T3], $colon$colon[Box[T4], Nil]]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple4</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2, T3, T4)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T3], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T4], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#fromSTuple5">
+      <a id="fromSTuple5[T1, T2, T3, T4, T5]((T1, T2, T3, T4, T5)):$colon$colon[Box[T1], $colon$colon[Box[T2], $colon$colon[Box[T3], $colon$colon[Box[T4], $colon$colon[Box[T5], Nil]]]]]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">fromSTuple5</span>
+        <span class="tparams">[<span name="T1">T1</span>, <span name="T2">T2</span>, <span name="T3">T3</span>, <span name="T4">T4</span>, <span name="T5">T5</span>]</span>
+        <span class="params">(<span name="from">from: (T1, T2, T3, T4, T5)</span>)</span>
+        <span class="result">: $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T1], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T2], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T3], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T4], $colon$colon[<a href="../Box.html" class="extype" name="com.github.okomok.sing.Box">Box</a>[T5], <a href="Nil.html" class="extype" name="com.github.okomok.sing.list.Nil">Nil</a>]]]]]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#iterate">
+      <a id="iterate[z&lt;:Any, f&lt;:Function1](z,f):iterate[z, f]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">iterate</span>
+        <span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>, <span name="f">f &lt;: <a href="../Function1.html" class="extype" name="com.github.okomok.sing.Function1">Function1</a></span>]</span>
+        <span class="params">(<span name="z">z: z</span>, <span name="f">f: f</span>)</span>
+        <span class="result">: iterate[z, f]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#lexicographicalOrdering">
+      <a id="lexicographicalOrdering[eo&lt;:Ordering](eo):lexicographicalOrdering[eo]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">lexicographicalOrdering</span>
+        <span class="tparams">[<span name="eo">eo &lt;: Ordering</span>]</span>
+        <span class="params">(<span name="eo">eo: eo</span>)</span>
+        <span class="result">: lexicographicalOrdering[eo]</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Makes a lexicographical Ordering from element Ordering.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Makes a lexicographical Ordering from element Ordering.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#naturalOrdering">
+      <a id="naturalOrdering:naturalOrdering"></a>
+      <h4 class="signature">
+      <span class="kind">val</span>
+      <span class="symbol">
+        <span class="name">naturalOrdering</span>
+        
+        
+        <span class="result">: naturalOrdering</span>
+      </span>
+      </h4>
+      
+            <p class="shortcomment cmt">Makes a lexicographical Ordering from element natural ordering.</p>
+            <div class="fullcomment"><div class="comment cmt"><p>Makes a lexicographical Ordering from element natural ordering.
+</p></div><div class="block">
+          definition classes: Common
+        </div>
+            
+            
+            
+          </div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#range">
+      <a id="range[n&lt;:Nat, m&lt;:Nat](n,m):range[n, m]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">range</span>
+        <span class="tparams">[<span name="n">n &lt;: Nat</span>, <span name="m">m &lt;: Nat</span>]</span>
+        <span class="params">(<span name="n">n: n</span>, <span name="m">m: m</span>)</span>
+        <span class="result">: range[n, m]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#repeat">
+      <a id="repeat[z&lt;:Any](z):repeat[z]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">repeat</span>
+        <span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>]</span>
+        <span class="params">(<span name="z">z: z</span>)</span>
+        <span class="result">: repeat[z]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#single">
+      <a id="single[x&lt;:Any](x):single[x]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">single</span>
+        <span class="tparams">[<span name="x">x &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>]</span>
+        <span class="params">(<span name="x">x: x</span>)</span>
+        <span class="result">: single[x]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li><li visbl="pub" data-isabs="false" name="com.github.okomok.sing.list.Common#unfoldRight">
+      <a id="unfoldRight[z&lt;:Any, f&lt;:Function1](z,f):unfoldRight[z, f]"></a>
+      <h4 class="signature">
+      <span class="kind">def</span>
+      <span class="symbol">
+        <span class="name">unfoldRight</span>
+        <span class="tparams">[<span name="z">z &lt;: <a href="../Any.html" class="extype" name="com.github.okomok.sing.Any">Any</a></span>, <span name="f">f &lt;: <a href="../Function1.html" class="extype" name="com.github.okomok.sing.Function1">Function1</a></span>]</span>
+        <span class="params">(<span name="z">z: z</span>, <span name="f">f: f</span>)</span>
+        <span class="result">: unfoldRight[z, f]</span>
+      </span>
+      </h4>
+      
+            
+            <div class="fullcomment"><div class="block">
+          definition classes: Common
+        </div></div>
+          
+    </li></ol>
+            </div>
+
+        
+
+      </div>
+      
+      <div id="tooltip"></div>
+      
+    </body>
+      </html>
